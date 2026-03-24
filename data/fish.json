@@ -16,7 +16,7 @@
     "sellPrice": 1500,
     "dropRate": "2.50%",
     "wowhead": "https://www.wowhead.com/item=34484",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_misc_fish_31.jpg"
   },
   {
     "id": 35313,
@@ -35,7 +35,7 @@
     "sellPrice": 1500,
     "dropRate": "2.50%",
     "wowhead": "https://www.wowhead.com/item=35313",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_misc_fish_37.jpg"
   },
   {
     "id": 100032,
@@ -54,7 +54,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=100032",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_pants_cloth_pvpmage_f_01.jpg"
   },
   {
     "id": 100075,
@@ -73,7 +73,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=100075",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_mail_pvphunter_f_01chest.jpg"
   },
   {
     "id": 100673,
@@ -92,7 +92,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=100673",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_chest_leather_pvprogue_g_01.jpg"
   },
   {
     "id": 101135,
@@ -111,7 +111,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=101135",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_misc_trinketpanda_02.jpg"
   },
   {
     "id": 101192,
@@ -130,7 +130,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=101192",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_pants_cloth_panda_b_01.jpg"
   },
   {
     "id": 101226,
@@ -149,7 +149,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=101226",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_mace_1h_pandariaquest_b_02.jpg"
   },
   {
     "id": 101317,
@@ -187,7 +187,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=101862",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_bracer_leather_reputation_c_01.jpg"
   },
   {
     "id": 102187,
@@ -244,7 +244,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=102896",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_misc_token_argentdawn3.jpg"
   },
   {
     "id": 102928,
@@ -263,7 +263,7 @@
     "sellPrice": 125,
     "dropRate": "18.00%",
     "wowhead": "https://www.wowhead.com/item=102928",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_shoulder_leather_pvprogue_g_01.jpg"
   },
   {
     "id": 103451,
@@ -282,7 +282,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=103451",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_glove_plate_pvppaladin_g_01.jpg"
   },
   {
     "id": 103803,
@@ -301,7 +301,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=103803",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_chest_cloth_raidmage_n_01.jpg"
   },
   {
     "id": 104321,
@@ -320,7 +320,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=104321",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_mace_11.jpg"
   },
   {
     "id": 104727,
@@ -358,7 +358,7 @@
     "sellPrice": 125,
     "dropRate": "18.00%",
     "wowhead": "https://www.wowhead.com/item=104889",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_helm_leather_raidrogue_n_01.jpg"
   },
   {
     "id": 104898,
@@ -396,7 +396,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=104981",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_sword_2h_orgrimmarraid_d_01.jpg"
   },
   {
     "id": 105114,
@@ -415,7 +415,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=105114",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_jewelry_orgrimmarraid_trinket_17.jpg"
   },
   {
     "id": 105578,
@@ -434,7 +434,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=105578",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_mail_raidshaman_n_01chest.jpg"
   },
   {
     "id": 105656,
@@ -491,7 +491,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=106450",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_mail_draenorquest90_b_01glove.jpg"
   },
   {
     "id": 106450,
@@ -510,7 +510,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=106450",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_mail_draenorquest90_b_01glove.jpg"
   },
   {
     "id": 106684,
@@ -529,7 +529,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=106684",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_mail_draenorquest90_b_01pant.jpg"
   },
   {
     "id": 107048,
@@ -738,7 +738,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=110640",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_misc_enchantedscroll.jpg"
   },
   {
     "id": 110680,
@@ -890,7 +890,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=112303",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_inscription_tarot_6otankdeck.jpg"
   },
   {
     "id": 112415,
@@ -947,7 +947,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=113719",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_glove_plate_dungeonplate_c_03.jpg"
   },
   {
     "id": 113861,
@@ -966,7 +966,7 @@
     "sellPrice": 25000,
     "dropRate": "0.01%",
     "wowhead": "https://www.wowhead.com/item=113861",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_misc_trinket6oog_handeye.jpg"
   },
   {
     "id": 114504,
@@ -985,7 +985,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=114504",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_plate_draenorlfr_c_01boots.jpg"
   },
   {
     "id": 114653,
@@ -1042,7 +1042,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=115310",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_mace_1h_draenorquest_b_02.jpg"
   },
   {
     "id": 115413,
@@ -1061,7 +1061,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=115413",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_leather_draenordungeon_c_01shoulder.jpg"
   },
   {
     "id": 115470,
@@ -1080,7 +1080,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=115470",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/spell_holy_dispelmagic.jpg"
   },
   {
     "id": 116007,
@@ -1099,7 +1099,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=116007",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_bracer_cloth_draenorlfr_c_01.jpg"
   },
   {
     "id": 116567,
@@ -1118,7 +1118,7 @@
     "sellPrice": 125,
     "dropRate": "18.00%",
     "wowhead": "https://www.wowhead.com/item=116567",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_mace_1h_draenorquest_b_02.jpg"
   },
   {
     "id": 116841,
@@ -1137,7 +1137,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=116841",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_crate_03.jpg"
   },
   {
     "id": 116935,
@@ -1156,7 +1156,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=116935",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_cloth_draenordungeon_c_01buckle.jpg"
   },
   {
     "id": 117585,
@@ -1175,7 +1175,7 @@
     "sellPrice": 125,
     "dropRate": "18.00%",
     "wowhead": "https://www.wowhead.com/item=117585",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_cape_draenorpvp_d_02_leather_purple.jpg"
   },
   {
     "id": 117713,
@@ -1194,7 +1194,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=117713",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_cape_draenorpvp_d_03_mail_yellow.jpg"
   },
   {
     "id": 117762,
@@ -1213,7 +1213,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=117762",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_shoulder_mail_pvphunter_o_01.jpg"
   },
   {
     "id": 117987,
@@ -1251,7 +1251,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=118378",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/ability_shaman_totemcooldownrefund.jpg"
   },
   {
     "id": 119167,
@@ -1270,7 +1270,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=119167",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_inscription_scroll_kings.jpg"
   },
   {
     "id": 119244,
@@ -1289,7 +1289,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=119244",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_inscription_scroll_kings.jpg"
   },
   {
     "id": 119510,
@@ -1308,7 +1308,7 @@
     "sellPrice": 125,
     "dropRate": "18.00%",
     "wowhead": "https://www.wowhead.com/item=119510",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_pants_leather_38.jpg"
   },
   {
     "id": 120077,
@@ -1327,7 +1327,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=120077",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_6_0raid_necklace_1d.jpg"
   },
   {
     "id": 121178,
@@ -1365,7 +1365,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=121238",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_boot_leather_legionendgame_c_01.jpg"
   },
   {
     "id": 121252,
@@ -1403,7 +1403,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=122543",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_misc_ticket_tarot_crusade.jpg"
   },
   {
     "id": 122803,
@@ -1460,7 +1460,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=123238",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_bracer_mail_pvpshamangladiator_o_01.jpg"
   },
   {
     "id": 123358,
@@ -1479,7 +1479,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=123358",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_belt_92v4.jpg"
   },
   {
     "id": 123518,
@@ -1517,7 +1517,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=124264",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_leather_raidrogue_p_01pants.jpg"
   },
   {
     "id": 124506,
@@ -1536,7 +1536,7 @@
     "sellPrice": 125,
     "dropRate": "18.00%",
     "wowhead": "https://www.wowhead.com/item=124506",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/trade_alchemy_potiona1.jpg"
   },
   {
     "id": 124627,
@@ -1555,7 +1555,7 @@
     "sellPrice": 25000,
     "dropRate": "0.01%",
     "wowhead": "https://www.wowhead.com/item=124627",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_knife_1h_draenorcrafted_d_01_b_horde.jpg"
   },
   {
     "id": 125289,
@@ -1574,7 +1574,7 @@
     "sellPrice": 125,
     "dropRate": "18.00%",
     "wowhead": "https://www.wowhead.com/item=125289",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_plate_raidwarrior_p_01bracer.jpg"
   },
   {
     "id": 125532,
@@ -1593,7 +1593,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=125532",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_pant_cloth_draenorhonors2_c_01.jpg"
   },
   {
     "id": 125577,
@@ -1612,7 +1612,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=125577",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_shoulder_cloth_draenorhonors2_c_01.jpg"
   },
   {
     "id": 126459,
@@ -1631,7 +1631,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=126459",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_60pvp_trinket3a.jpg"
   },
   {
     "id": 126794,
@@ -1650,7 +1650,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=126794",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_belt_mail_raidhuntermythic_p_01.jpg"
   },
   {
     "id": 127103,
@@ -1669,7 +1669,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=127103",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_plate_plate_pvpwarrior_o_01shoulders.jpg"
   },
   {
     "id": 127128,
@@ -1707,7 +1707,7 @@
     "sellPrice": 125,
     "dropRate": "18.00%",
     "wowhead": "https://www.wowhead.com/item=128140",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_misc_trinket6oih_lanternb2.jpg"
   },
   {
     "id": 128166,
@@ -1745,7 +1745,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=128368",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_misc_monsterfang_01.jpg"
   },
   {
     "id": 129014,
@@ -1783,7 +1783,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=129259",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_misc_trinket6oih_horn2.jpg"
   },
   {
     "id": 130000,
@@ -1802,7 +1802,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=130000",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_bracer_leather_legionquest100_b_01.jpg"
   },
   {
     "id": 130571,
@@ -1859,7 +1859,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=131323",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_pants_leather_13.jpg"
   },
   {
     "id": 131504,
@@ -1878,7 +1878,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=131504",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_gauntlets_21.jpg"
   },
   {
     "id": 132054,
@@ -1916,7 +1916,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=132093",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_60pvp_trinket1c.jpg"
   },
   {
     "id": 132185,
@@ -1935,7 +1935,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=132185",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_weapon_crossbow_22.jpg"
   },
   {
     "id": 132253,
@@ -1954,7 +1954,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=132253",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_drink_waterskin_01.jpg"
   },
   {
     "id": 132868,
@@ -1992,7 +1992,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=133279",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_misc_stonering2.jpg"
   },
   {
     "id": 133447,
@@ -2011,7 +2011,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=133447",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_gauntlets_12.jpg"
   },
   {
     "id": 133691,
@@ -2030,7 +2030,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=133691",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_weapon_shortblade_05.jpg"
   },
   {
     "id": 134049,
@@ -2049,7 +2049,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=134049",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_misc_bone_elfskull_01.jpg"
   },
   {
     "id": 134258,
@@ -2068,7 +2068,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=134258",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_chest_mail_legionendgame_c_01.jpg"
   },
   {
     "id": 134462,
@@ -2087,7 +2087,7 @@
     "sellPrice": 25000,
     "dropRate": "0.01%",
     "wowhead": "https://www.wowhead.com/item=134462",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_chest_mail_legiondungeon_c_01.jpg"
   },
   {
     "id": 135147,
@@ -2163,7 +2163,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=136558",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_misc_food_148_cupcake.jpg"
   },
   {
     "id": 136566,
@@ -2182,7 +2182,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=136566",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_drink_04.jpg"
   },
   {
     "id": 136574,
@@ -2201,7 +2201,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=136574",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_drink_01.jpg"
   },
   {
     "id": 136596,
@@ -2220,7 +2220,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=136596",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_misc_rope_01.jpg"
   },
   {
     "id": 138018,
@@ -2239,7 +2239,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=138018",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_scroll_03.jpg"
   },
   {
     "id": 139052,
@@ -2277,7 +2277,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=139242",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_glove_leather_legiondungeon_c_01.jpg"
   },
   {
     "id": 139481,
@@ -2296,7 +2296,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=139481",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/creatureportrait_twilightshammer_dragonegg_red_01.jpg"
   },
   {
     "id": 140172,
@@ -2315,7 +2315,7 @@
     "sellPrice": 125,
     "dropRate": "18.00%",
     "wowhead": "https://www.wowhead.com/item=140172",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/trade_archaeology_draenei_tome.jpg"
   },
   {
     "id": 140372,
@@ -2334,7 +2334,7 @@
     "sellPrice": 125,
     "dropRate": "18.00%",
     "wowhead": "https://www.wowhead.com/item=140372",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_misc_enggizmos_05.jpg"
   },
   {
     "id": 140526,
@@ -2353,7 +2353,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=140526",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_60dungeon_ring8b.jpg"
   },
   {
     "id": 141065,
@@ -2391,7 +2391,7 @@
     "sellPrice": 25000,
     "dropRate": "0.01%",
     "wowhead": "https://www.wowhead.com/item=141627",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_pant_leather_legionquest100_b_01.jpg"
   },
   {
     "id": 141628,
@@ -2410,7 +2410,7 @@
     "sellPrice": 1500,
     "dropRate": "2.50%",
     "wowhead": "https://www.wowhead.com/item=141628",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_pant_cloth_legionquest100_b_01.jpg"
   },
   {
     "id": 141734,
@@ -2467,7 +2467,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=141932",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_legendarygem_03.jpg"
   },
   {
     "id": 142007,
@@ -2486,7 +2486,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=142007",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_misc_book_08.jpg"
   },
   {
     "id": 142133,
@@ -2505,7 +2505,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=142133",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_gauntlets_mail_legionendgame_c_01.jpg"
   },
   {
     "id": 142439,
@@ -2543,7 +2543,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=143079",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_helm_mail_raidshamanmythic_q_01.jpg"
   },
   {
     "id": 143238,
@@ -2562,7 +2562,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=143238",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_leather_raiddemonhuntermythic_q_02boots.jpg"
   },
   {
     "id": 143349,
@@ -2581,7 +2581,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=143349",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_plate_legionraid_d_01pants.jpg"
   },
   {
     "id": 143585,
@@ -2600,7 +2600,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=143585",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_icon_shadowcouncilorb_green.jpg"
   },
   {
     "id": 143585,
@@ -2619,7 +2619,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=143585",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_icon_shadowcouncilorb_green.jpg"
   },
   {
     "id": 143625,
@@ -2657,7 +2657,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=144027",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_helmet_plate_dungeonplate_c_07.jpg"
   },
   {
     "id": 144361,
@@ -2676,7 +2676,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=144361",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_chest_chain_15.jpg"
   },
   {
     "id": 144816,
@@ -2695,7 +2695,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=144816",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_belt_plate_raiddeathknightmythic_r_01.jpg"
   },
   {
     "id": 144836,
@@ -2714,7 +2714,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=144836",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_chest_leather_raiddruidmythic_r_01.jpg"
   },
   {
     "id": 145013,
@@ -2733,7 +2733,7 @@
     "sellPrice": 125,
     "dropRate": "18.00%",
     "wowhead": "https://www.wowhead.com/item=145013",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_boot_plate_raidwarriormythic_r_01.jpg"
   },
   {
     "id": 145750,
@@ -2752,7 +2752,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=145750",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_boot_plate_raidpaladin_r_01mythic.jpg"
   },
   {
     "id": 146948,
@@ -2771,7 +2771,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=146948",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_legioncampaign01.jpg"
   },
   {
     "id": 147032,
@@ -2790,7 +2790,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=147032",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_glove_leather_raidrogue_r_01.jpg"
   },
   {
     "id": 147169,
@@ -2809,7 +2809,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=147169",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_chest_leather_raidrogue_r_01.jpg"
   },
   {
     "id": 147435,
@@ -2847,7 +2847,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=147510",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/spell_fire_sealoffire.jpg"
   },
   {
     "id": 148057,
@@ -2866,7 +2866,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=148057",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_pant_cloth_raidpriest_s_01.jpg"
   },
   {
     "id": 148152,
@@ -2885,7 +2885,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=148152",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_plate_raidwarrior_s_01buckle.jpg"
   },
   {
     "id": 148390,
@@ -2904,7 +2904,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=148390",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_plate_raidwarriormythic_s_01gloves.jpg"
   },
   {
     "id": 148787,
@@ -2923,7 +2923,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=148787",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_belt_plate_raidpaladinmythic_s_01.jpg"
   },
   {
     "id": 148971,
@@ -2942,7 +2942,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=148971",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_glove_mail_raidhunter_s_01.jpg"
   },
   {
     "id": 149159,
@@ -2961,7 +2961,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=149159",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_cape_mail_raidshamanmythic_s_01.jpg"
   },
   {
     "id": 149749,
@@ -2980,7 +2980,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=149749",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_belt_plate_legiondungeon_c_03.jpg"
   },
   {
     "id": 149757,
@@ -2999,7 +2999,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=149757",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_cape_plate_legiondungeon_c_03.jpg"
   },
   {
     "id": 150096,
@@ -3018,7 +3018,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=150096",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_pant_cloth_legiondungeon_c_03.jpg"
   },
   {
     "id": 150980,
@@ -3037,7 +3037,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=150980",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_helm_cloth_legiondungeon_c_03.jpg"
   },
   {
     "id": 151030,
@@ -3075,7 +3075,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=151247",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_7_0raid_necklace_17c.jpg"
   },
   {
     "id": 151362,
@@ -3113,7 +3113,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=151712",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_recipe_70_scroll2star.jpg"
   },
   {
     "id": 152252,
@@ -3151,7 +3151,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=152518",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_chest_chain_10.jpg"
   },
   {
     "id": 152891,
@@ -3170,7 +3170,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=152891",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_rod_enchantedfelsteel.jpg"
   },
   {
     "id": 152946,
@@ -3189,7 +3189,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=152946",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_plate_helmet_eredarargus_d_01.jpg"
   },
   {
     "id": 152946,
@@ -3208,7 +3208,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=152946",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_plate_helmet_eredarargus_d_01.jpg"
   },
   {
     "id": 153015,
@@ -3227,7 +3227,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=153015",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_misc_treasurechest02c.jpg"
   },
   {
     "id": 153198,
@@ -3246,7 +3246,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=153198",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_stone_02.jpg"
   },
   {
     "id": 153856,
@@ -3265,7 +3265,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=153856",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_staff_2h_pandung_c_01.jpg"
   },
   {
     "id": 153970,
@@ -3284,7 +3284,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=153970",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_jewelry_ring_128.jpg"
   },
   {
     "id": 154010,
@@ -3303,7 +3303,7 @@
     "sellPrice": 125,
     "dropRate": "18.00%",
     "wowhead": "https://www.wowhead.com/item=154010",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_misc_trinketpanda_03.jpg"
   },
   {
     "id": 154092,
@@ -3322,7 +3322,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=154092",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_summerfest_firespirit.jpg"
   },
   {
     "id": 154332,
@@ -3398,7 +3398,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=155065",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_mace_1h_kultirasquest_b_02.jpg"
   },
   {
     "id": 155283,
@@ -3474,7 +3474,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=155709",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_misc_volatilewater.jpg"
   },
   {
     "id": 156089,
@@ -3493,7 +3493,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=156089",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_chest_chain_15.jpg"
   },
   {
     "id": 156633,
@@ -3512,7 +3512,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=156633",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/trade_alchemy_potione1.jpg"
   },
   {
     "id": 156661,
@@ -3588,7 +3588,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=157727",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_shoulder_77.jpg"
   },
   {
     "id": 157769,
@@ -3626,7 +3626,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=157827",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_legion_cache_warden.jpg"
   },
   {
     "id": 158042,
@@ -3645,7 +3645,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=158042",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_pants_leather_kultirasquest_b_01.jpg"
   },
   {
     "id": 158088,
@@ -3664,7 +3664,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=158088",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_hand_1h_kultirasquest_b_01.jpg"
   },
   {
     "id": 158268,
@@ -3683,7 +3683,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=158268",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_bracer_cloth_kultirasquest_b_01.jpg"
   },
   {
     "id": 159466,
@@ -3702,7 +3702,7 @@
     "sellPrice": 125,
     "dropRate": "18.00%",
     "wowhead": "https://www.wowhead.com/item=159466",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_misc_enchantedscroll.jpg"
   },
   {
     "id": 159742,
@@ -3721,7 +3721,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=159742",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_misc_enchantedscroll.jpg"
   },
   {
     "id": 160465,
@@ -3740,7 +3740,7 @@
     "sellPrice": 125,
     "dropRate": "18.00%",
     "wowhead": "https://www.wowhead.com/item=160465",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_glove_leather_kultirasquest_b_01.jpg"
   },
   {
     "id": 161258,
@@ -3778,7 +3778,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=161335",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_offhand_1h_kultirasquest_b_01.jpg"
   },
   {
     "id": 161394,
@@ -3797,7 +3797,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=161394",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_belt_mail_nazmirraid_d_01.jpg"
   },
   {
     "id": 162029,
@@ -3816,7 +3816,7 @@
     "sellPrice": 1500,
     "dropRate": "2.50%",
     "wowhead": "https://www.wowhead.com/item=162029",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/ability_druid_flightform.jpg"
   },
   {
     "id": 162508,
@@ -3835,7 +3835,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=162508",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/70_professions_scroll_02.jpg"
   },
   {
     "id": 162845,
@@ -3854,7 +3854,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=162845",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_belt_plate_pvppaladin_f_01bronze.jpg"
   },
   {
     "id": 163377,
@@ -3873,7 +3873,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=163377",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_leather_warfrontsalliance_b_01_shoulder.jpg"
   },
   {
     "id": 163446,
@@ -3892,7 +3892,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=163446",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_helm_mail_warfrontshorde_b_01.jpg"
   },
   {
     "id": 163670,
@@ -3911,7 +3911,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=163670",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_shoulder_mail_warfrontshorde_b_01.jpg"
   },
   {
     "id": 164132,
@@ -3949,7 +3949,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=164407",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_pants_plate_raidwarrior_k_01.jpg"
   },
   {
     "id": 164834,
@@ -3968,7 +3968,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=164834",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_shoulder_cape_mail_warfrontsnightelf_d_01.jpg"
   },
   {
     "id": 165134,
@@ -4006,7 +4006,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=165521",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_pants_leather_zuldazarraid_d_01.jpg"
   },
   {
     "id": 165613,
@@ -4025,7 +4025,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=165613",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_polearm_2h_warfrontsforsaken_d_01.jpg"
   },
   {
     "id": 165705,
@@ -4082,7 +4082,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=166942",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_pant_icons_cloth_warfrontsalliance_c_01.jpg"
   },
   {
     "id": 166978,
@@ -4101,7 +4101,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=166978",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/70_professions_scroll_02.jpg"
   },
   {
     "id": 167266,
@@ -4120,7 +4120,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=167266",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_helm_plate_nazjatarraid_d_01.jpg"
   },
   {
     "id": 167671,
@@ -4139,7 +4139,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=167671",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_fishing_f_skulker2.jpg"
   },
   {
     "id": 167770,
@@ -4158,7 +4158,7 @@
     "sellPrice": 125,
     "dropRate": "18.00%",
     "wowhead": "https://www.wowhead.com/item=167770",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_helm_mail_nazjatar_c_01.jpg"
   },
   {
     "id": 168607,
@@ -4177,7 +4177,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=168607",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_holiday_beerfest_voidelf.jpg"
   },
   {
     "id": 168919,
@@ -4196,7 +4196,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=168919",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/achievement_boss_yoggsaron_01.jpg"
   },
   {
     "id": 169098,
@@ -4234,7 +4234,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=169237",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_alchemy_80_alchemiststone01.jpg"
   },
   {
     "id": 169287,
@@ -4253,7 +4253,7 @@
     "sellPrice": 125,
     "dropRate": "18.00%",
     "wowhead": "https://www.wowhead.com/item=169287",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_plate_draenorlfr_c_01boots.jpg"
   },
   {
     "id": 169420,
@@ -4272,7 +4272,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=169420",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_bracer_mail_nazjatar_c_01.jpg"
   },
   {
     "id": 169789,
@@ -4291,7 +4291,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=169789",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_letter_18.jpg"
   },
   {
     "id": 170750,
@@ -4310,7 +4310,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=170750",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_jewelry_ring_122.jpg"
   },
   {
     "id": 170994,
@@ -4386,7 +4386,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=171664",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_sword_1h_firelandsraid_d_02.jpg"
   },
   {
     "id": 172188,
@@ -4405,7 +4405,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=172188",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_shield_1h_nzothraid_d_01.jpg"
   },
   {
     "id": 172866,
@@ -4424,7 +4424,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=172866",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_offhand_1h_nzothraid_d_01.jpg"
   },
   {
     "id": 173135,
@@ -4443,7 +4443,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=173135",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_jewelcrafting_90_lvlupring_blue.jpg"
   },
   {
     "id": 173376,
@@ -4462,7 +4462,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=173376",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_faction_83_uldumaccord.jpg"
   },
   {
     "id": 173659,
@@ -4481,7 +4481,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=173659",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_boots_plate_02.jpg"
   },
   {
     "id": 173670,
@@ -4500,7 +4500,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=173670",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_jewelry_necklace_07.jpg"
   },
   {
     "id": 173799,
@@ -4538,7 +4538,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=174055",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_70_quest_ring2a.jpg"
   },
   {
     "id": 174350,
@@ -4557,7 +4557,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=174350",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_misc_food_122_steak.jpg"
   },
   {
     "id": 174693,
@@ -4614,7 +4614,7 @@
     "sellPrice": 125,
     "dropRate": "18.00%",
     "wowhead": "https://www.wowhead.com/item=175057",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/ability_hunter_beastcall.jpg"
   },
   {
     "id": 175216,
@@ -4633,7 +4633,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=175216",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_leather_warfrontshorde_b_01_gloves.jpg"
   },
   {
     "id": 175709,
@@ -4690,7 +4690,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=175874",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_shoulder_mail_oribosdungeon_c_01.jpg"
   },
   {
     "id": 176955,
@@ -4709,7 +4709,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=176955",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_boots_01.jpg"
   },
   {
     "id": 177000,
@@ -4747,7 +4747,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=178861",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_trinket_revendreth_01_gold.jpg"
   },
   {
     "id": 178995,
@@ -4766,7 +4766,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=178995",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_enchant_shardglowingsmall.jpg"
   },
   {
     "id": 179158,
@@ -4804,7 +4804,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=179393",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/achievement_guildperk_everyonesahero.jpg"
   },
   {
     "id": 179571,
@@ -4823,7 +4823,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=179571",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_offhand_1h_ardenweald_d_01.jpg"
   },
   {
     "id": 179689,
@@ -4880,7 +4880,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=180312",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_mace_2h_bastion_d_01.jpg"
   },
   {
     "id": 180517,
@@ -4899,7 +4899,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=180517",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_misc_1h_jewelcraftingtool_a_05.jpg"
   },
   {
     "id": 181151,
@@ -4918,7 +4918,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=181151",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_sword_1h_revendreth_d_02.jpg"
   },
   {
     "id": 182323,
@@ -4937,7 +4937,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=182323",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_knife_1h_ardenwealdquest_b_01.jpg"
   },
   {
     "id": 183147,
@@ -4956,7 +4956,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=183147",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_misc_desecrated_platepants.jpg"
   },
   {
     "id": 183256,
@@ -4975,7 +4975,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=183256",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/ability_hunter_barbedshot.jpg"
   },
   {
     "id": 184496,
@@ -4994,7 +4994,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=184496",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_helm_cloth_bastion_d_01.jpg"
   },
   {
     "id": 184717,
@@ -5013,7 +5013,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=184717",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_cape_mail_oribosdungeon_c_01.jpg"
   },
   {
     "id": 184980,
@@ -5032,7 +5032,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=184980",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_buckle_armor_bastioncosmetic_d.jpg"
   },
   {
     "id": 185373,
@@ -5070,7 +5070,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=185823",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_mace_1h_broker_c_01.jpg"
   },
   {
     "id": 186218,
@@ -5089,7 +5089,7 @@
     "sellPrice": 125,
     "dropRate": "18.00%",
     "wowhead": "https://www.wowhead.com/item=186218",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_belt_leather_oribosdungeon_c_01.jpg"
   },
   {
     "id": 186526,
@@ -5108,7 +5108,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=186526",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_misc_food_vendor_roastedbarlytea.jpg"
   },
   {
     "id": 186554,
@@ -5127,7 +5127,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=186554",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/achievement_raid_torghast_theeyeofthejailer.jpg"
   },
   {
     "id": 187427,
@@ -5146,7 +5146,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=187427",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/ability_mount_goatmountwhite.jpg"
   },
   {
     "id": 187809,
@@ -5165,7 +5165,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=187809",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_misc_key_11.jpg"
   },
   {
     "id": 188742,
@@ -5203,7 +5203,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=189146",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_misc_celestialmap.jpg"
   },
   {
     "id": 189416,
@@ -5317,7 +5317,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=190435",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_cloth_legiondungeon_c_01.jpg"
   },
   {
     "id": 191291,
@@ -5374,7 +5374,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=192691",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/ability_deathknight_pillaroffrost.jpg"
   },
   {
     "id": 192950,
@@ -5393,7 +5393,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=192950",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_10_jewelcrafting_gem2standard_frost_cut_green.jpg"
   },
   {
     "id": 193520,
@@ -5412,7 +5412,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=193520",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_cloth_dragonquest_b_01_shoulder.jpg"
   },
   {
     "id": 193561,
@@ -5431,7 +5431,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=193561",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_10_skinning_consumable_armorkit_color3.jpg"
   },
   {
     "id": 193829,
@@ -5469,7 +5469,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=193902",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_misc_enggizmos_13.jpg"
   },
   {
     "id": 194215,
@@ -5526,7 +5526,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=195455",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_misc_food_38.jpg"
   },
   {
     "id": 195521,
@@ -5545,7 +5545,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=195521",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_knife_1h_primalistraid_d_01.jpg"
   },
   {
     "id": 195989,
@@ -5659,7 +5659,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=197781",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_misc_food_legion_deepfriedmossgill.jpg"
   },
   {
     "id": 198748,
@@ -5678,7 +5678,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=198748",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_cloth_dragonquest_b_01_bracer.jpg"
   },
   {
     "id": 199075,
@@ -5697,7 +5697,7 @@
     "sellPrice": 125,
     "dropRate": "18.00%",
     "wowhead": "https://www.wowhead.com/item=199075",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_firearm_2h_dragonpvp_d_01.jpg"
   },
   {
     "id": 199247,
@@ -5716,7 +5716,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=199247",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_misc_scrollrolled03b.jpg"
   },
   {
     "id": 200029,
@@ -5735,7 +5735,7 @@
     "sellPrice": 25000,
     "dropRate": "0.01%",
     "wowhead": "https://www.wowhead.com/item=200029",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_misc_enchantedscroll.jpg"
   },
   {
     "id": 200030,
@@ -5754,7 +5754,7 @@
     "sellPrice": 125,
     "dropRate": "18.00%",
     "wowhead": "https://www.wowhead.com/item=200030",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_misc_enchantedscroll.jpg"
   },
   {
     "id": 200168,
@@ -5773,7 +5773,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=200168",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_leather_dragondungeon_c_01_belt.jpg"
   },
   {
     "id": 200543,
@@ -5792,7 +5792,7 @@
     "sellPrice": 125,
     "dropRate": "18.00%",
     "wowhead": "https://www.wowhead.com/item=200543",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_cape_special_centaurbloodline_b_01.jpg"
   },
   {
     "id": 200611,
@@ -5811,7 +5811,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=200611",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_misc_coinbag09.jpg"
   },
   {
     "id": 202401,
@@ -5830,7 +5830,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=202401",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_misc_food_19.jpg"
   },
   {
     "id": 202740,
@@ -5868,7 +5868,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=203190",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_armor_orc_d_01_chest.jpg"
   },
   {
     "id": 203396,
@@ -5887,7 +5887,7 @@
     "sellPrice": 25000,
     "dropRate": "0.01%",
     "wowhead": "https://www.wowhead.com/item=203396",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_shoulder_armor_dragonblack_b_01.jpg"
   },
   {
     "id": 203450,
@@ -5906,7 +5906,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=203450",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_misc_coinbag05.jpg"
   },
   {
     "id": 204251,
@@ -5925,7 +5925,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=204251",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_misc_rune_09.jpg"
   },
   {
     "id": 204511,
@@ -5963,7 +5963,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=205265",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_mail_dragonquest_b_01_boots.jpg"
   },
   {
     "id": 205828,
@@ -5982,7 +5982,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=205828",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_shoulder_leather_raidroguedragon_d_01.jpg"
   },
   {
     "id": 206332,
@@ -6001,7 +6001,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=206332",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_collections_armor_neckerchief_b_01_yellow.jpg"
   },
   {
     "id": 206636,
@@ -6020,7 +6020,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=206636",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_misc_desecrated_platehelm.jpg"
   },
   {
     "id": 206768,
@@ -6039,7 +6039,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=206768",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_knife_1h_430oldgod_c_02.jpg"
   },
   {
     "id": 206931,
@@ -6096,7 +6096,7 @@
     "sellPrice": 125,
     "dropRate": "18.00%",
     "wowhead": "https://www.wowhead.com/item=208321",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_staff_2h_dracthyr_c_01.jpg"
   },
   {
     "id": 209070,
@@ -6115,7 +6115,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=209070",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_cloth_raidmageemerald_d_01_chest.jpg"
   },
   {
     "id": 209375,
@@ -6134,7 +6134,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=209375",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_firearm_2h_blackdragonoutdoor_d_01.jpg"
   },
   {
     "id": 209453,
@@ -6210,7 +6210,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=210012",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_10_skinning_leather_curedleather_fire.jpg"
   },
   {
     "id": 210177,
@@ -6248,7 +6248,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=210416",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_misc_paperbundle04b.jpg"
   },
   {
     "id": 210497,
@@ -6267,7 +6267,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=210497",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_soloshufflepennantreward_icons_green.jpg"
   },
   {
     "id": 210630,
@@ -6286,7 +6286,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=210630",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_bracer_plate_panda_b_02.jpg"
   },
   {
     "id": 210731,
@@ -6305,7 +6305,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=210731",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_titan_runestones_icon.jpg"
   },
   {
     "id": 210857,
@@ -6324,7 +6324,7 @@
     "sellPrice": 25000,
     "dropRate": "0.01%",
     "wowhead": "https://www.wowhead.com/item=210857",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_armor_sarong_a_01_orange.jpg"
   },
   {
     "id": 210918,
@@ -6343,7 +6343,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=210918",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_enchant_dustvision.jpg"
   },
   {
     "id": 211323,
@@ -6381,7 +6381,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=211373",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_10_tailoring_bag2_color2.jpg"
   },
   {
     "id": 211598,
@@ -6400,7 +6400,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=211598",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_misc_scrollrolled03b.jpg"
   },
   {
     "id": 212748,
@@ -6438,7 +6438,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=213212",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_knife_1h_newplayer_a_02.jpg"
   },
   {
     "id": 213212,
@@ -6457,7 +6457,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=213212",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_knife_1h_newplayer_a_02.jpg"
   },
   {
     "id": 213761,
@@ -6476,7 +6476,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=213761",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_10_jewelcrafting_prism_transparent.jpg"
   },
   {
     "id": 214250,
@@ -6495,7 +6495,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=214250",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_pant_leather_raidmonk_l_01.jpg"
   },
   {
     "id": 215364,
@@ -6514,7 +6514,7 @@
     "sellPrice": 125,
     "dropRate": "18.00%",
     "wowhead": "https://www.wowhead.com/item=215364",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_legioncircle_cache_dreamweavers.jpg"
   },
   {
     "id": 216137,
@@ -6533,7 +6533,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=216137",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_cape_leather_raidmonkemerald_d_01.jpg"
   },
   {
     "id": 216192,
@@ -6552,7 +6552,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=216192",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_mail_raidhunteremerald_d_01_bracer.jpg"
   },
   {
     "id": 216204,
@@ -6571,7 +6571,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=216204",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_mail_raidshamanemerald_d_01_helm.jpg"
   },
   {
     "id": 216528,
@@ -6590,7 +6590,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=216528",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_misc_key_07.jpg"
   },
   {
     "id": 216577,
@@ -6609,7 +6609,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=216577",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_shield_pandung_c_01.jpg"
   },
   {
     "id": 216651,
@@ -6628,7 +6628,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=216651",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/spell_holy_pureofheart.jpg"
   },
   {
     "id": 216681,
@@ -6704,7 +6704,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=217099",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_mail_outdooremeralddream_d_01_belt.jpg"
   },
   {
     "id": 217181,
@@ -6723,7 +6723,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=217181",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_mail_raidhunterprimalist_d_01_chest.jpg"
   },
   {
     "id": 217786,
@@ -6742,7 +6742,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=217786",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_cloth_demonicdominationsuccubus_c_01_helmet.jpg"
   },
   {
     "id": 218054,
@@ -6761,7 +6761,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=218054",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_shoulder_cloth_legiondungeon_c_03.jpg"
   },
   {
     "id": 218071,
@@ -6780,7 +6780,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=218071",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_boot_mail_legiondungeon_c_03.jpg"
   },
   {
     "id": 218168,
@@ -6818,7 +6818,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=218291",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_glove_icons_cloth_warfrontsalliance_c_01.jpg"
   },
   {
     "id": 218396,
@@ -6837,7 +6837,7 @@
     "sellPrice": 125,
     "dropRate": "18.00%",
     "wowhead": "https://www.wowhead.com/item=218396",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_mail_outdoorarathor_d_01_boot.jpg"
   },
   {
     "id": 218617,
@@ -6856,7 +6856,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=218617",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_mail_raidhunternerubian_d_01_glove.jpg"
   },
   {
     "id": 218920,
@@ -6875,7 +6875,7 @@
     "sellPrice": 25000,
     "dropRate": "0.01%",
     "wowhead": "https://www.wowhead.com/item=218920",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_shoulder_armor_civilianadventurer_b_01.jpg"
   },
   {
     "id": 218959,
@@ -6894,7 +6894,7 @@
     "sellPrice": 125,
     "dropRate": "18.00%",
     "wowhead": "https://www.wowhead.com/item=218959",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_belt_armor_civilianmerchant_b_01.jpg"
   },
   {
     "id": 219792,
@@ -6913,7 +6913,7 @@
     "sellPrice": 1500,
     "dropRate": "2.50%",
     "wowhead": "https://www.wowhead.com/item=219792",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_mace_1h_undergroundquest_b_01.jpg"
   },
   {
     "id": 219977,
@@ -6951,7 +6951,7 @@
     "sellPrice": 125,
     "dropRate": "18.00%",
     "wowhead": "https://www.wowhead.com/item=220326",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_helm_mail_undergroundquest_b_01.jpg"
   },
   {
     "id": 220986,
@@ -6970,7 +6970,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=220986",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_leather_raiddruid_n_01pant.jpg"
   },
   {
     "id": 221023,
@@ -6989,7 +6989,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=221023",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_etherealraid_communicator_color1.jpg"
   },
   {
     "id": 221073,
@@ -7008,7 +7008,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=221073",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_shield_1h_earthendungeon_c_01.jpg"
   },
   {
     "id": 221518,
@@ -7084,7 +7084,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=222476",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_pant_plate_undergroundquest_b_01.jpg"
   },
   {
     "id": 223048,
@@ -7103,7 +7103,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=223048",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_10_inscription2_scroll2_color1.jpg"
   },
   {
     "id": 223839,
@@ -7122,7 +7122,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=223839",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_mail_outdoorarathor_d_01_cape.jpg"
   },
   {
     "id": 224101,
@@ -7141,7 +7141,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=224101",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_leafbug_brown.jpg"
   },
   {
     "id": 224175,
@@ -7160,7 +7160,7 @@
     "sellPrice": 125,
     "dropRate": "18.00%",
     "wowhead": "https://www.wowhead.com/item=224175",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_enchant_dustspirit.jpg"
   },
   {
     "id": 224320,
@@ -7179,7 +7179,7 @@
     "sellPrice": 1500,
     "dropRate": "2.50%",
     "wowhead": "https://www.wowhead.com/item=224320",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_helm_mask_fittedalpha_b_01_nightborne_02.jpg"
   },
   {
     "id": 225214,
@@ -7198,7 +7198,7 @@
     "sellPrice": 125,
     "dropRate": "18.00%",
     "wowhead": "https://www.wowhead.com/item=225214",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_toy_booklibrary.jpg"
   },
   {
     "id": 225390,
@@ -7217,7 +7217,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=225390",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_helm_cloth_undergroundquest_b_01.jpg"
   },
   {
     "id": 225512,
@@ -7255,7 +7255,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=225805",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_misc_enggizmos_19.jpg"
   },
   {
     "id": 225881,
@@ -7274,7 +7274,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=225881",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_misc_bag_29.jpg"
   },
   {
     "id": 226374,
@@ -7407,7 +7407,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=228822",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_crate_05.jpg"
   },
   {
     "id": 229112,
@@ -7426,7 +7426,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=229112",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_chest_mail_earthendungeon_c_01.jpg"
   },
   {
     "id": 229695,
@@ -7445,7 +7445,7 @@
     "sellPrice": 25000,
     "dropRate": "0.01%",
     "wowhead": "https://www.wowhead.com/item=229695",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_chest_mail_raidshamangoblin_d_01.jpg"
   },
   {
     "id": 229743,
@@ -7464,7 +7464,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=229743",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_plate_raidpaladingoblin_d_01_pant.jpg"
   },
   {
     "id": 230107,
@@ -7483,7 +7483,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=230107",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_cloth_outdoorundermine_c_01_boot.jpg"
   },
   {
     "id": 230350,
@@ -7502,7 +7502,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=230350",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_bracer_mail_outdoorethereal_c_01.jpg"
   },
   {
     "id": 230480,
@@ -7521,7 +7521,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=230480",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_chest_leather_raidmonkethereal_d_01.jpg"
   },
   {
     "id": 231288,
@@ -7559,7 +7559,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=232687",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_helm_leather_raidmonknerubian_d_01.jpg"
   },
   {
     "id": 233250,
@@ -7616,7 +7616,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=234884",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_boot_mail_draenorcrafted_d_01_alliance.jpg"
   },
   {
     "id": 235278,
@@ -7654,7 +7654,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=235453",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_mail_outdoorundermine_c_01_belt.jpg"
   },
   {
     "id": 235899,
@@ -7730,7 +7730,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=237112",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_mail_outdoorundermine_c_01_chest.jpg"
   },
   {
     "id": 237403,
@@ -7749,7 +7749,7 @@
     "sellPrice": 1500,
     "dropRate": "2.50%",
     "wowhead": "https://www.wowhead.com/item=237403",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_leather_outdoorarathor_d_01_cape.jpg"
   },
   {
     "id": 237533,
@@ -7768,7 +7768,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=237533",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_belt_leather_raidmonkethereal_d_01.jpg"
   },
   {
     "id": 237661,
@@ -7787,7 +7787,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=237661",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_belt_leather_raidrogueethereal_d_01.jpg"
   },
   {
     "id": 238320,
@@ -7844,7 +7844,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=239162",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_6hu_garrison_woodmug.jpg"
   },
   {
     "id": 239692,
@@ -7863,7 +7863,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=239692",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_herb_karesh.jpg"
   },
   {
     "id": 239742,
@@ -7901,7 +7901,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=239823",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_cape_leather_classsetdemonhunter_d_01.jpg"
   },
   {
     "id": 239847,
@@ -7920,7 +7920,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=239847",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_cape_leather_legiondungeon_c_03.jpg"
   },
   {
     "id": 240195,
@@ -7958,7 +7958,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=240425",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_pant_leather_legionendgame_c_01.jpg"
   },
   {
     "id": 240492,
@@ -8015,7 +8015,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=240831",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/trade_archaeology_draenei_tome.jpg"
   },
   {
     "id": 240975,
@@ -8034,7 +8034,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=240975",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_12_profession_jewelcrafting_combined_gem_reagent_multicoloured.jpg"
   },
   {
     "id": 241405,
@@ -8053,7 +8053,7 @@
     "sellPrice": 25000,
     "dropRate": "0.01%",
     "wowhead": "https://www.wowhead.com/item=241405",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_chest_leather_vrykulhunter_b_01.jpg"
   },
   {
     "id": 241795,
@@ -8110,7 +8110,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=242593",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_hand_1h_artifactstormfist_d_01.jpg"
   },
   {
     "id": 242604,
@@ -8129,7 +8129,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=242604",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_sword_1h_artifactskywall_d_01.jpg"
   },
   {
     "id": 242604,
@@ -8148,7 +8148,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=242604",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_sword_1h_artifactskywall_d_01.jpg"
   },
   {
     "id": 242733,
@@ -8167,7 +8167,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=242733",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_kareshroamermount_blue.jpg"
   },
   {
     "id": 243400,
@@ -8243,7 +8243,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=243515",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_bracer_leather_outdoorethereal_c_01.jpg"
   },
   {
     "id": 244265,
@@ -8300,7 +8300,7 @@
     "sellPrice": 1500,
     "dropRate": "2.50%",
     "wowhead": "https://www.wowhead.com/item=244647",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_stave_2h_firelandsraid_d_01.jpg"
   },
   {
     "id": 246087,
@@ -8319,7 +8319,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=246087",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_10_blacksmithing_consumable_key_color1.jpg"
   },
   {
     "id": 246251,
@@ -8338,7 +8338,7 @@
     "sellPrice": 125,
     "dropRate": "18.00%",
     "wowhead": "https://www.wowhead.com/item=246251",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_12ph_bloodelf_ibe01_platform_s.jpg"
   },
   {
     "id": 246319,
@@ -8357,7 +8357,7 @@
     "sellPrice": 125,
     "dropRate": "18.00%",
     "wowhead": "https://www.wowhead.com/item=246319",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_polearm_2h_mawnecromancerboss_d_01_grey.jpg"
   },
   {
     "id": 246629,
@@ -8376,7 +8376,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=246629",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_chest_cloth_earthendungeon_c_01.jpg"
   },
   {
     "id": 246694,
@@ -8395,7 +8395,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=246694",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_catbroker_gold.jpg"
   },
   {
     "id": 246700,
@@ -8414,7 +8414,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=246700",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_gnomebed01.jpg"
   },
   {
     "id": 246778,
@@ -8452,7 +8452,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=246789",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/ability_evoker_powernexus.jpg"
   },
   {
     "id": 247271,
@@ -8566,7 +8566,7 @@
     "sellPrice": 125,
     "dropRate": "18.00%",
     "wowhead": "https://www.wowhead.com/item=248379",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_glove_armor_dragonhawkrider_d_01.jpg"
   },
   {
     "id": 248951,
@@ -8623,7 +8623,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=249159",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_offhand_1h_etherealraid_d_02.jpg"
   },
   {
     "id": 249169,
@@ -8642,7 +8642,7 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=249169",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_mace_1h_etherealraid_d_02.jpg"
   },
   {
     "id": 249264,
@@ -8680,6 +8680,6 @@
     "sellPrice": 15,
     "dropRate": "85.00%",
     "wowhead": "https://www.wowhead.com/item=249559",
-    "icon": null
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_12be_bloodelf_structure_statue01.jpg"
   }
 ]
