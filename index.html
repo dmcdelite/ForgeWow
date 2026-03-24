@@ -914,7 +914,19 @@ function openDetail(item) {
     icon.style.display='none'; iconPh.style.display='flex';
   }
 
-  const fields = [
+  const isFish = item.category === 'fish' || item.itemSubclass === 'Fish';
+  const fields = isFish ? [
+    ['Quality',      item.quality],
+    ['Weight',       item.weightLbs  != null ? `${item.weightLbs} lbs` : '—'],
+    ['Length',       item.lengthIn   != null ? `${item.lengthIn} in`   : '—'],
+    ['Location',     item.location   || '—'],
+    ['Expansion',    item.expansion  || '—'],
+    ['Bait',         item.bait       || '—'],
+    ['Weather',      item.weather    || '—'],
+    ['Fish Type',    item.fishType   || '—'],
+    ['Drop Rate',    item.dropRate   || '—'],
+    ['Sell Price',   formatGold(item.sellPrice)],
+  ] : [
     ['Item Class',     item.itemClass     || '—'],
     ['Subclass',       item.itemSubclass  || '—'],
     ['Item Level',     item.level         ?? '—'],

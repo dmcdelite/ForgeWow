@@ -54,159 +54,4299 @@
     "quality": "Epic"
   },
   {
-    "id": 21181,
-    "name": "Grace of Earth",
-    "category": "armor",
+    "id": 647,
+    "name": "Destiny",
+    "category": "weapons",
+    "quality": "Epic"
+  },
+  {
+    "id": 727,
+    "name": "Notched Shortsword",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 753,
+    "name": "Dragonmaw Shortsword",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 754,
+    "name": "Shortsword of Vengeance",
+    "category": "weapons",
     "quality": "Rare"
   },
   {
-    "id": 18404,
-    "name": "Onyxia Tooth Pendant",
-    "category": "armor",
-    "quality": "Epic"
-  },
-  {
-    "id": 23520,
-    "name": "Ragesteel Gloves",
-    "category": "armor",
+    "id": 776,
+    "name": "Vendetta",
+    "category": "weapons",
     "quality": "Rare"
   },
   {
-    "id": 16795,
-    "name": "Arcanist Crown",
-    "category": "armor",
+    "id": 789,
+    "name": "Stout Battlehammer",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 790,
+    "name": "Forester's Axe",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 791,
+    "name": "Gnarled Ash Staff",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 809,
+    "name": "Bloodrazor",
+    "category": "weapons",
     "quality": "Epic"
   },
   {
-    "id": 21712,
-    "name": "Amulet of the Fallen God",
-    "category": "armor",
+    "id": 810,
+    "name": "Hammer of the Northern Wind",
+    "category": "weapons",
     "quality": "Epic"
   },
   {
-    "id": 22798,
-    "name": "Might of Menethil",
-    "category": "armor",
+    "id": 811,
+    "name": "Axe of the Deep Woods",
+    "category": "weapons",
     "quality": "Epic"
   },
   {
-    "id": 13442,
-    "name": "Mighty Rage Potion",
-    "category": "consumables",
-    "quality": "Common"
+    "id": 812,
+    "name": "Glowing Brightwood Staff",
+    "category": "weapons",
+    "quality": "Epic"
   },
   {
-    "id": 13443,
-    "name": "Superior Mana Potion",
-    "category": "consumables",
-    "quality": "Common"
+    "id": 816,
+    "name": "Small Hand Blade",
+    "category": "weapons",
+    "quality": "Uncommon"
   },
   {
-    "id": 22832,
-    "name": "Super Mana Potion",
-    "category": "consumables",
-    "quality": "Common"
+    "id": 820,
+    "name": "Slicer Blade",
+    "category": "weapons",
+    "quality": "Uncommon"
   },
   {
-    "id": 22105,
-    "name": "Master Healthstone",
-    "category": "consumables",
-    "quality": "Common"
+    "id": 826,
+    "name": "Brutish Riverpaw Axe",
+    "category": "weapons",
+    "quality": "Uncommon"
   },
   {
-    "id": 20002,
-    "name": "Greater Dreamless Sleep Potion",
-    "category": "consumables",
-    "quality": "Common"
+    "id": 827,
+    "name": "Wicked Blackjack",
+    "category": "weapons",
+    "quality": "Uncommon"
   },
   {
-    "id": 22788,
-    "name": "Flame Cap",
-    "category": "consumables",
-    "quality": "Common"
+    "id": 863,
+    "name": "Gloom Reaper",
+    "category": "weapons",
+    "quality": "Uncommon"
   },
   {
-    "id": 9155,
-    "name": "Arcane Elixir",
-    "category": "consumables",
-    "quality": "Common"
+    "id": 864,
+    "name": "Knightly Longsword",
+    "category": "weapons",
+    "quality": "Uncommon"
   },
   {
-    "id": 3928,
-    "name": "Superior Healing Potion",
-    "category": "consumables",
-    "quality": "Common"
+    "id": 865,
+    "name": "Leaden Mace",
+    "category": "weapons",
+    "quality": "Uncommon"
   },
   {
-    "id": 6149,
-    "name": "Greater Mana Potion",
-    "category": "consumables",
-    "quality": "Common"
+    "id": 866,
+    "name": "Monk's Staff",
+    "category": "weapons",
+    "quality": "Uncommon"
   },
   {
-    "id": 2459,
-    "name": "Swiftness Potion",
-    "category": "consumables",
-    "quality": "Common"
+    "id": 868,
+    "name": "Ardent Custodian",
+    "category": "weapons",
+    "quality": "Epic"
   },
   {
-    "id": 6291,
-    "name": "Raw Brilliant Smallfish",
-    "category": "fish",
-    "quality": "Common"
+    "id": 869,
+    "name": "Dazzling Longsword",
+    "category": "weapons",
+    "quality": "Epic"
   },
   {
-    "id": 6308,
-    "name": "Raw Bristle Whisker Catfish",
-    "category": "fish",
-    "quality": "Common"
+    "id": 870,
+    "name": "Fiery War Axe",
+    "category": "weapons",
+    "quality": "Epic"
   },
   {
-    "id": 4603,
-    "name": "Raw Spotted Yellowtail",
-    "category": "fish",
-    "quality": "Common"
+    "id": 871,
+    "name": "Flurry Axe",
+    "category": "weapons",
+    "quality": "Epic"
   },
   {
-    "id": 13422,
-    "name": "Stonescale Eel",
-    "category": "fish",
-    "quality": "Common"
+    "id": 872,
+    "name": "Rockslicer",
+    "category": "weapons",
+    "quality": "Rare"
   },
   {
-    "id": 21153,
-    "name": "Raw Greater Sagefish",
-    "category": "fish",
-    "quality": "Common"
+    "id": 873,
+    "name": "Staff of Jordan",
+    "category": "weapons",
+    "quality": "Epic"
   },
   {
-    "id": 27422,
-    "name": "Barbed Gill Trout",
-    "category": "fish",
-    "quality": "Common"
+    "id": 880,
+    "name": "Staff of Horrors",
+    "category": "weapons",
+    "quality": "Uncommon"
   },
   {
-    "id": 6289,
-    "name": "Raw Longjaw Mud Snapper",
-    "category": "fish",
-    "quality": "Common"
+    "id": 885,
+    "name": "Black Metal Axe",
+    "category": "weapons",
+    "quality": "Uncommon"
   },
   {
-    "id": 6317,
-    "name": "Raw Loch Frenzy",
-    "category": "fish",
-    "quality": "Common"
+    "id": 886,
+    "name": "Black Metal Shortsword",
+    "category": "weapons",
+    "quality": "Uncommon"
   },
   {
-    "id": 6361,
-    "name": "Raw Rainbow Fin Albacore",
-    "category": "fish",
-    "quality": "Common"
+    "id": 890,
+    "name": "Twisted Chanter's Staff",
+    "category": "weapons",
+    "quality": "Rare"
   },
   {
-    "id": 13889,
-    "name": "Raw Whitescale Salmon",
-    "category": "fish",
-    "quality": "Common"
+    "id": 899,
+    "name": "Venom Web Fang",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 911,
+    "name": "Ironwood Treebranch",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 920,
+    "name": "Wicked Spiked Mace",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 934,
+    "name": "Stalvan's Reaper",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 935,
+    "name": "Night Watch Shortsword",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 936,
+    "name": "Midnight Mace",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 937,
+    "name": "Black Duskwood Staff",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 943,
+    "name": "Warden Staff",
+    "category": "weapons",
+    "quality": "Epic"
+  },
+  {
+    "id": 944,
+    "name": "Elemental Mage Staff",
+    "category": "weapons",
+    "quality": "Epic"
+  },
+  {
+    "id": 1009,
+    "name": "Compact Hammer",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 1155,
+    "name": "Rod of the Sleepwalker",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 1158,
+    "name": "Solid Metal Club",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 1207,
+    "name": "Murphstar",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 1214,
+    "name": "Gnoll Punisher",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 1218,
+    "name": "Heavy Gnoll War Club",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 1219,
+    "name": "Redridge Machete",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 1220,
+    "name": "Lupine Axe",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 1263,
+    "name": "Brain Hacker",
+    "category": "weapons",
+    "quality": "Epic"
+  },
+  {
+    "id": 1264,
+    "name": "Headbasher",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 1265,
+    "name": "Scorpion Sting",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 1287,
+    "name": "Giant Tarantula Fang",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 1292,
+    "name": "Butcher's Cleaver",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 1296,
+    "name": "Blackrock Mace",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 1300,
+    "name": "Lesser Staff of the Spire",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 1317,
+    "name": "Hardened Root Staff",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 1318,
+    "name": "Night Reaver",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 1387,
+    "name": "Ghoulfang",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 1391,
+    "name": "Riverpaw Mystic Staff",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 1394,
+    "name": "Driftwood Club",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 1405,
+    "name": "Foamspittle Staff",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 1406,
+    "name": "Pearl-Encrusted Spear",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 1440,
+    "name": "Gnoll Skull Basher",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 1454,
+    "name": "Axe of the Enforcer",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 1455,
+    "name": "Blackrock Champion's Axe",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 1457,
+    "name": "Shadowhide Mace",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 1458,
+    "name": "Shadowhide Maul",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 1459,
+    "name": "Shadowhide Scalper",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 1460,
+    "name": "Shadowhide Two-Handed Sword",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 1461,
+    "name": "Slayer's Battle Axe",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 1465,
+    "name": "Tigerbane",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 1469,
+    "name": "Scimitar of Atun",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 1473,
+    "name": "Riverside Staff",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 1480,
+    "name": "Fist of the People's Militia",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 1481,
+    "name": "Grimclaw",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 1482,
+    "name": "Shadowfang",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 1483,
+    "name": "Face Smasher",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 1484,
+    "name": "Witching Stave",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 1493,
+    "name": "Heavy Marauder Scimitar",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 1521,
+    "name": "Lumbering Ogre Axe",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 1522,
+    "name": "Headhunting Spear",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 1523,
+    "name": "Huge Stone Club",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 1539,
+    "name": "Gnarled Hermit's Staff",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 1566,
+    "name": "Edge of the People's Militia",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 1602,
+    "name": "Sickle Axe",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 1604,
+    "name": "Chromatic Sword",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 1607,
+    "name": "Soulkeeper",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 1608,
+    "name": "Skullcrusher Mace",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 1613,
+    "name": "Spiritchaser Staff",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 1625,
+    "name": "Exquisite Flamberge",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 1639,
+    "name": "Grinning Axe",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 1640,
+    "name": "Monstrous War Axe",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 1664,
+    "name": "Spellforce Rod",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 1679,
+    "name": "Korg Bat",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 1680,
+    "name": "Headchopper",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 1720,
+    "name": "Tanglewood Staff",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 1721,
+    "name": "Viking Warhammer",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 1722,
+    "name": "Thornstone Sledgehammer",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 1726,
+    "name": "Poison-Tipped Bone Spear",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 1727,
+    "name": "Sword of Decay",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 1728,
+    "name": "Teebu's Blazing Longsword",
+    "category": "weapons",
+    "quality": "Epic"
+  },
+  {
+    "id": 1917,
+    "name": "Jeweled Dagger",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 1925,
+    "name": "Defias Rapier",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 1926,
+    "name": "Weighted Sap",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 1927,
+    "name": "Deadmines Cleaver",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 1928,
+    "name": "Defias Mage Staff",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 1933,
+    "name": "Staff of Conjuring",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 1935,
+    "name": "Assassin's Blade",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 1936,
+    "name": "Goblin Screwdriver",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 1937,
+    "name": "Buzz Saw",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 1938,
+    "name": "Block Mallet",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 1951,
+    "name": "Blackwater Cutlass",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 1958,
+    "name": "Petrified Shinbone",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 1975,
+    "name": "Pysan's Old Greatsword",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 1976,
+    "name": "Slaghammer",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 1982,
+    "name": "Nightblade",
+    "category": "weapons",
+    "quality": "Epic"
+  },
+  {
+    "id": 1986,
+    "name": "Gutrender",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 1990,
+    "name": "Ballast Maul",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 1991,
+    "name": "Goblin Power Shovel",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 1994,
+    "name": "Ebonclaw Reaver",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 1998,
+    "name": "Bloodscalp Channeling Staff",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 2011,
+    "name": "Twisted Sabre",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 2013,
+    "name": "Cryptbone Staff",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 2014,
+    "name": "Black Metal Greatsword",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 2015,
+    "name": "Black Metal War Axe",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 2018,
+    "name": "Skeletal Longsword",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 2020,
+    "name": "Hollowfang Blade",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 2035,
+    "name": "Sword of the Night Sky",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 2042,
+    "name": "Staff of Westfall",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 2044,
+    "name": "Crescent of Forlorn Spirits",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 2046,
+    "name": "Bluegill Kukri",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 2058,
+    "name": "Kazon's Maul",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 2072,
+    "name": "Dwarven Magestaff",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 2073,
+    "name": "Dwarven Hatchet",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 2074,
+    "name": "Solid Shortblade",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 2075,
+    "name": "Heavy Mace",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 2077,
+    "name": "Magician Staff",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 2078,
+    "name": "Northern Shortsword",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 2079,
+    "name": "Sergeant's Warhammer",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 2080,
+    "name": "Hillborne Axe",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 2084,
+    "name": "Darksteel Bastard Sword",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 2088,
+    "name": "Long Crawler Limb",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 2089,
+    "name": "Scrimshaw Dagger",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 2098,
+    "name": "Double-Barreled Shotgun",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 2099,
+    "name": "Dwarven Hand Cannon",
+    "category": "weapons",
+    "quality": "Epic"
+  },
+  {
+    "id": 2100,
+    "name": "Precisely Calibrated Boomstick",
+    "category": "weapons",
+    "quality": "Epic"
+  },
+  {
+    "id": 2140,
+    "name": "Carving Knife",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 2163,
+    "name": "Shadowblade",
+    "category": "weapons",
+    "quality": "Epic"
+  },
+  {
+    "id": 2164,
+    "name": "Gut Ripper",
+    "category": "weapons",
+    "quality": "Epic"
+  },
+  {
+    "id": 2169,
+    "name": "Buzzer Blade",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 2175,
+    "name": "Shadowhide Battle Axe",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 2194,
+    "name": "Diamond Hammer",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 2203,
+    "name": "Brashclaw's Chopper",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 2204,
+    "name": "Brashclaw's Skewer",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 2205,
+    "name": "Duskbringer",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 2218,
+    "name": "Craftsman's Dagger",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 2226,
+    "name": "Ogremage Staff",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 2227,
+    "name": "Heavy Ogre War Axe",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 2235,
+    "name": "Brackclaw",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 2236,
+    "name": "Blackfang",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 2243,
+    "name": "Hand of Edward the Odd",
+    "category": "weapons",
+    "quality": "Epic"
+  },
+  {
+    "id": 2244,
+    "name": "Krol Blade",
+    "category": "weapons",
+    "quality": "Epic"
+  },
+  {
+    "id": 2254,
+    "name": "Icepane Warhammer",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 2256,
+    "name": "Skeletal Club",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 2263,
+    "name": "Phytoblade",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 2265,
+    "name": "Stonesplinter Axe",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 2266,
+    "name": "Stonesplinter Dagger",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 2267,
+    "name": "Stonesplinter Mace",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 2271,
+    "name": "Staff of the Blessed Seer",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 2280,
+    "name": "Kam's Walking Stick",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 2281,
+    "name": "Rodentia Flint Axe",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 2291,
+    "name": "Kang the Decapitator",
+    "category": "weapons",
+    "quality": "Epic"
+  },
+  {
+    "id": 2299,
+    "name": "Burning War Axe",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 2549,
+    "name": "Staff of the Shade",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 2567,
+    "name": "Evocator's Blade",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 2632,
+    "name": "Curved Dagger",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 2664,
+    "name": "Spinner Fang",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 2801,
+    "name": "Blade of Hanna",
+    "category": "weapons",
+    "quality": "Epic"
+  },
+  {
+    "id": 2807,
+    "name": "Guillotine Axe",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 2815,
+    "name": "Curve-Bladed Ripper",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 2816,
+    "name": "Death Speaker Scepter",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 2819,
+    "name": "Cross Dagger",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 2821,
+    "name": "Mo'grosh Masher",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 2822,
+    "name": "Mo'grosh Toothpick",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 2823,
+    "name": "Mo'grosh Can Opener",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 2824,
+    "name": "Hurricane",
+    "category": "weapons",
+    "quality": "Epic"
+  },
+  {
+    "id": 2825,
+    "name": "Bow of Searing Arrows",
+    "category": "weapons",
+    "quality": "Epic"
+  },
+  {
+    "id": 2848,
+    "name": "Bronze Mace",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 2849,
+    "name": "Bronze Axe",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 2850,
+    "name": "Bronze Shortsword",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 2877,
+    "name": "Combatant Claymore",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 2878,
+    "name": "Bearded Boneaxe",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 2903,
+    "name": "Daryl's Hunting Bow",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 2904,
+    "name": "Daryl's Hunting Rifle",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 2907,
+    "name": "Dwarven Tree Chopper",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 2908,
+    "name": "Thornblade",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 2912,
+    "name": "Claw of the Shadowmancer",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 2915,
+    "name": "Taran Icebreaker",
+    "category": "weapons",
+    "quality": "Epic"
+  },
+  {
+    "id": 2941,
+    "name": "Prison Shank",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 2942,
+    "name": "Iron Knuckles",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 2950,
+    "name": "Icicle Rod",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3021,
+    "name": "Ranger Bow",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 3036,
+    "name": "Heavy Shortbow",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3037,
+    "name": "Whipwood Recurve Bow",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3039,
+    "name": "Short Ash Bow",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3040,
+    "name": "Hunter's Muzzle Loader",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3041,
+    "name": "\"Mage-Eye\" Blunderbuss",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3042,
+    "name": "BKP \"Sparrow\" Smallbore",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3078,
+    "name": "Naga Heartpiercer",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 3079,
+    "name": "Skorn's Rifle",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3103,
+    "name": "Coldridge Hammer",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3154,
+    "name": "Thelsamar Axe",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3184,
+    "name": "Hook Dagger",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3185,
+    "name": "Acrobatic Staff",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3186,
+    "name": "Viking Sword",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3187,
+    "name": "Sacrificial Kris",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3188,
+    "name": "Coral Claymore",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3191,
+    "name": "Arced War Axe",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 3192,
+    "name": "Short Bastard Sword",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3193,
+    "name": "Oak Mallet",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3194,
+    "name": "Black Malice",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 3195,
+    "name": "Barbaric Battle Axe",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3196,
+    "name": "Edged Bastard Sword",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3197,
+    "name": "Stonecutter Claymore",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3198,
+    "name": "Battering Hammer",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3199,
+    "name": "Battle Slayer",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3201,
+    "name": "Barbarian War Axe",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3203,
+    "name": "Dense Triangle Mace",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 3206,
+    "name": "Cavalier Two-Hander",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3208,
+    "name": "Conk Hammer",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3209,
+    "name": "Ancient War Sword",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3210,
+    "name": "Brutal War Axe",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3222,
+    "name": "Wicked Dagger",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 3223,
+    "name": "Frostmane Scepter",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3227,
+    "name": "Nightbane Staff",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3336,
+    "name": "Flesh Piercer",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3400,
+    "name": "Lucine Longsword",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3413,
+    "name": "Doomspike",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 3414,
+    "name": "Crested Scepter",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 3415,
+    "name": "Staff of the Friar",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 3417,
+    "name": "Onyx Claymore",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 3430,
+    "name": "Sniper Rifle",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3440,
+    "name": "Bonecracker",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3446,
+    "name": "Darkwood Staff",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3452,
+    "name": "Ceranium Rod",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3462,
+    "name": "Talonstrike",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3487,
+    "name": "Heavy Copper Broadsword",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3488,
+    "name": "Copper Battle Axe",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3489,
+    "name": "Thick War Axe",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3490,
+    "name": "Deadly Bronze Poniard",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3491,
+    "name": "Heavy Bronze Mace",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3492,
+    "name": "Mighty Iron Hammer",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3493,
+    "name": "Raptor's End",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3570,
+    "name": "Bonegrinding Pestle",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3571,
+    "name": "Trogg Beater",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3572,
+    "name": "Daryl's Shortsword",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3581,
+    "name": "Serrated Knife",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3586,
+    "name": "Logsplitter",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3740,
+    "name": "Decapitating Sword",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3742,
+    "name": "Bow of Plunder",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3755,
+    "name": "Fish Gutter",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3822,
+    "name": "Runic Darkblade",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3848,
+    "name": "Big Bronze Knife",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3849,
+    "name": "Hardened Iron Shortsword",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3850,
+    "name": "Jade Serpentblade",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3851,
+    "name": "Solid Iron Maul",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3852,
+    "name": "Golden Iron Destroyer",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3853,
+    "name": "Moonsteel Broadsword",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3854,
+    "name": "Frost Tiger Blade",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3855,
+    "name": "Massive Iron Axe",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3856,
+    "name": "Shadow Crescent Axe",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 3902,
+    "name": "Staff of Nobles",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 4086,
+    "name": "Flash Rifle",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 4087,
+    "name": "Trueshot Bow",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 4088,
+    "name": "Dreadblade",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 4089,
+    "name": "Ricochet Blunderbuss",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 4090,
+    "name": "Mug O' Hurt",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 4091,
+    "name": "Widowmaker",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 4110,
+    "name": "Master Hunter's Bow",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 4111,
+    "name": "Master Hunter's Rifle",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 4116,
+    "name": "Olmann Sewar",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 4122,
+    "name": "Bookmaker's Scepter",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 4126,
+    "name": "Guerrilla Cleaver",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 4127,
+    "name": "Shrapnel Blaster",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 4128,
+    "name": "Silver Spade",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 4134,
+    "name": "Nimboya's Mystical Staff",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 4303,
+    "name": "Cranial Thumper",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 4362,
+    "name": "Rough Boomstick",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 4369,
+    "name": "Deadly Blunderbuss",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 4372,
+    "name": "Lovingly Crafted Boomstick",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 4379,
+    "name": "Silver-Plated Shotgun",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 4383,
+    "name": "Moonsight Rifle",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 4437,
+    "name": "Channeler's Staff",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 4439,
+    "name": "Bruiser Club",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 4445,
+    "name": "Flesh Carver",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 4446,
+    "name": "Blackvenom Blade",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 4449,
+    "name": "Naraxis' Fang",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 4454,
+    "name": "Talon of Vultros",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 4474,
+    "name": "Ravenwood Bow",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 4511,
+    "name": "Black Water Hammer",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 4547,
+    "name": "Gnomish Zapper",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 4548,
+    "name": "Servomechanic Sledgehammer",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 4561,
+    "name": "Scalping Tomahawk",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 4562,
+    "name": "Severing Axe",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 4564,
+    "name": "Spiked Club",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 4566,
+    "name": "Sturdy Quarterstaff",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 4567,
+    "name": "Merc Sword",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 4568,
+    "name": "Grunt Axe",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 4569,
+    "name": "Staunch Hammer",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 4570,
+    "name": "Birchwood Maul",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 4571,
+    "name": "War Knife",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 4575,
+    "name": "Medicine Staff",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 4576,
+    "name": "Light Bow",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 4577,
+    "name": "Compact Shotgun",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 4765,
+    "name": "Enamelled Broadsword",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 4766,
+    "name": "Feral Blade",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 4777,
+    "name": "Ironwood Maul",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 4778,
+    "name": "Heavy Spiked Mace",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 4817,
+    "name": "Blessed Claymore",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 4818,
+    "name": "Executioner's Sword",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 4824,
+    "name": "Blurred Axe",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 4825,
+    "name": "Callous Axe",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 4826,
+    "name": "Marauder Axe",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 4840,
+    "name": "Long Bayonet",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 4939,
+    "name": "Steady Bastard Sword",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 4947,
+    "name": "Jagged Dagger",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 4948,
+    "name": "Stinging Mace",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 4949,
+    "name": "Orcish Cleaver",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 4964,
+    "name": "Goblin Smasher",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 4971,
+    "name": "Skorn's Hammer",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 4974,
+    "name": "Compact Fighting Knife",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 4977,
+    "name": "Sword of Hammerfall",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 4978,
+    "name": "Ryedol's Hammer",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 4983,
+    "name": "Rock Pulverizer",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 4987,
+    "name": "Dwarf Captain's Sword",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5069,
+    "name": "Fire Wand",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5071,
+    "name": "Shadow Wand",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5112,
+    "name": "Ritual Blade",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5182,
+    "name": "Shiver Blade",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5187,
+    "name": "Foe Reaper",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 5191,
+    "name": "Cruel Barb",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 5192,
+    "name": "Thief's Blade",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 5194,
+    "name": "Taskmaster Axe",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 5196,
+    "name": "Smite's Reaver",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 5197,
+    "name": "Cookie's Tenderizer",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 5198,
+    "name": "Cookie's Stirring Rod",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 5200,
+    "name": "Impaling Harpoon",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 5201,
+    "name": "Emberstone Staff",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 5207,
+    "name": "Opaque Wand",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5212,
+    "name": "Blazing Wand",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5213,
+    "name": "Scorching Wand",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5214,
+    "name": "Wand of Eventide",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5215,
+    "name": "Ember Wand",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5216,
+    "name": "Umbral Wand",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5240,
+    "name": "Torchlight Wand",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5241,
+    "name": "Dwarven Flamestick",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5242,
+    "name": "Cinder Wand",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5243,
+    "name": "Firebelcher",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 5244,
+    "name": "Consecrated Wand",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5245,
+    "name": "Summoner's Wand",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5246,
+    "name": "Excavation Rod",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5247,
+    "name": "Rod of Sorrow",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5248,
+    "name": "Flash Wand",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5249,
+    "name": "Burning Sliver",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5250,
+    "name": "Charred Wand",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5252,
+    "name": "Wand of Decay",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5253,
+    "name": "Goblin Igniter",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5255,
+    "name": "Quilboar Tomahawk",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5256,
+    "name": "Kovork's Rattle",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5267,
+    "name": "Scarlet Kris",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 5279,
+    "name": "Harpy Skinner",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5306,
+    "name": "Wind Rider Staff",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5309,
+    "name": "Privateer Musket",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5318,
+    "name": "Zhovur Axe",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5321,
+    "name": "Elegant Shortsword",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5322,
+    "name": "Demolition Hammer",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5324,
+    "name": "Engineer's Hammer",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5326,
+    "name": "Flaring Baton",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5340,
+    "name": "Cauldron Stirrer",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5344,
+    "name": "Pointed Axe",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5345,
+    "name": "Stonewood Hammer",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5346,
+    "name": "Orcish Battle Bow",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5356,
+    "name": "Branding Rod",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5423,
+    "name": "Boahn's Fang",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 5426,
+    "name": "Serpent's Kiss",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 5459,
+    "name": "Defender Axe",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5540,
+    "name": "Pearl-Handled Dagger",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5541,
+    "name": "Iridescent Hammer",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5587,
+    "name": "Thornroot Club",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5595,
+    "name": "Thicket Hammer",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5596,
+    "name": "Ashwood Bow",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5604,
+    "name": "Elven Wand",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5613,
+    "name": "Staff of the Purifier",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5614,
+    "name": "Seraph's Strike",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5615,
+    "name": "Woodsman Sword",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5616,
+    "name": "Gutwrencher",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 5626,
+    "name": "Skullchipper",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5627,
+    "name": "Relic Blade",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5742,
+    "name": "Gemstone Dagger",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5744,
+    "name": "Pale Skinner",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5748,
+    "name": "Centaur Longbow",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5749,
+    "name": "Scythe Axe",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5752,
+    "name": "Wyvern Tailspike",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5756,
+    "name": "Sliverblade",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 5757,
+    "name": "Hardwood Cudgel",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5813,
+    "name": "Emil's Brand",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5815,
+    "name": "Glacial Stone",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5817,
+    "name": "Lunaris Bow",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 5818,
+    "name": "Moonbeam Wand",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 6093,
+    "name": "Orc Crusher",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 6094,
+    "name": "Piercing Axe",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 6186,
+    "name": "Trogg Slicer",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 6194,
+    "name": "Barreling Reaper",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 6205,
+    "name": "Burrowing Shovel",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 6214,
+    "name": "Heavy Copper Maul",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 6215,
+    "name": "Balanced Fighting Stick",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 6220,
+    "name": "Meteor Shard",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 6315,
+    "name": "Steelarrow Crossbow",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 6318,
+    "name": "Odo's Ley Staff",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 6323,
+    "name": "Baron's Scepter",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 6327,
+    "name": "The Pacifier",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 6331,
+    "name": "Howling Blade",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 6333,
+    "name": "Spikelash Dagger",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 6360,
+    "name": "Steelscale Crushfish",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 6448,
+    "name": "Tail Spike",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 6469,
+    "name": "Venomstrike",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 6472,
+    "name": "Stinging Viper",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 6504,
+    "name": "Wingblade",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 6505,
+    "name": "Crescent Staff",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 6622,
+    "name": "Sword of Zeal",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 6631,
+    "name": "Living Root",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 6633,
+    "name": "Butcher's Slicer",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 6641,
+    "name": "Haunting Blade",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 6660,
+    "name": "Julie's Dagger",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 6677,
+    "name": "Spellcrafter Wand",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 6679,
+    "name": "Armor Piercer",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 6681,
+    "name": "Thornspike",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 6687,
+    "name": "Corpsemaker",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 6689,
+    "name": "Wind Spirit Staff",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 6691,
+    "name": "Swinetusk Shank",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 6692,
+    "name": "Pronged Reaver",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 6696,
+    "name": "Nightstalker Bow",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 6729,
+    "name": "Fizzle's Zippy Lighter",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 6738,
+    "name": "Bleeding Crescent",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 6739,
+    "name": "Cliffrunner's Aim",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 6797,
+    "name": "Eyepoker",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 6798,
+    "name": "Blasting Hackbut",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 6802,
+    "name": "Sword of Omen",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 6804,
+    "name": "Windstorm Hammer",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 6806,
+    "name": "Dancing Flame",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 6829,
+    "name": "Sword of Serenity",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 6830,
+    "name": "Bonebiter",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 6831,
+    "name": "Black Menace",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 6904,
+    "name": "Bite of Serra'kis",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 6905,
+    "name": "Reef Axe",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 6909,
+    "name": "Strike of the Hydra",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 6953,
+    "name": "Verigan's Fist",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 6966,
+    "name": "Elunite Axe",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 6967,
+    "name": "Elunite Sword",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 6968,
+    "name": "Elunite Hammer",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 6969,
+    "name": "Elunite Dagger",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 6975,
+    "name": "Whirlwind Axe",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 6976,
+    "name": "Whirlwind Warhammer",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 6977,
+    "name": "Whirlwind Sword",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 6978,
+    "name": "Umbral Axe",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 6979,
+    "name": "Haggard's Axe",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 6980,
+    "name": "Haggard's Dagger",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 6981,
+    "name": "Umbral Dagger",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 6982,
+    "name": "Umbral Mace",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 6983,
+    "name": "Haggard's Hammer",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 6984,
+    "name": "Umbral Sword",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 6985,
+    "name": "Haggard's Sword",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 7001,
+    "name": "Gravestone Scepter",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 7115,
+    "name": "Heirloom Axe",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 7116,
+    "name": "Heirloom Dagger",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 7117,
+    "name": "Heirloom Hammer",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 7118,
+    "name": "Heirloom Sword",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 7230,
+    "name": "Smite's Mighty Hammer",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 7298,
+    "name": "Blade of Cunning",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 7326,
+    "name": "Thun'grim's Axe",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 7327,
+    "name": "Thun'grim's Dagger",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 7328,
+    "name": "Thun'grim's Mace",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 7329,
+    "name": "Thun'grim's Sword",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 7513,
+    "name": "Ragefire Wand",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 7514,
+    "name": "Icefury Wand",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 7607,
+    "name": "Sable Wand",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 7682,
+    "name": "Torturing Poker",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 7683,
+    "name": "Bloody Brass Knuckles",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 7687,
+    "name": "Ironspine's Fist",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 7689,
+    "name": "Morbid Dawn",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 7708,
+    "name": "Necrotic Wand",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 7710,
+    "name": "Loksey's Training Stick",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 7713,
+    "name": "Illusionary Rod",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 7714,
+    "name": "Hypnotic Blade",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 7717,
+    "name": "Ravager",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 7721,
+    "name": "Hand of Righteousness",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 7723,
+    "name": "Mograine's Might",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 7729,
+    "name": "Chesterfall Musket",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 7730,
+    "name": "Cobalt Crusher",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 7736,
+    "name": "Fight Club",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 7752,
+    "name": "Dreamslayer",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 7753,
+    "name": "Bloodspiller",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 7757,
+    "name": "Windweaver Staff",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 7758,
+    "name": "Ruthless Shiv",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 7761,
+    "name": "Steelclaw Reaver",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 7786,
+    "name": "Headsplitter",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 7941,
+    "name": "Heavy Mithril Axe",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 7942,
+    "name": "Blue Glittering Axe",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 7943,
+    "name": "Wicked Mithril Blade",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 7944,
+    "name": "Dazzling Mithril Rapier",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 7945,
+    "name": "Big Black Mace",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 7946,
+    "name": "Runed Mithril Hammer",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 7947,
+    "name": "Ebon Shiv",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 7954,
+    "name": "The Shatterer",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 7956,
+    "name": "Bronze Warhammer",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 7957,
+    "name": "Bronze Greatsword",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 7958,
+    "name": "Bronze Battle Axe",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 7959,
+    "name": "Blight",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 7960,
+    "name": "Truesilver Champion",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 7961,
+    "name": "Phantom Blade",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 8006,
+    "name": "The Ziggler",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 8071,
+    "name": "Sizzle Stick",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 8178,
+    "name": "Training Sword",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 8180,
+    "name": "Hunting Bow",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 8183,
+    "name": "Precision Bow",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 8184,
+    "name": "Firestarter",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 8186,
+    "name": "Dire Wand",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 8188,
+    "name": "Explosive Shotgun",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 8194,
+    "name": "Goblin Nutcracker",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 8196,
+    "name": "Ebon Scimitar",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 8199,
+    "name": "Battlefield Destroyer",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 8223,
+    "name": "Blade of the Basilisk",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 8224,
+    "name": "Silithid Ripper",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 8225,
+    "name": "Tainted Pierce",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 8226,
+    "name": "The Butcher",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 8708,
+    "name": "Hammer of Expertise",
+    "category": "weapons",
+    "quality": "Epic"
+  },
+  {
+    "id": 9240,
+    "name": "Mallet of Zul'Farrak",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 9359,
+    "name": "Southsea Lamp",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 9372,
+    "name": "Sul'thraze the Lasher",
+    "category": "weapons",
+    "quality": "Epic"
+  },
+  {
+    "id": 9378,
+    "name": "Shovelphlange's Mining Axe",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 9379,
+    "name": "Sang'thraze the Deflector",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 9381,
+    "name": "Earthen Rod",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 9383,
+    "name": "Obsidian Cleaver",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 9384,
+    "name": "Stonevault Shiv",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 9385,
+    "name": "Archaic Defender",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 9386,
+    "name": "Excavator's Brand",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 9391,
+    "name": "The Shoveler",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 9392,
+    "name": "Annealed Blade",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 9400,
+    "name": "Baelog's Shortbow",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 9401,
+    "name": "Nordic Longshank",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 9408,
+    "name": "Ironshod Bludgeon",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 9412,
+    "name": "Galgann's Fireblaster",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 9413,
+    "name": "The Rockpounder",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 9416,
+    "name": "Grimlok's Charge",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 9418,
+    "name": "Stoneslayer",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 9419,
+    "name": "Galgann's Firehammer",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 9422,
+    "name": "Shadowforge Bushmaster",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 9423,
+    "name": "The Jackhammer",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 9424,
+    "name": "Ginn-Su Sword",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 9425,
+    "name": "Pendulum of Doom",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 9426,
+    "name": "Monolithic Bow",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 9427,
+    "name": "Stonevault Bonebreaker",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 9446,
+    "name": "Electrocutioner Leg",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 9449,
+    "name": "Manual Crowd Pummeler",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 9452,
+    "name": "Hydrocane",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 9453,
+    "name": "Toxic Revenger",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 9456,
+    "name": "Glass Shooter",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 9457,
+    "name": "Royal Diplomatic Scepter",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 9459,
+    "name": "Thermaplugg's Left Arm",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 9467,
+    "name": "Gahz'rilla Fang",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 9475,
+    "name": "Diabolic Skiver",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 9477,
+    "name": "The Chief's Enforcer",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 9478,
+    "name": "Ripsaw",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 9480,
+    "name": "Eyegouger",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 9481,
+    "name": "The Minotaur",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 9482,
+    "name": "Witch Doctor's Cane",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 9483,
+    "name": "Flaming Incinerator",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 9485,
+    "name": "Vibroblade",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 9486,
+    "name": "Supercharger Battle Axe",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 9487,
+    "name": "Hi-Tech Supergun",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 9488,
+    "name": "Oscillating Power Hammer",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 9489,
+    "name": "Gyromatic Icemaker",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 9490,
+    "name": "Gizmotron Megachopper",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 9511,
+    "name": "Bloodletter Scalpel",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 9513,
+    "name": "Ley Staff",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 9514,
+    "name": "Arcane Staff",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 9517,
+    "name": "Celestial Stave",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 9520,
+    "name": "Silent Hunter",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 9521,
+    "name": "Skullsplitter",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 9527,
+    "name": "Spellshifter Rod",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 9602,
+    "name": "Brushwood Blade",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 9603,
+    "name": "Gritroot Staff",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 9604,
+    "name": "Mechanic's Pipehammer",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 9608,
+    "name": "Shoni's Disarming Tool",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 9626,
+    "name": "Dwarven Charge",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 9639,
+    "name": "The Hand of Antu'sul",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 9651,
+    "name": "Gryphon Rider's Stormhammer",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 9654,
+    "name": "Cairnstone Sliver",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 9678,
+    "name": "Tok'kar's Murloc Basher",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 9679,
+    "name": "Tok'kar's Murloc Chopper",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 9680,
+    "name": "Tok'kar's Murloc Shanker",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 9683,
+    "name": "Strength of the Treant",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 9684,
+    "name": "Force of the Hippogryph",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 9686,
+    "name": "Spirit of the Faerie Dragon",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 9718,
+    "name": "Reforged Blade of Heroes",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 10508,
+    "name": "Mithril Blunderbuss",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 10510,
+    "name": "Mithril Heavy-Bore Rifle",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 10567,
+    "name": "Quillshooter",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 10570,
+    "name": "Manslayer",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 10571,
+    "name": "Ebony Boneclub",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 10572,
+    "name": "Freezing Shard",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 10573,
+    "name": "Boneslasher",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 10623,
+    "name": "Winter's Bite",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 10624,
+    "name": "Stinging Bow",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 10625,
+    "name": "Stealthblade",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 10626,
+    "name": "Ragehammer",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 10627,
+    "name": "Bludgeon of the Grinning Dog",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 10628,
+    "name": "Deathblow",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 10652,
+    "name": "Will of the Mountain Giant",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 10703,
+    "name": "Fiendish Skiv",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 10704,
+    "name": "Chillnail Splinter",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 10744,
+    "name": "Axe of the Ebon Drake",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 10750,
+    "name": "Lifeforce Dirk",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 10758,
+    "name": "X'caliboar",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 10761,
+    "name": "Coldrage Dagger",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 10766,
+    "name": "Plaguerot Sprig",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 10772,
+    "name": "Glutton's Cleaver",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 10797,
+    "name": "Firebreather",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 10799,
+    "name": "Headspike",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 10803,
+    "name": "Blade of the Wretched",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 10804,
+    "name": "Fist of the Damned",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 10805,
+    "name": "Eater of the Dead",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 10823,
+    "name": "Vanquisher's Sword",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 10826,
+    "name": "Staff of Lore",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 10828,
+    "name": "Dire Nail",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 10836,
+    "name": "Rod of Corrosion",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 10837,
+    "name": "Tooth of Eranikus",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 10838,
+    "name": "Might of Hakkar",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 10844,
+    "name": "Spire of Hakkar",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 10847,
+    "name": "Dragon's Call",
+    "category": "weapons",
+    "quality": "Epic"
+  },
+  {
+    "id": 11086,
+    "name": "Jang'thraze the Protector",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 11120,
+    "name": "Belgrom's Hammer",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 11263,
+    "name": "Nether Force Wand",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 11265,
+    "name": "Cragwood Maul",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 11287,
+    "name": "Lesser Magic Wand",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 11288,
+    "name": "Greater Magic Wand",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 11289,
+    "name": "Lesser Mystic Wand",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 11290,
+    "name": "Greater Mystic Wand",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 11303,
+    "name": "Fine Shortbow",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 11304,
+    "name": "Fine Longbow",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 11305,
+    "name": "Dense Shortbow",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 11306,
+    "name": "Sturdy Recurve",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 11307,
+    "name": "Massive Longbow",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 11308,
+    "name": "Sylvan Shortbow",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 11603,
+    "name": "Vilerend Slicer",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 11607,
+    "name": "Dark Iron Sunderer",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 11608,
+    "name": "Dark Iron Pulverizer",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 11628,
+    "name": "Houndmaster's Bow",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 11629,
+    "name": "Houndmaster's Rifle",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 11635,
+    "name": "Hookfang Shanker",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 11702,
+    "name": "Grizzle's Skinner",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 11743,
+    "name": "Rockfist",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 11744,
+    "name": "Bloodfist",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 11748,
+    "name": "Pyric Caduceus",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 11750,
+    "name": "Kindling Stave",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 11784,
+    "name": "Arbiter's Blade",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 11786,
+    "name": "Stone of the Earth",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 11803,
+    "name": "Force of Magma",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 11805,
+    "name": "Rubidium Hammer",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 11809,
+    "name": "Flame Wrath",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 11816,
+    "name": "Angerforge's Battle Axe",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 11817,
+    "name": "Lord General's Sword",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 11854,
+    "name": "Samophlange Screwdriver",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 11856,
+    "name": "Ceremonial Elven Blade",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 11857,
+    "name": "Sanctimonial Rod",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 11860,
+    "name": "Charged Lightning Rod",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 11863,
+    "name": "White Bone Shredder",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 11864,
+    "name": "White Bone Spear",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 11902,
+    "name": "Linken's Sword of Mastery",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 11906,
+    "name": "Beastsmasher",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 11907,
+    "name": "Beastslayer",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 11920,
+    "name": "Wraith Scythe",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 11921,
+    "name": "Impervious Giant",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 11922,
+    "name": "Blood-Etched Blade",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 11923,
+    "name": "The Hammer of Grace",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 11931,
+    "name": "Dreadforge Retaliator",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 11932,
+    "name": "Guiding Stave of Wisdom",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 11964,
+    "name": "Swiftstrike Cudgel",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 12000,
+    "name": "Limb Cleaver",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 12061,
+    "name": "Blade of Reckoning",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 12062,
+    "name": "Skilled Fighting Blade",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 12243,
+    "name": "Smoldering Claw",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 12247,
+    "name": "Broad Bladed Knife",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 12248,
+    "name": "Daring Dirk",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 12249,
+    "name": "Merciless Axe",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 12250,
+    "name": "Midnight Axe",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 12251,
+    "name": "Big Stick",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 12252,
+    "name": "Staff of Protection",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 12259,
+    "name": "Glinting Steel Dagger",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 12260,
+    "name": "Searing Golden Blade",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 12296,
+    "name": "Spark of the People's Militia",
+    "category": "weapons",
+    "quality": "Uncommon"
+  },
+  {
+    "id": 12463,
+    "name": "Drakefang Butcher",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 12527,
+    "name": "Ribsplitter",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 12528,
+    "name": "The Judge's Gavel",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 12531,
+    "name": "Searing Needle",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 12532,
+    "name": "Spire of the Stoneshaper",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 12535,
+    "name": "Doomforged Straightedge",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 12582,
+    "name": "Keris of Zul'Serak",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 12583,
+    "name": "Blackhand Doomsaw",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 12584,
+    "name": "Grand Marshal's Longsword",
+    "category": "weapons",
+    "quality": "Epic"
+  },
+  {
+    "id": 12590,
+    "name": "Felstriker",
+    "category": "weapons",
+    "quality": "Epic"
+  },
+  {
+    "id": 12592,
+    "name": "Blackblade of Shahram",
+    "category": "weapons",
+    "quality": "Epic"
+  },
+  {
+    "id": 12605,
+    "name": "Serpentine Skuller",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 12621,
+    "name": "Demonfork",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 12651,
+    "name": "Blackcrow",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 12653,
+    "name": "Riphook",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 12764,
+    "name": "Thorium Greatsword",
+    "category": "weapons",
+    "quality": "Uncommon"
   }
 ]
