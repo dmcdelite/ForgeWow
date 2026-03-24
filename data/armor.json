@@ -1,1 +1,86 @@
-[]
+[
+  {
+    "id": 21181,
+    "name": "Grace of Earth",
+    "quality": "Rare",
+    "itemClass": "Armor",
+    "itemSubclass": "Miscellaneous",
+    "level": 29,
+    "requiredLevel": 0,
+    "sellPrice": 21612,
+    "description": "",
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_misc_herb_02.jpg",
+    "wowhead": "https://www.wowhead.com/item=21181",
+    "category": "armor"
+  },
+  {
+    "id": 18404,
+    "name": "Onyxia Tooth Pendant",
+    "quality": "Epic",
+    "itemClass": "Armor",
+    "itemSubclass": "Miscellaneous",
+    "level": 29,
+    "requiredLevel": 0,
+    "sellPrice": 5038,
+    "description": "",
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_jewelry_necklace_09.jpg",
+    "wowhead": "https://www.wowhead.com/item=18404",
+    "category": "armor"
+  },
+  {
+    "id": 23520,
+    "name": "Ragesteel Gloves",
+    "quality": "Rare",
+    "itemClass": "Armor",
+    "itemSubclass": "Plate",
+    "level": 32,
+    "requiredLevel": 27,
+    "sellPrice": 30896,
+    "description": "",
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_gauntlets_26.jpg",
+    "wowhead": "https://www.wowhead.com/item=23520",
+    "category": "armor"
+  },
+  {
+    "id": 16795,
+    "name": "Arcanist Crown",
+    "quality": "Epic",
+    "itemClass": "Armor",
+    "itemSubclass": "Cloth",
+    "level": 29,
+    "requiredLevel": 25,
+    "sellPrice": 37757,
+    "description": "",
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_helmet_53.jpg",
+    "wowhead": "https://www.wowhead.com/item=16795",
+    "category": "armor"
+  },
+  {
+    "id": 21712,
+    "name": "Amulet of the Fallen God",
+    "quality": "Epic",
+    "itemClass": "Armor",
+    "itemSubclass": "Miscellaneous",
+    "level": 30,
+    "requiredLevel": 25,
+    "sellPrice": 5432,
+    "description": "",
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_jewelry_necklace_ahnqiraj_02.jpg",
+    "wowhead": "https://www.wowhead.com/item=21712",
+    "category": "armor"
+  },
+  {
+    "id": 22798,
+    "name": "Might of Menethil",
+    "quality": "Epic",
+    "itemClass": "Weapon",
+    "itemSubclass": "Mace",
+    "level": 30,
+    "requiredLevel": 25,
+    "sellPrice": 101856,
+    "description": "",
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_mace_25.jpg",
+    "wowhead": "https://www.wowhead.com/item=22798",
+    "category": "armor"
+  }
+]

@@ -1,1 +1,212 @@
-[]
+[
+  {
+    "id": 19019,
+    "name": "Thunderfury, Blessed Blade of the Windseeker",
+    "category": "weapons",
+    "quality": "Legendary"
+  },
+  {
+    "id": 17182,
+    "name": "Sulfuras, Hand of Ragnaros",
+    "category": "weapons",
+    "quality": "Legendary"
+  },
+  {
+    "id": 23554,
+    "name": "Eternium Runed Blade",
+    "category": "weapons",
+    "quality": "Epic"
+  },
+  {
+    "id": 18541,
+    "name": "Puissant Cape",
+    "category": "weapons",
+    "quality": "Epic"
+  },
+  {
+    "id": 11684,
+    "name": "Ironfoe",
+    "category": "weapons",
+    "quality": "Epic"
+  },
+  {
+    "id": 17076,
+    "name": "Bonereaver's Edge",
+    "category": "weapons",
+    "quality": "Epic"
+  },
+  {
+    "id": 18442,
+    "name": "Master Sergeant's Insignia",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 13142,
+    "name": "Brigam Girdle",
+    "category": "weapons",
+    "quality": "Rare"
+  },
+  {
+    "id": 14555,
+    "name": "Alcor's Sunrazor",
+    "category": "weapons",
+    "quality": "Epic"
+  },
+  {
+    "id": 21181,
+    "name": "Grace of Earth",
+    "category": "armor",
+    "quality": "Rare"
+  },
+  {
+    "id": 18404,
+    "name": "Onyxia Tooth Pendant",
+    "category": "armor",
+    "quality": "Epic"
+  },
+  {
+    "id": 23520,
+    "name": "Ragesteel Gloves",
+    "category": "armor",
+    "quality": "Rare"
+  },
+  {
+    "id": 16795,
+    "name": "Arcanist Crown",
+    "category": "armor",
+    "quality": "Epic"
+  },
+  {
+    "id": 21712,
+    "name": "Amulet of the Fallen God",
+    "category": "armor",
+    "quality": "Epic"
+  },
+  {
+    "id": 22798,
+    "name": "Might of Menethil",
+    "category": "armor",
+    "quality": "Epic"
+  },
+  {
+    "id": 13442,
+    "name": "Mighty Rage Potion",
+    "category": "consumables",
+    "quality": "Common"
+  },
+  {
+    "id": 13443,
+    "name": "Superior Mana Potion",
+    "category": "consumables",
+    "quality": "Common"
+  },
+  {
+    "id": 22832,
+    "name": "Super Mana Potion",
+    "category": "consumables",
+    "quality": "Common"
+  },
+  {
+    "id": 22105,
+    "name": "Master Healthstone",
+    "category": "consumables",
+    "quality": "Common"
+  },
+  {
+    "id": 20002,
+    "name": "Greater Dreamless Sleep Potion",
+    "category": "consumables",
+    "quality": "Common"
+  },
+  {
+    "id": 22788,
+    "name": "Flame Cap",
+    "category": "consumables",
+    "quality": "Common"
+  },
+  {
+    "id": 9155,
+    "name": "Arcane Elixir",
+    "category": "consumables",
+    "quality": "Common"
+  },
+  {
+    "id": 3928,
+    "name": "Superior Healing Potion",
+    "category": "consumables",
+    "quality": "Common"
+  },
+  {
+    "id": 6149,
+    "name": "Greater Mana Potion",
+    "category": "consumables",
+    "quality": "Common"
+  },
+  {
+    "id": 2459,
+    "name": "Swiftness Potion",
+    "category": "consumables",
+    "quality": "Common"
+  },
+  {
+    "id": 6291,
+    "name": "Raw Brilliant Smallfish",
+    "category": "fish",
+    "quality": "Common"
+  },
+  {
+    "id": 6308,
+    "name": "Raw Bristle Whisker Catfish",
+    "category": "fish",
+    "quality": "Common"
+  },
+  {
+    "id": 4603,
+    "name": "Raw Spotted Yellowtail",
+    "category": "fish",
+    "quality": "Common"
+  },
+  {
+    "id": 13422,
+    "name": "Stonescale Eel",
+    "category": "fish",
+    "quality": "Common"
+  },
+  {
+    "id": 21153,
+    "name": "Raw Greater Sagefish",
+    "category": "fish",
+    "quality": "Common"
+  },
+  {
+    "id": 27422,
+    "name": "Barbed Gill Trout",
+    "category": "fish",
+    "quality": "Common"
+  },
+  {
+    "id": 6289,
+    "name": "Raw Longjaw Mud Snapper",
+    "category": "fish",
+    "quality": "Common"
+  },
+  {
+    "id": 6317,
+    "name": "Raw Loch Frenzy",
+    "category": "fish",
+    "quality": "Common"
+  },
+  {
+    "id": 6361,
+    "name": "Raw Rainbow Fin Albacore",
+    "category": "fish",
+    "quality": "Common"
+  },
+  {
+    "id": 13889,
+    "name": "Raw Whitescale Salmon",
+    "category": "fish",
+    "quality": "Common"
+  }
+]
