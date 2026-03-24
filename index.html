@@ -266,6 +266,114 @@ select.sort-sel{
   gap:1rem;
   margin-bottom:1.5rem;
 }
+.results-shell{
+  min-width:0;
+}
+.main.fish-mode .results-shell{
+  max-height:calc(100vh - 305px);
+  min-height:420px;
+  overflow-y:auto;
+  padding-right:.35rem;
+}
+.main.fish-mode .item-grid{
+  margin-bottom:0;
+}
+.category-summary{
+  display:none;
+  margin-bottom:1rem;
+}
+.main.fish-mode .category-summary{
+  display:grid;
+  grid-template-columns:minmax(0,1.3fr) repeat(2,minmax(180px,.85fr));
+  gap:1rem;
+}
+.summary-card{
+  background:linear-gradient(180deg,rgba(17,21,32,.94),rgba(8,12,20,.96));
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:1rem 1.1rem;
+  position:relative;
+  overflow:hidden;
+}
+.summary-card::before{
+  content:'';
+  position:absolute;
+  inset:0 0 auto 0;
+  height:1px;
+  background:linear-gradient(90deg,transparent,var(--gold-dim),transparent);
+  opacity:.8;
+}
+.summary-eyebrow{
+  font-family:'Cinzel',serif;
+  font-size:.58rem;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:var(--gold-dim);
+  margin-bottom:.5rem;
+}
+.summary-title{
+  font-family:'Cinzel',serif;
+  font-size:1.15rem;
+  color:var(--text-bright);
+  margin-bottom:.35rem;
+}
+.summary-copy{
+  color:var(--text);
+  line-height:1.5;
+  font-size:.92rem;
+}
+.summary-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:.75rem;
+  margin-top:1rem;
+}
+.summary-stat{
+  background:rgba(0,0,0,.24);
+  border:1px solid rgba(200,168,75,.08);
+  border-radius:8px;
+  padding:.7rem .8rem;
+}
+.summary-stat-label{
+  font-family:'Cinzel',serif;
+  font-size:.52rem;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--text-dim);
+  margin-bottom:.18rem;
+}
+.summary-stat-value{
+  color:var(--gold-bright);
+  font-size:1rem;
+  font-weight:600;
+}
+.catch-card{
+  display:flex;
+  flex-direction:column;
+  gap:.55rem;
+}
+.catch-kind{
+  font-family:'Cinzel',serif;
+  font-size:.62rem;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--text-dim);
+}
+.catch-name{
+  color:var(--text-bright);
+  font-size:1rem;
+  font-weight:600;
+}
+.catch-metric{
+  font-family:'Cinzel',serif;
+  color:var(--gold-bright);
+  font-size:1.05rem;
+}
+.catch-detail{
+  color:var(--text);
+  font-size:.86rem;
+  line-height:1.45;
+}
 .item-card{
   background:var(--bg-card);
   border:1px solid var(--border);
@@ -538,11 +646,14 @@ footer span{color:var(--gold-dim)}
   .sidebar{display:none}
   .main{padding:1rem}
   .item-grid{grid-template-columns:1fr 1fr}
+  .main.fish-mode .category-summary{grid-template-columns:1fr}
+  .main.fish-mode .results-shell{max-height:none;min-height:0;padding-right:0}
 }
 @media(max-width:480px){
   .item-grid{grid-template-columns:1fr}
   .hero{padding:1.5rem 1rem 1.2rem}
   .search-bar-wrap{flex-direction:column}
+  .summary-grid{grid-template-columns:1fr}
 }
 </style>
 </head>
@@ -580,6 +691,18 @@ footer span{color:var(--gold-dim)}
       </div>
       <div class="sidebar-item" onclick="loadCategory('fish',this)" data-cat="fish">
         <span class="sidebar-icon">🐟</span> Fish
+      </div>
+      <div class="sidebar-item" onclick="loadCategory('housing',this)" data-cat="housing">
+        <span class="sidebar-icon">🏠</span> Housing
+      </div>
+      <div class="sidebar-item" onclick="loadCategory('mounts',this)" data-cat="mounts">
+        <span class="sidebar-icon">🐴</span> Mounts
+      </div>
+      <div class="sidebar-item" onclick="loadCategory('pets',this)" data-cat="pets">
+        <span class="sidebar-icon">🐾</span> Battle Pets
+      </div>
+      <div class="sidebar-item" onclick="loadCategory('toys',this)" data-cat="toys">
+        <span class="sidebar-icon">🧸</span> Toys
       </div>
     </div>
     <div class="sidebar-divider"></div>
@@ -626,7 +749,10 @@ footer span{color:var(--gold-dim)}
       </div>
     </div>
 
-    <div class="item-grid" id="itemGrid"></div>
+    <div class="category-summary" id="categorySummary"></div>
+    <div class="results-shell" id="resultsShell">
+      <div class="item-grid" id="itemGrid"></div>
+    </div>
     <div class="pagination" id="pagination"></div>
   </main>
 </div>
@@ -679,6 +805,7 @@ const STATE = {
   activeCategory: 'weapons',
   activeQualities: new Set(['Poor','Common','Uncommon','Rare','Epic','Legendary','Artifact']),
   searchQuery:    '',
+  isSearchMode:   false,
   sortBy:         'name-asc',
   page:           1,
   perPage:        24,
@@ -700,6 +827,7 @@ async function loadCategory(category, sidebarEl) {
   STATE.activeCategory = category;
   STATE.page = 1;
   STATE.searchQuery = '';
+  STATE.isSearchMode = false;
   document.getElementById('heroSearch').value = '';
   document.getElementById('toolbarTitle').textContent =
     category.charAt(0).toUpperCase() + category.slice(1);
@@ -732,12 +860,13 @@ async function handleSearch() {
   if (!q) { loadCategory(STATE.activeCategory); return; }
 
   STATE.searchQuery = q;
+  STATE.isSearchMode = true;
   STATE.page = 1;
 
   // Search across ALL categories
   showSkeletons();
   const results = [];
-  const cats = ['weapons','armor','consumables','fish'];
+  const cats = ['weapons','armor','consumables','fish','housing','mounts','pets','toys'];
 
   for (const cat of cats) {
     try {
@@ -809,21 +938,112 @@ function applyFilters() {
   renderPage();
 }
 
+function isFishDatabaseView() {
+  return STATE.activeCategory === 'fish' && !STATE.isSearchMode;
+}
+
+function setFishLayout(enabled) {
+  document.querySelector('.main').classList.toggle('fish-mode', enabled);
+}
+
+function getFishLeader(items, field) {
+  return items.reduce((best, fish) => {
+    const value = Number(fish?.[field]);
+    if (!Number.isFinite(value)) return best;
+    if (!best || value > best.value) return { item: fish, value };
+    return best;
+  }, null);
+}
+
+function renderFishSummary(items) {
+  const summary = document.getElementById('categorySummary');
+  if (!isFishDatabaseView()) {
+    summary.innerHTML = '';
+    return;
+  }
+
+  if (!items.length) {
+    summary.innerHTML = `
+      <section class="summary-card">
+        <div class="summary-eyebrow">Biggest Catch</div>
+        <div class="summary-title">No fish in the current view</div>
+        <div class="summary-copy">Adjust the active quality filters to bring the fish database back into view.</div>
+      </section>`;
+    return;
+  }
+
+  const heaviest = getFishLeader(items, 'weightLbs');
+  const longest = getFishLeader(items, 'lengthIn');
+  const locations = new Set(items.map(item => item.location).filter(Boolean)).size;
+  const weightValues = items
+    .map(item => Number(item.weightLbs))
+    .filter(value => Number.isFinite(value));
+  const avgWeight = weightValues.length
+    ? weightValues.reduce((sum, value) => sum + value, 0) / weightValues.length
+    : null;
+
+  summary.innerHTML = `
+    <section class="summary-card">
+      <div class="summary-eyebrow">Biggest Catch</div>
+      <div class="summary-title">Trophy fish at a glance</div>
+      <div class="summary-copy">The fish database now stays in a dedicated scroll panel so you can browse the full catch list without leaving the category view.</div>
+      <div class="summary-grid">
+        <div class="summary-stat">
+          <div class="summary-stat-label">Fish In View</div>
+          <div class="summary-stat-value">${items.length}</div>
+        </div>
+        <div class="summary-stat">
+          <div class="summary-stat-label">Locations</div>
+          <div class="summary-stat-value">${locations || '—'}</div>
+        </div>
+        <div class="summary-stat">
+          <div class="summary-stat-label">Average Weight</div>
+          <div class="summary-stat-value">${avgWeight != null ? `${avgWeight.toFixed(1)} lbs` : '—'}</div>
+        </div>
+        <div class="summary-stat">
+          <div class="summary-stat-label">Mode</div>
+          <div class="summary-stat-value">Scrollable</div>
+        </div>
+      </div>
+    </section>
+    <section class="summary-card catch-card">
+      <div class="summary-eyebrow">Heaviest</div>
+      <div class="catch-kind">Top Weight</div>
+      <div class="catch-name">${heaviest?.item?.name || '—'}</div>
+      <div class="catch-metric">${heaviest ? `${heaviest.value} lbs` : '—'}</div>
+      <div class="catch-detail">${heaviest?.item?.location || 'Unknown waters'}${heaviest?.item?.fishType ? ` · ${heaviest.item.fishType}` : ''}</div>
+    </section>
+    <section class="summary-card catch-card">
+      <div class="summary-eyebrow">Longest</div>
+      <div class="catch-kind">Top Length</div>
+      <div class="catch-name">${longest?.item?.name || '—'}</div>
+      <div class="catch-metric">${longest ? `${longest.value} in` : '—'}</div>
+      <div class="catch-detail">${longest?.item?.location || 'Unknown waters'}${longest?.item?.bait ? ` · Bait: ${longest.item.bait}` : ''}</div>
+    </section>`;
+}
+
 // ═══════════════════════════════════════════
 //  RENDER
 // ═══════════════════════════════════════════
 function renderPage() {
   const { filtered, page, perPage } = STATE;
   const total   = filtered.length;
-  const pages   = Math.ceil(total / perPage);
-  const start   = (page - 1) * perPage;
-  const slice   = filtered.slice(start, start + perPage);
+  const fishView = isFishDatabaseView();
+  const pages   = fishView ? 1 : Math.ceil(total / perPage);
+  const start   = fishView ? 0 : (page - 1) * perPage;
+  const slice   = fishView ? filtered : filtered.slice(start, start + perPage);
 
   document.getElementById('toolbarMeta').innerHTML =
-    `<span>${total}</span> items &nbsp;·&nbsp; Page <span>${page}</span> of <span>${Math.max(pages,1)}</span>`;
+    fishView
+      ? `<span>${total}</span> fish &nbsp;·&nbsp; Scroll the database to browse every catch in the current filter set`
+      : `<span>${total}</span> items &nbsp;·&nbsp; Page <span>${page}</span> of <span>${Math.max(pages,1)}</span>`;
+
+  setFishLayout(fishView);
+  renderFishSummary(filtered);
 
   const grid = document.getElementById('itemGrid');
   grid.innerHTML = '';
+  document.getElementById('resultsShell').scrollTop = 0;
 
   if (!slice.length) {
     document.getElementById('pagination').innerHTML = '';
@@ -832,7 +1052,11 @@ function renderPage() {
   }
 
   slice.forEach(item => grid.appendChild(buildCard(item)));
-  renderPagination(page, pages);
+  if (fishView) {
+    document.getElementById('pagination').innerHTML = '';
+  } else {
+    renderPagination(page, pages);
+  }
 }
 
 function buildCard(item) {
@@ -890,7 +1114,11 @@ function goPage(p) {
   if (p < 1 || p > total) return;
   STATE.page = p;
   renderPage();
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  if (isFishDatabaseView()) {
+    document.getElementById('resultsShell').scrollTo({ top: 0, behavior: 'smooth' });
+  } else {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 }
 
 // ═══════════════════════════════════════════
@@ -914,26 +1142,46 @@ function openDetail(item) {
     icon.style.display='none'; iconPh.style.display='flex';
   }
 
-  const isFish = item.category === 'fish' || item.itemSubclass === 'Fish';
-  const fields = isFish ? [
-    ['Quality',      item.quality],
-    ['Weight',       item.weightLbs  != null ? `${item.weightLbs} lbs` : '—'],
-    ['Length',       item.lengthIn   != null ? `${item.lengthIn} in`   : '—'],
-    ['Location',     item.location   || '—'],
-    ['Expansion',    item.expansion  || '—'],
-    ['Bait',         item.bait       || '—'],
-    ['Weather',      item.weather    || '—'],
-    ['Fish Type',    item.fishType   || '—'],
-    ['Drop Rate',    item.dropRate   || '—'],
-    ['Sell Price',   formatGold(item.sellPrice)],
-  ] : [
-    ['Item Class',     item.itemClass     || '—'],
-    ['Subclass',       item.itemSubclass  || '—'],
-    ['Item Level',     item.level         ?? '—'],
-    ['Required Level', item.requiredLevel ?? '—'],
-    ['Sell Price',     formatGold(item.sellPrice)],
-    ['Category',       item.category      || '—'],
-  ];
+  const cat = item.category || '';
+  let fields;
+  if (cat === 'fish' || item.itemSubclass === 'Fish') {
+    fields = [
+      ['Quality',    item.quality],
+      ['Weight',     item.weightLbs  != null ? `${item.weightLbs} lbs` : '—'],
+      ['Length',     item.lengthIn   != null ? `${item.lengthIn} in`   : '—'],
+      ['Location',   item.location   || '—'],
+      ['Expansion',  item.expansion  || '—'],
+      ['Bait',       item.bait       || '—'],
+      ['Weather',    item.weather    || '—'],
+      ['Fish Type',  item.fishType   || '—'],
+      ['Drop Rate',  item.dropRate   || '—'],
+      ['Sell Price', formatGold(item.sellPrice)],
+    ];
+  } else if (cat === 'mounts') {
+    fields = [
+      ['Source',      item.source   || '—'],
+      ['Faction',     item.faction  || 'All'],
+    ];
+  } else if (cat === 'pets') {
+    fields = [
+      ['Pet Type',    item.petType  || '—'],
+      ['Source',      item.source   || '—'],
+    ];
+  } else if (cat === 'toys') {
+    fields = [
+      ['Source',      item.source   || '—'],
+      ['Item ID',     item.itemId   || item.id],
+    ];
+  } else {
+    fields = [
+      ['Item Class',     item.itemClass     || '—'],
+      ['Subclass',       item.itemSubclass  || '—'],
+      ['Item Level',     item.level         ?? '—'],
+      ['Required Level', item.requiredLevel ?? '—'],
+      ['Sell Price',     formatGold(item.sellPrice)],
+      ['Category',       item.category      || '—'],
+    ];
+  }
   document.getElementById('modalGrid').innerHTML = fields.map(([l,v]) => `
     <div class="modal-field">
       <div class="modal-field-label">${l}</div>
