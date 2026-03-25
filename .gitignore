@@ -7,6 +7,10 @@ fetch/
 *.env
 config.local.js
 secrets.js
+credentials.js
+credentials.json
+api-keys.js
+*.key
 
 # ── OS / editor junk ──
 .DS_Store
@@ -27,3 +31,18 @@ data/local/
 *.bak
 *.orig
 *~
+
+# ── Node (if you ever use it) ──
+node_modules/
+package-lock.json
+
+# ── Build output ──
+dist/
+build/
+
+# ── Test/dev files ──
+test.html
+dev.html
+draft-*.html
+_old/
+_backup/
