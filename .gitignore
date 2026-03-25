@@ -2,8 +2,28 @@
 admin.html
 fetch/
 
+# ── API credentials — NEVER commit these ──
+.env
+*.env
+config.local.js
+secrets.js
+
 # ── OS / editor junk ──
 .DS_Store
 Thumbs.db
 desktop.ini
 *.log
+
+# ── VS Code ──
+.vscode/settings.json
+.vscode/launch.json
+
+# ── Local data overrides ──
+data/local/
+*.local.json
+
+# ── Temp / backup files ──
+*.tmp
+*.bak
+*.orig
+*~
