@@ -1095,6 +1095,80 @@ select.vt-sort:focus{border-color:var(--gold-dim);}
         </div>
 
       </div>
+      <div class="idp-title">
+        <div class="idp-eyebrow" id="idpEyebrow"></div>
+        <div class="idp-name" id="idpName"></div>
+        <div class="idp-quality-badge" id="idpQBadge"></div>
+        <div class="idp-type-row" id="idpTypeRow"></div>
+      </div>
+      <button class="idp-close" onclick="closeItemDetail()" aria-label="Close">✕</button>
+    </div>
+
+    <!-- BODY: main + sidebar -->
+    <div class="idp-body">
+
+      <!-- LEFT: 3D model + description + stats + related -->
+      <div class="idp-main">
+
+        <!-- 3D MODEL VIEWER -->
+        <div class="idp-model-wrap" id="idpModelWrap">
+          <div class="idp-model-shape" id="idpModelShape"></div>
+          <div class="idp-model-hint">Drag to rotate · Scroll to zoom</div>
+        </div>
+
+        <!-- LORE / DESCRIPTION -->
+        <div class="idp-lore" id="idpLore" style="display:none"></div>
+
+        <!-- KEY STATS -->
+        <div class="idp-stats-grid" id="idpStatsGrid"></div>
+
+        <!-- ACHIEVEMENT POINTS BLOCK (achievements only) -->
+        <div id="idpAchBlock" style="display:none">
+          <div class="idp-ach-points">
+            <div>
+              <div class="idp-ach-pts-num" id="idpAchPts">0</div>
+              <div class="idp-ach-pts-label">Achievement Points</div>
+            </div>
+            <div style="margin-left:auto" id="idpAchWide"></div>
+          </div>
+        </div>
+
+        <!-- RELATED ITEMS -->
+        <div class="idp-related" id="idpRelated" style="display:none">
+          <div class="idp-section-title">Related Items</div>
+          <div class="idp-related-grid" id="idpRelatedGrid"></div>
+        </div>
+
+      </div>
+
+      <!-- RIGHT: sidebar quick-facts -->
+      <div class="idp-side">
+
+        <!-- QUICK FACTS -->
+        <div class="idp-sidebar-panel">
+          <div class="idp-section-title">Quick Facts</div>
+          <div id="idpQuickFacts"></div>
+        </div>
+
+        <!-- SELL PRICE -->
+        <div class="idp-sidebar-panel" id="idpPricePanel" style="display:none">
+          <div class="idp-section-title">Sell Price</div>
+          <div class="idp-price" id="idpPriceEl"></div>
+        </div>
+
+        <!-- FISH DETAILS -->
+        <div class="idp-sidebar-panel" id="idpFishPanel" style="display:none">
+          <div class="idp-section-title">Catch Details</div>
+          <div id="idpFishDetails"></div>
+        </div>
+
+        <!-- MOUNT / PET SOURCE -->
+        <div class="idp-sidebar-panel" id="idpSourcePanel" style="display:none">
+          <div class="idp-section-title">Source</div>
+          <div id="idpSourceDetails"></div>
+        </div>
+
+      </div>
     </div>
 
     <!-- ACTIONS BAR -->
@@ -1523,6 +1597,33 @@ function filterFaction(f,el){
   if(_factionFilter)items=items.filter(i=>(i.faction||'').includes(_factionFilter));
   ST.filtered=items;ST.page=1;renderPage();
 }
+
+
+/* LOAD REAL DATA FROM JSON FILE */
+const PAGE_CAT  = 'armor';
+const PAGE_FILE = 'armor';
+
+async function initPage(){
+  try{
+    const r = await fetch('data/armor.json');
+    if(!r.ok) throw new Error('HTTP '+r.status);
+    const items = await r.json();
+    ST.allItems = items;
+    applyFilters();
+    const c = document.getElementById('vtCount');
+    if(c) c.innerHTML = `<span>${items.length.toLocaleString()}</span> items`;
+  } catch(e) {
+    showEmpty('📦','No data file found',`Ensure data/armor.json exists in the data/ folder.`);
+    console.error(e);
+  }
+}
+
+function doSearch(){
+  const q = document.getElementById('navSearch')?.value.trim();
+  if(q) window.location.href='search.html?q='+encodeURIComponent(q);
+}
+
+document.getElementById('navSearch')?.addEventListener('keydown', e=>{ if(e.key==='Enter') doSearch(); });
 
 
 /* ── LOAD REAL DATA ── */

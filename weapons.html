@@ -1098,6 +1098,74 @@ select.vt-sort:focus{border-color:var(--gold-dim);}
         </div>
 
       </div>
+      <button class="idp-close" onclick="closeItemDetail()" aria-label="Close">✕</button>
+    </div>
+
+    <!-- BODY: main + sidebar -->
+    <div class="idp-body">
+
+      <!-- LEFT: 3D model + description + stats + related -->
+      <div class="idp-main">
+
+        <!-- 3D MODEL VIEWER -->
+        <div class="idp-model-wrap" id="idpModelWrap">
+          <div class="idp-model-shape" id="idpModelShape"></div>
+          <div class="idp-model-hint">Drag to rotate · Scroll to zoom</div>
+        </div>
+
+        <!-- LORE / DESCRIPTION -->
+        <div class="idp-lore" id="idpLore" style="display:none"></div>
+
+        <!-- KEY STATS -->
+        <div class="idp-stats-grid" id="idpStatsGrid"></div>
+
+        <!-- ACHIEVEMENT POINTS BLOCK (achievements only) -->
+        <div id="idpAchBlock" style="display:none">
+          <div class="idp-ach-points">
+            <div>
+              <div class="idp-ach-pts-num" id="idpAchPts">0</div>
+              <div class="idp-ach-pts-label">Achievement Points</div>
+            </div>
+            <div style="margin-left:auto" id="idpAchWide"></div>
+          </div>
+        </div>
+
+        <!-- RELATED ITEMS -->
+        <div class="idp-related" id="idpRelated" style="display:none">
+          <div class="idp-section-title">Related Items</div>
+          <div class="idp-related-grid" id="idpRelatedGrid"></div>
+        </div>
+
+      </div>
+
+      <!-- RIGHT: sidebar quick-facts -->
+      <div class="idp-side">
+
+        <!-- QUICK FACTS -->
+        <div class="idp-sidebar-panel">
+          <div class="idp-section-title">Quick Facts</div>
+          <div id="idpQuickFacts"></div>
+        </div>
+
+        <!-- SELL PRICE -->
+        <div class="idp-sidebar-panel" id="idpPricePanel" style="display:none">
+          <div class="idp-section-title">Sell Price</div>
+          <div class="idp-price" id="idpPriceEl"></div>
+        </div>
+
+        <!-- FISH DETAILS -->
+        <div class="idp-sidebar-panel" id="idpFishPanel" style="display:none">
+          <div class="idp-section-title">Catch Details</div>
+          <div id="idpFishDetails"></div>
+        </div>
+
+        <!-- MOUNT / PET SOURCE -->
+        <div class="idp-sidebar-panel" id="idpSourcePanel" style="display:none">
+          <div class="idp-section-title">Source</div>
+          <div id="idpSourceDetails"></div>
+        </div>
+
+      </div>
     </div>
 
     <!-- ACTIONS BAR -->
@@ -1528,6 +1596,33 @@ function filterFaction(f,el){
 }
 
 
+/* LOAD REAL DATA FROM JSON FILE */
+const PAGE_CAT  = 'weapons';
+const PAGE_FILE = 'weapons';
+
+async function initPage(){
+  try{
+    const r = await fetch('data/weapons.json');
+    if(!r.ok) throw new Error('HTTP '+r.status);
+    const items = await r.json();
+    ST.allItems = items;
+    applyFilters();
+    const c = document.getElementById('vtCount');
+    if(c) c.innerHTML = `<span>${items.length.toLocaleString()}</span> items`;
+  } catch(e) {
+    showEmpty('📦','No data file found',`Ensure data/weapons.json exists in the data/ folder.`);
+    console.error(e);
+  }
+}
+
+function doSearch(){
+  const q = document.getElementById('navSearch')?.value.trim();
+  if(q) window.location.href='search.html?q='+encodeURIComponent(q);
+}
+
+document.getElementById('navSearch')?.addEventListener('keydown', e=>{ if(e.key==='Enter') doSearch(); });
+
+
 /* ── LOAD REAL DATA ── */
 async function initPage() {
   try {
@@ -1549,6 +1644,330 @@ async function initPage() {
 document.addEventListener('DOMContentLoaded', () => {
   try { const v = localStorage.getItem('forgeView'); setView(v || 'grid'); } catch(e) { setView('grid'); }
   initPage();
+});
+
+
+/* ═══════════════════════════════════════════════════════
+   WOWHEAD-STYLE ITEM DETAIL ENGINE
+═══════════════════════════════════════════════════════ */
+
+const QC_HEX = {
+  "Poor":"#9d9d9d","Common":"#e0e0e0","Uncommon":"#1eff00",
+  "Rare":"#0070dd","Epic":"#a335ee","Legendary":"#ff8000",
+  "Artifact":"#e6cc80","default":"#E6A11C"
+};
+function qHex(q){ return QC_HEX[q]||QC_HEX.default; }
+
+function fmtGold(copper){
+  if(!copper||copper<=0) return '<span style="color:var(--text-dim)">No sell value</span>';
+  const g=Math.floor(copper/10000), s=Math.floor((copper%10000)/100), c=copper%100;
+  let out='';
+  if(g) out+=`<span class="price-g">${g}<span>g</span></span> `;
+  if(s) out+=`<span class="price-s">${s}<span>s</span></span> `;
+  if(c) out+=`<span class="price-c">${c}<span>c</span></span>`;
+  return out||'0c';
+}
+
+function makeStat(label, value, cls=''){
+  return `<div class="idp-stat"><div class="idp-stat-label">${label}</div><div class="idp-stat-value ${cls}">${value}</div></div>`;
+}
+function makeSideRow(key, value){
+  return `<div class="idp-sidebar-row"><span class="idp-sidebar-key">${key}</span><span class="idp-sidebar-val">${value}</span></div>`;
+}
+function makeChip(text){
+  return text ? `<span class="idp-type-chip">${text}</span>` : '';
+}
+
+/* ── 3D MODEL in detail panel ── */
+let _idpScene, _idpCamera, _idpRenderer, _idpMesh, _idpRAF;
+let _idpDrag=false, _idpLX=0, _idpLY=0, _idpRX=0, _idpRY=0;
+let _idpInited=false;
+
+function idpInitRenderer(){
+  if(_idpInited) return;
+  _idpInited = true;
+  const wrap = document.getElementById('idpModelWrap');
+  _idpRenderer = new THREE.WebGLRenderer({antialias:true, alpha:true});
+  _idpRenderer.setPixelRatio(Math.min(devicePixelRatio,2));
+  _idpRenderer.setClearColor(0,0);
+  _idpRenderer.setSize(wrap.clientWidth||440, 220);
+  wrap.insertBefore(_idpRenderer.domElement, wrap.firstChild);
+
+  _idpScene = new THREE.Scene();
+  _idpCamera = new THREE.PerspectiveCamera(45, (wrap.clientWidth||440)/220, .1, 100);
+  _idpCamera.position.z = 3.0;
+
+  _idpScene.add(new THREE.AmbientLight(0xffffff, .7));
+  const d1 = new THREE.DirectionalLight(0xfff8e0, 2.0);
+  d1.position.set(3,4,3); _idpScene.add(d1);
+  const d2 = new THREE.DirectionalLight(0x4040ff, .3);
+  d2.position.set(-3,-2,-2); _idpScene.add(d2);
+  const pt = new THREE.PointLight(0xE6A11C, 1.2, 10);
+  pt.position.set(0,2,2); _idpScene.add(pt);
+
+  const el = _idpRenderer.domElement;
+  el.addEventListener('mousedown', e=>{_idpDrag=true;_idpLX=e.clientX;_idpLY=e.clientY;});
+  window.addEventListener('mouseup', ()=>_idpDrag=false);
+  window.addEventListener('mousemove', e=>{
+    if(!_idpDrag||!_idpMesh) return;
+    _idpRY+=(e.clientX-_idpLX)*.009; _idpRX+=(e.clientY-_idpLY)*.009;
+    _idpMesh.rotation.y=_idpRY; _idpMesh.rotation.x=_idpRX;
+    _idpLX=e.clientX; _idpLY=e.clientY;
+  });
+  el.addEventListener('touchstart',e=>{_idpDrag=true;_idpLX=e.touches[0].clientX;_idpLY=e.touches[0].clientY;},{passive:true});
+  el.addEventListener('touchend',()=>_idpDrag=false);
+  el.addEventListener('touchmove',e=>{
+    if(!_idpDrag||!_idpMesh) return;
+    _idpRY+=(e.touches[0].clientX-_idpLX)*.009; _idpRX+=(e.touches[0].clientY-_idpLY)*.009;
+    _idpMesh.rotation.y=_idpRY; _idpMesh.rotation.x=_idpRX;
+    _idpLX=e.touches[0].clientX; _idpLY=e.touches[0].clientY;
+  },{passive:true});
+  // Scroll to zoom
+  el.addEventListener('wheel', e=>{
+    _idpCamera.position.z = Math.max(1.2, Math.min(5, _idpCamera.position.z + e.deltaY*.003));
+    e.preventDefault();
+  },{passive:false});
+}
+
+function idpLoadModel(item){
+  idpInitRenderer();
+  cancelAnimationFrame(_idpRAF);
+  if(_idpMesh){ _idpScene.remove(_idpMesh); _idpMesh=null; }
+  _idpRX=0; _idpRY=0;
+  if(typeof M3D !== 'undefined'){
+    _idpMesh = M3D._buildFull ? M3D._buildFull(item) : null;
+  }
+  // Build from Three.js shapes (same engine as tooltip)
+  if(!_idpMesh){
+    const shape = typeof M3D!=='undefined' ? M3D.getShape(item) : 'orb';
+    const col   = parseInt(qHex(item.quality).replace('#',''),16);
+    _idpMesh = buildDetailModel(shape, col);
+  }
+  _idpScene.add(_idpMesh);
+  // Update shape label
+  const shapeEl = document.getElementById('idpModelShape');
+  if(shapeEl) shapeEl.textContent = typeof M3D!=='undefined' ? M3D.getShape(item) : '';
+
+  const wrap = document.getElementById('idpModelWrap');
+  _idpRenderer.setSize(wrap.clientWidth, 220);
+  _idpCamera.aspect = wrap.clientWidth/220;
+  _idpCamera.updateProjectionMatrix();
+
+  let t=0;
+  function loop(){
+    _idpRAF = requestAnimationFrame(loop);
+    t+=.008;
+    if(!_idpDrag){
+      _idpRY+=.007; _idpMesh.rotation.y=_idpRY;
+      _idpMesh.rotation.x = Math.sin(t*.5)*.08;
+    }
+    _idpRenderer.render(_idpScene,_idpCamera);
+  }
+  loop();
+}
+
+function buildDetailModel(shape, col){
+  // Reuse M3D build if available, otherwise make a simple orb
+  if(typeof M3D !== 'undefined' && M3D.lMod){
+    // Build a standalone group using same shapes
+    const g = new THREE.Group();
+    const mt = (c,o={})=> new THREE.MeshStandardMaterial({color:c,metalness:o.m||.72,roughness:o.r||.25,emissive:c,emissiveIntensity:o.ei||.12,transparent:o.tr||false,opacity:o.op||1});
+    const gm = (c)=> new THREE.MeshStandardMaterial({color:c,metalness:.05,roughness:0,transparent:true,opacity:.9,emissive:c,emissiveIntensity:.5});
+    switch(shape){
+      case'sword':{const bl=new THREE.Mesh(new THREE.CylinderGeometry(.05,.01,1.9,6),mt(0xc0d0e0,{m:.93,r:.08}));bl.position.y=.62;g.add(bl);g.add(new THREE.Mesh(new THREE.BoxGeometry(.62,.075,.12),mt(col,{ei:.3})));const ha=new THREE.Mesh(new THREE.CylinderGeometry(.045,.045,.52,8),mt(0x5a3010,{m:.2,r:.8}));ha.position.y=-.34;g.add(ha);g.add(Object.assign(new THREE.Mesh(new THREE.SphereGeometry(.1,8,8),mt(col,{ei:.45})),{position:new THREE.Vector3(0,-.64,0)}));g.add(Object.assign(new THREE.Mesh(new THREE.OctahedronGeometry(.075),gm(col)),{position:new THREE.Vector3(0,.02,.1)}));g.position.y=-.25;break;}
+      case'axe':{g.add(new THREE.Mesh(new THREE.CylinderGeometry(.038,.05,1.4,8),mt(0x5a3010,{m:.2,r:.8})));const ah=new THREE.Mesh(new THREE.BoxGeometry(.72,.58,.11),mt(0xa0b8c8,{m:.9,r:.14}));ah.position.set(.2,.48,0);g.add(ah);const aa=new THREE.Mesh(new THREE.BoxGeometry(.09,.58,.13),mt(col,{ei:.28}));aa.position.set(-.06,.48,0);g.add(aa);g.position.y=-.22;break;}
+      case'staff':{g.add(new THREE.Mesh(new THREE.CylinderGeometry(.028,.038,2.2,8),mt(0x3a2010,{m:.15,r:.85})));const ob=new THREE.Mesh(new THREE.SphereGeometry(.18,14,14),mt(col,{ei:.6,tr:true,op:.88,m:.05,r:0}));ob.position.y=1.22;g.add(ob);g.add(Object.assign(new THREE.Mesh(new THREE.SphereGeometry(.09,10,10),mt(0xffffff,{ei:1.5,tr:true,op:.3})),{position:new THREE.Vector3(0,1.22,0)}));for(let i=0;i<3;i++){const ri=new THREE.Mesh(new THREE.TorusGeometry(.045,.011,6,18),mt(col,{ei:.18}));ri.position.y=.22+i*.6;ri.rotation.x=Math.PI/2;g.add(ri);}g.position.y=-.55;break;}
+      case'shield':{const fa=new THREE.Mesh(new THREE.CylinderGeometry(.58,.58,.09,8),new THREE.MeshStandardMaterial({color:0x8098a8,metalness:.8,roughness:.22,side:THREE.DoubleSide}));fa.rotation.x=Math.PI/2;g.add(fa);g.add(Object.assign(new THREE.Mesh(new THREE.SphereGeometry(.17,8,8),mt(col,{ei:.35})),{position:new THREE.Vector3(0,0,.08)}));g.add(Object.assign(new THREE.Mesh(new THREE.TorusGeometry(.58,.034,6,22),mt(col,{ei:.18})),{rotation:new THREE.Euler(Math.PI/2,0,0),position:new THREE.Vector3(0,0,.01)}));break;}
+      case'ring':{g.add(new THREE.Mesh(new THREE.TorusGeometry(.26,.058,10,44),mt(col,{m:.92,r:.06,ei:.15})));g.add(Object.assign(new THREE.Mesh(new THREE.OctahedronGeometry(.09),gm(col)),{position:new THREE.Vector3(0,.26,.06)}));break;}
+      case'potion':{g.add(new THREE.Mesh(new THREE.CylinderGeometry(.18,.21,.46,10),mt(col,{ei:.5,tr:true,op:.8,m:.05,r:.1})));const ne=new THREE.Mesh(new THREE.CylinderGeometry(.06,.14,.22,8),mt(0x8a9aaa,{m:.7,r:.3}));ne.position.y=.35;g.add(ne);g.position.y=-.12;break;}
+      case'helm':{const dm=new THREE.Mesh(new THREE.SphereGeometry(.36,10,10,0,Math.PI*2,0,Math.PI*.65),mt(0x8a9ab0,{m:.85,r:.2}));dm.position.y=.05;g.add(dm);g.add(Object.assign(new THREE.Mesh(new THREE.BoxGeometry(.5,.07,.38),mt(0x6a7a8a,{m:.9,r:.15})),{position:new THREE.Vector3(0,-.04,0)}));g.add(Object.assign(new THREE.Mesh(new THREE.BoxGeometry(.06,.35,.28),mt(col,{ei:.22})),{position:new THREE.Vector3(0,.32,0)}));g.add(Object.assign(new THREE.Mesh(new THREE.OctahedronGeometry(.07),gm(col)),{position:new THREE.Vector3(0,.1,.32)}));break;}
+      case'dagger':{const bl=new THREE.Mesh(new THREE.CylinderGeometry(.024,.006,1.05,5),mt(0xd8e0f0,{m:.95,r:.07}));bl.position.y=.38;g.add(bl);g.add(new THREE.Mesh(new THREE.BoxGeometry(.32,.06,.09),mt(col,{ei:.22})));g.add(Object.assign(new THREE.Mesh(new THREE.CylinderGeometry(.034,.034,.38,7),mt(0x2a1808,{m:.2,r:.9})),{position:new THREE.Vector3(0,-.22,0)}));g.position.y=-.12;break;}
+      case'bow':{const ar=new THREE.Mesh(new THREE.TorusGeometry(.62,.046,8,22,Math.PI*1.4),mt(0x5a3808,{m:.2,r:.7}));ar.rotation.z=Math.PI*.3;g.add(ar);const pts=[new THREE.Vector3(-.34,.58,0),new THREE.Vector3(0,-.04,0),new THREE.Vector3(.44,-.56,0)];g.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(pts),new THREE.LineBasicMaterial({color:0xd0c090})));break;}
+      default:{g.add(new THREE.Mesh(new THREE.IcosahedronGeometry(.3,1),mt(col,{ei:.4})));for(let i=0;i<2;i++){const ri=new THREE.Mesh(new THREE.TorusGeometry(.38,.016,6,38),mt(col,{ei:.28}));ri.rotation.x=Math.PI/2+i*Math.PI/3;g.add(ri);}break;}
+    }
+    return g;
+  }
+  // Fallback sphere
+  const g=new THREE.Group();
+  g.add(new THREE.Mesh(new THREE.IcosahedronGeometry(.3,1),new THREE.MeshStandardMaterial({color:col,metalness:.72,roughness:.25,emissive:col,emissiveIntensity:.12})));
+  return g;
+}
+
+/* ── MAIN OPEN FUNCTION ── */
+let _currentDetailItem = null;
+
+function openItemDetail(item) {
+  if(!item) return;
+  _currentDetailItem = item;
+  const q = item.quality || 'Common';
+  const color = qHex(q);
+  const cat = item.category || '';
+
+  // Quality bar + name color
+  document.getElementById('idpQualityBar').style.background = color;
+  document.getElementById('idpQualityBar').style.boxShadow = `0 0 18px ${color}`;
+  const nameEl = document.getElementById('idpName');
+  nameEl.textContent = item.name || 'Unknown Item';
+  nameEl.style.color = color;
+  nameEl.style.textShadow = `0 0 20px ${color}44`;
+
+  // Eyebrow
+  document.getElementById('idpEyebrow').textContent =
+    [item.itemClass, item.itemSubClass].filter(Boolean).join(' › ') ||
+    cat.replace(/_/g,' ').replace(/\w/g,c=>c.toUpperCase());
+
+  // Quality badge
+  const qb = document.getElementById('idpQBadge');
+  qb.textContent = q; qb.style.color = color; qb.style.borderColor = color+'55';
+
+  // Icon
+  const iconEl = document.getElementById('idpIconEl');
+  if(item.icon && item.icon !== 'None'){
+    iconEl.innerHTML = `<img class="idp-icon" src="${item.icon}" alt="${item.name}" onerror="this.outerHTML='<div class=idp-icon-ph>?</div>'">`;
+  } else {
+    const icons={weapons:'⚔️',armor:'🛡️',mounts:'🐴',pets:'🐾',fish:'🐟',achievements:'🏆',housing:'🏠',consumables:'🧪',gems:'💎',recipes:'📜',tradegoods:'⚗️',containers:'🎒',glyphs:'✨',keys:'🗝️'};
+    iconEl.innerHTML = `<div class="idp-icon-ph">${icons[cat]||'📦'}</div>`;
+  }
+
+  // Item level badge
+  const ilvlEl = document.getElementById('idpIlvl');
+  if(item.level){ ilvlEl.textContent='ilvl '+item.level; ilvlEl.style.display=''; }
+  else ilvlEl.style.display='none';
+
+  // Type chips
+  const chips = [item.itemClass, item.itemSubClass, item.petType, item.achCategory].filter(Boolean);
+  document.getElementById('idpTypeRow').innerHTML = chips.map(makeChip).join('');
+
+  // Description / lore
+  const loreEl = document.getElementById('idpLore');
+  if(item.description){ loreEl.textContent='"'+item.description+'"'; loreEl.style.display=''; }
+  else loreEl.style.display='none';
+
+  // ── STATS GRID ──
+  const stats = [];
+  if(item.level)         stats.push(makeStat('Item Level', item.level, 'gold'));
+  if(item.requiredLevel) stats.push(makeStat('Required Level', item.requiredLevel));
+  if(item.itemClass)     stats.push(makeStat('Item Class', item.itemClass));
+  if(item.itemSubClass)  stats.push(makeStat('Item Type', item.itemSubClass));
+  if(item.faction)       stats.push(makeStat('Faction', item.faction, item.faction==='Alliance'?'alliance':item.faction==='Horde'?'horde':''));
+  if(item.petType)       stats.push(makeStat('Pet Type', item.petType, 'cyan'));
+  if(item.source)        stats.push(makeStat('Source', item.source));
+  if(item.fishType)      stats.push(makeStat('Fish Type', item.fishType));
+  if(item.expansion)     stats.push(makeStat('Expansion', item.expansion));
+  document.getElementById('idpStatsGrid').innerHTML = stats.join('');
+
+  // ── ACHIEVEMENT BLOCK ──
+  const achBlock = document.getElementById('idpAchBlock');
+  if(cat === 'achievements' && item.points){
+    achBlock.style.display='';
+    document.getElementById('idpAchPts').textContent = item.points;
+    const wideEl = document.getElementById('idpAchWide');
+    wideEl.innerHTML = item.accountWide ? '<div class="idp-ach-wide">Account Wide</div>' : '';
+  } else achBlock.style.display='none';
+
+  // ── QUICK FACTS (sidebar) ──
+  const qfRows = [];
+  qfRows.push(makeSideRow('Item ID', '#'+item.id));
+  if(item.category) qfRows.push(makeSideRow('Category', item.category.replace(/_/g,' ').replace(/\w/g,c=>c.toUpperCase())));
+  if(item.level)    qfRows.push(makeSideRow('Item Level', item.level));
+  if(item.requiredLevel) qfRows.push(makeSideRow('Req. Level', item.requiredLevel));
+  if(item.itemSubClass)  qfRows.push(makeSideRow('Type', item.itemSubClass));
+  if(item.faction)       qfRows.push(makeSideRow('Faction', `<span class="${item.faction==='Alliance'?'alliance':item.faction==='Horde'?'horde':''}">${item.faction}</span>`));
+  if(item.achCategory)   qfRows.push(makeSideRow('Ach. Category', item.achCategory));
+  if(item.points)        qfRows.push(makeSideRow('Points', item.points+'⭐'));
+  if(item.accountWide!==undefined) qfRows.push(makeSideRow('Account Wide', item.accountWide?'✓ Yes':'✗ No'));
+  if(item.petType)       qfRows.push(makeSideRow('Pet Type', item.petType));
+  if(item.source)        qfRows.push(makeSideRow('Source', item.source));
+  document.getElementById('idpQuickFacts').innerHTML = qfRows.join('');
+
+  // ── SELL PRICE ──
+  const pricePanel = document.getElementById('idpPricePanel');
+  if(item.sellPrice && item.sellPrice > 0){
+    pricePanel.style.display='';
+    document.getElementById('idpPriceEl').innerHTML = fmtGold(item.sellPrice);
+  } else pricePanel.style.display='none';
+
+  // ── FISH DETAILS ──
+  const fishPanel = document.getElementById('idpFishPanel');
+  if(cat === 'fish'){
+    fishPanel.style.display='';
+    let fishHtml = '';
+    if(item.weightLbs) fishHtml += makeSideRow('Weight',item.weightLbs+' lbs');
+    if(item.lengthIn)  fishHtml += makeSideRow('Length',item.lengthIn+'"');
+    if(item.location)  fishHtml += makeSideRow('Location',item.location);
+    if(item.bait)      fishHtml += makeSideRow('Bait',item.bait);
+    if(item.expansion) fishHtml += makeSideRow('Expansion',item.expansion);
+    document.getElementById('idpFishDetails').innerHTML = fishHtml;
+  } else fishPanel.style.display='none';
+
+  // ── MOUNT / PET SOURCE ──
+  const srcPanel = document.getElementById('idpSourcePanel');
+  if((cat==='mounts'||cat==='pets') && item.source){
+    srcPanel.style.display='';
+    let srcHtml = makeSideRow('How to Obtain', item.source);
+    if(item.faction) srcHtml += makeSideRow('Faction', item.faction);
+    document.getElementById('idpSourceDetails').innerHTML = srcHtml;
+  } else srcPanel.style.display='none';
+
+  // ── WOWHEAD LINK ──
+  document.getElementById('idpWowheadBtn').href = item.wowhead || `https://www.wowhead.com/item=${item.id}`;
+
+  // ── RELATED ITEMS (same subclass) ──
+  const relBlock = document.getElementById('idpRelated');
+  const relGrid  = document.getElementById('idpRelatedGrid');
+  if(ST && ST.allItems){
+    const related = ST.allItems.filter(i =>
+      i.id !== item.id &&
+      (i.itemSubClass === item.itemSubClass || i.petType === item.petType || i.achCategory === item.achCategory) &&
+      i.icon
+    ).slice(0, 8);
+    if(related.length >= 2){
+      relGrid.innerHTML = related.map(ri => {
+        const rc = qHex(ri.quality);
+        return `<div class="idp-related-item" onclick="openItemDetail(ST.allItems.find(x=>x.id===${ri.id}))">
+          <img src="${ri.icon}" alt="" onerror="this.style.display='none'">
+          <div class="idp-related-name" style="color:${rc}">${ri.name}</div>
+        </div>`;
+      }).join('');
+      relBlock.style.display='';
+    } else relBlock.style.display='none';
+  } else relBlock.style.display='none';
+
+  // ── LOAD 3D MODEL ──
+  idpLoadModel(item);
+
+  // ── OPEN OVERLAY ──
+  const overlay = document.getElementById('itemDetailOverlay');
+  overlay.classList.add('open');
+  document.body.style.overflow='hidden';
+}
+
+function closeItemDetail(){
+  const overlay = document.getElementById('itemDetailOverlay');
+  overlay.classList.remove('open');
+  document.body.style.overflow='';
+  cancelAnimationFrame(_idpRAF);
+}
+
+function handleDetailBgClick(e){
+  if(e.target === document.getElementById('itemDetailOverlay')) closeItemDetail();
+}
+
+function idpCopyId(){
+  if(_currentDetailItem) navigator.clipboard?.writeText(String(_currentDetailItem.id));
+}
+function idpCopyLink(){
+  if(_currentDetailItem){
+    const url = _currentDetailItem.wowhead || `https://www.wowhead.com/item=${_currentDetailItem.id}`;
+    navigator.clipboard?.writeText(url);
+  }
+}
+
+// ESC to close
+document.addEventListener('keydown', e=>{
+  if(e.key==='Escape') closeItemDetail();
+});
+
 });
 
 

@@ -1520,6 +1520,33 @@ function filterFaction(f,el){
 }
 
 
+/* LOAD REAL DATA FROM JSON FILE */
+const PAGE_CAT  = 'mounts';
+const PAGE_FILE = 'mounts';
+
+async function initPage(){
+  try{
+    const r = await fetch('data/mounts.json');
+    if(!r.ok) throw new Error('HTTP '+r.status);
+    const items = await r.json();
+    ST.allItems = items;
+    applyFilters();
+    const c = document.getElementById('vtCount');
+    if(c) c.innerHTML = `<span>${items.length.toLocaleString()}</span> items`;
+  } catch(e) {
+    showEmpty('📦','No data file found',`Ensure data/mounts.json exists in the data/ folder.`);
+    console.error(e);
+  }
+}
+
+function doSearch(){
+  const q = document.getElementById('navSearch')?.value.trim();
+  if(q) window.location.href='search.html?q='+encodeURIComponent(q);
+}
+
+document.getElementById('navSearch')?.addEventListener('keydown', e=>{ if(e.key==='Enter') doSearch(); });
+
+
 /* ── LOAD REAL DATA ── */
 async function initPage() {
   try {
