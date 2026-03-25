@@ -543,20 +543,29 @@ select.vt-sort:focus{border-color:var(--gold-dim);}
   <div class="browse-layout">
     <aside class="sidebar">
       <div class="sb-box">
-        <div class="sb-title">Category</div>
+        <div class="sb-title">Categories</div>
         <ul class="sb-list">
-          <li><a onclick="loadCat('weapons',this)" class="active"><img class="ico" data-asset="icon_sword" src="" alt="">Weapons</a></li>
-          <li><a onclick="loadCat('armor',this)"><img class="ico" data-asset="icon_gear" src="" alt="">Armor</a></li>
-          <li><a onclick="loadCat('consumables',this)">🧪 Consumables</a></li>
-          <li><a onclick="loadCat('mounts',this)">🐴 Mounts</a></li>
-          <li><a onclick="loadCat('pets',this)"><img class="ico" data-asset="icon_spell" src="" alt="">Battle Pets</a></li>
-          <li><a onclick="loadCat('toys',this)">🧸 Toys</a></li>
-          <li><a onclick="loadCat('housing',this)">🏠 Housing</a></li>
-          <li><a onclick="loadCat('fish',this)">🐟 Fish</a></li>
+          <li><a class="active" onclick="loadAll(this)">📦 All Items</a></li>
+          <li><a href="weapons.html">⚔️ Weapons</a></li>
+          <li><a href="armor.html">🛡️ Armor</a></li>
+          <li><a href="consumables.html">🧪 Consumables</a></li>
+          <li><a href="gems.html">💎 Gems</a></li>
+          <li><a href="recipes.html">📜 Recipes</a></li>
+          <li><a href="tradegoods.html">⚗️ Trade Goods</a></li>
+          <li><a href="mounts.html">🐴 Mounts</a></li>
+          <li><a href="pets.html">🐾 Battle Pets</a></li>
+          <li><a href="toys.html">🧸 Toys</a></li>
+          <li><a href="housing.html">🏠 Housing</a></li>
+          <li><a href="fish.html">🐟 Fish</a></li>
+          <li><a href="containers.html">🎒 Containers</a></li>
+          <li><a href="achievements.html">🏆 Achievements</a></li>
+          <li><a href="quests.html">📋 Quest Items</a></li>
+          <li><a href="profession_tools.html">⚒️ Prof. Tools</a></li>
+          <li><a href="glyphs.html">✨ Glyphs</a></li>
+          <li><a href="keys.html">🗝️ Keys</a></li>
         </ul>
       </div>
-      <div class="sb-box">
-        <div class="sb-title">Quality</div>
+      <div class="sb-title">Quality</div>
         <div class="q-filter-list">
           <div class="q-pill q-legendary on" onclick="toggleQ('Legendary',this)"><div class="q-dot"></div>Legendary</div>
           <div class="q-pill q-epic on" onclick="toggleQ('Epic',this)"><div class="q-dot"></div>Epic</div>
@@ -880,8 +889,6 @@ document.addEventListener("keydown",e=>{if(e.key==="Escape")closeDetail();});
 
 /* SEARCH */
 function doSearch(){const q=document.getElementById("navSearch")?.value.trim();if(q)window.location.href="search.html?q="+encodeURIComponent(q);}
-document.addEventListener("DOMContentLoaded",()=>{
-  document.getElementById("navSearch")?.addEventListener("keydown",e=>{if(e.key==="Enter")doSearch();});
 });
 
 
@@ -891,38 +898,7 @@ function setSortClick(val,el){
   document.getElementById('sortSel').value=val;
   applyFilters();
 }
-document.addEventListener('DOMContentLoaded',()=>loadCat('weapons',document.querySelector('.sb-list li a')));
-
-DB.weapons=[{id:19019,name:"Thunderfury, Blessed Blade of the Windseeker",quality:"Legendary",level:80,itemClass:"Weapon",itemSubClass:"Sword",sellPrice:1234500,description:"Whosoever holds this hammer, if he be worthy..."},{id:17182,name:"Sulfuras, Hand of Ragnaros",quality:"Legendary",level:80,itemClass:"Weapon",itemSubClass:"Mace",sellPrice:980000,description:"I am Ragnaros the Firelord!"},{id:22589,name:"Atiesh, Greatstaff of the Guardian",quality:"Legendary",level:65,itemClass:"Weapon",itemSubClass:"Staff",description:"The staff of the Guardian of Tirisfal."},{id:28383,name:"Warglaive of Azzinoth",quality:"Legendary",level:100,itemClass:"Weapon",itemSubClass:"Sword",sellPrice:500000},{id:49623,name:"Shadowmourne",quality:"Legendary",level:284,itemClass:"Weapon",itemSubClass:"Axe",description:"Forged from the shards of Frostmourne."},{id:128476,name:"Ashbringer",quality:"Artifact",level:750,itemClass:"Weapon",itemSubClass:"Sword",description:"Forged from a shard of Light."},{id:38082,name:"Thori'dal, the Stars' Fury",quality:"Legendary",level:100,itemClass:"Weapon",itemSubClass:"Bow"},{id:18609,name:"Brutality Blade",quality:"Epic",level:70,itemClass:"Weapon",itemSubClass:"Sword"},{id:18803,name:"Staff of the Shadowflame",quality:"Epic",level:74,itemClass:"Weapon",itemSubClass:"Staff"},{id:86978,name:"Gurthalak, Voice of the Deeps",quality:"Epic",level:410,itemClass:"Weapon",itemSubClass:"Sword"},{id:18816,name:"Alcor's Sunrazor",quality:"Epic",level:70,itemClass:"Weapon",itemSubClass:"Dagger"},{id:30621,name:"Black Bow of the Betrayer",quality:"Epic",level:115,itemClass:"Weapon",itemSubClass:"Bow"}];
-DB.armor=[{id:16921,name:"Breastplate of Wrath",quality:"Epic",level:66,itemClass:"Armor",itemSubClass:"Plate"},{id:16922,name:"Pauldrons of Wrath",quality:"Epic",level:66,itemClass:"Armor",itemSubClass:"Plate"},{id:16923,name:"Helm of Wrath",quality:"Epic",level:66,itemClass:"Armor",itemSubClass:"Plate"},{id:22349,name:"Helm of the Lightbringer",quality:"Epic",level:110,itemClass:"Armor",itemSubClass:"Plate"},{id:45428,name:"Conqueror's Aegis Tunic",quality:"Epic",level:219,itemClass:"Armor",itemSubClass:"Plate"},{id:71031,name:"Firelord's Mantle",quality:"Epic",level:378,itemClass:"Armor",itemSubClass:"Cloth"}];
-DB.consumables=[{id:33447,name:"Flask of Pure Death",quality:"Uncommon",level:65,itemClass:"Consumable",itemSubClass:"Flask"},{id:43569,name:"Fish Feast",quality:"Uncommon",level:70,itemClass:"Consumable",itemSubClass:"Food"},{id:13452,name:"Greater Fire Protection Potion",quality:"Common",level:45,itemClass:"Consumable",itemSubClass:"Potion"}];
-DB.mounts=[{id:40192,name:"Ashes of Al'ar",quality:"Epic",level:70,itemClass:"Mount",description:"The phoenix mount."},{id:54068,name:"Celestial Steed",quality:"Epic",level:20,itemClass:"Mount"},{id:32768,name:"Swift White Hawkstrider",quality:"Epic",level:70,itemClass:"Mount"}];
-DB.pets=[{id:82800,name:"Mechanical Pandaren Dragonling",quality:"Uncommon",level:1,itemClass:"Battle Pet"},{id:64402,name:"Lil' Ragnaros",quality:"Rare",level:1,itemClass:"Battle Pet"}];
-DB.toys=[{id:122355,name:"Crashin' Thrashin' Flamer",quality:"Common",itemClass:"Toy"}];
-DB.housing=[{id:210054,name:"Cozy Hearthfire Lantern",quality:"Uncommon",itemClass:"Housing"},{id:210055,name:"Ironforge Forge Replica",quality:"Rare",itemClass:"Housing"}];
-DB.fish=[{id:6291,name:"Raw Brilliant Smallfish",quality:"Common",level:1,itemClass:"Consumable",itemSubClass:"Fish",weightLbs:.5,location:"Various"},{id:4603,name:"Raw Spotted Yellowtail",quality:"Uncommon",level:35,itemClass:"Consumable",itemSubClass:"Fish",weightLbs:4.0,location:"Thousand Needles"}];
-
-
-/* ═══════════════════════════════════════════
-   VIEW MODE CONTROLLER
-═══════════════════════════════════════════ */
-const VIEWS = ['grid','list','compact','carousel','table'];
-let currentView = 'grid';
-let tableSort = { col: 'name', dir: 'asc' };
-let carouselPage = 0;
-const CAROUSEL_VISIBLE = 5;
-
-function setView(v) {
-  currentView = v;
-  const container = document.getElementById('itemsContainer');
-  if (!container) return;
-  VIEWS.forEach(view => container.classList.remove('view-' + view));
-  container.classList.add('view-' + v);
-  // Update toolbar buttons
-  document.querySelectorAll('.view-btn[data-view]').forEach(btn => {
-    btn.classList.toggle('active', btn.dataset.view === v);
-  });
-  // Re-render for view-specific layouts
+// Re-render for view-specific layouts
   if (v === 'carousel') renderCarousel();
   if (v === 'table') renderTable();
   // Save preference
@@ -1086,12 +1062,27 @@ function renderPage() {
 }
 
 /* Restore saved view on load */
-document.addEventListener('DOMContentLoaded', () => {
+
+/* ── LOAD ALL ITEMS FROM INDEX ── */
+async function initPage() {
   try {
-    const saved = localStorage.getItem('forgeView');
-    if (saved && VIEWS.includes(saved)) setView(saved);
-    else setView('grid');
-  } catch(e) { setView('grid'); }
+    showSkel();
+    const r = await fetch('data/index.json');
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    const items = await r.json();
+    ST.allItems = items;
+    applyFilters();
+    const c = document.getElementById('vtCount');
+    if (c) c.innerHTML = '<span>' + items.length.toLocaleString() + '</span> items';
+  } catch(e) {
+    showEmpty('📦', 'Could not load index.json', 'Place the data/ folder next to items.html. Error: ' + e.message);
+    console.error(e);
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  try { const v = localStorage.getItem('forgeView'); setView(v || 'grid'); } catch(e) { setView('grid'); }
+  initPage();
 });
 
 </script>

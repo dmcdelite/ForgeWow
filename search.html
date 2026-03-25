@@ -910,8 +910,6 @@ document.addEventListener("keydown",e=>{if(e.key==="Escape")closeDetail();});
 
 /* SEARCH */
 function doSearch(){const q=document.getElementById("navSearch")?.value.trim();if(q)window.location.href="search.html?q="+encodeURIComponent(q);}
-document.addEventListener("DOMContentLoaded",()=>{
-  document.getElementById("navSearch")?.addEventListener("keydown",e=>{if(e.key==="Enter")doSearch();});
 });
 
 
@@ -921,28 +919,19 @@ function switchTab(el,tab){
   el.classList.add('active');currentTab=tab;
   if(ST.allItems.length)runSearch();
 }
-function runSearch(){
+async function runSearch(){
   const q=(document.getElementById('bigSearch')?.value||'').trim().toLowerCase();
   const qual=document.getElementById('qualFilter')?.value||'';
   if(!q){document.getElementById('searchResultTitle').textContent='Enter a search term above';return;}
-  let results=[];
-  const all=[
-    {id:19019,name:"Thunderfury, Blessed Blade of the Windseeker",quality:"Legendary",level:80,itemClass:"Weapon",itemSubClass:"Sword",sellPrice:1234500,description:"The legendary blade of the Windseeker."},
-    {id:17182,name:"Sulfuras, Hand of Ragnaros",quality:"Legendary",level:80,itemClass:"Weapon",itemSubClass:"Mace",sellPrice:980000},
-    {id:22589,name:"Atiesh, Greatstaff of the Guardian",quality:"Legendary",level:65,itemClass:"Weapon",itemSubClass:"Staff"},
-    {id:28383,name:"Warglaive of Azzinoth",quality:"Legendary",level:100,itemClass:"Weapon",itemSubClass:"Sword"},
-    {id:49623,name:"Shadowmourne",quality:"Legendary",level:284,itemClass:"Weapon",itemSubClass:"Axe"},
-    {id:16921,name:"Breastplate of Wrath",quality:"Epic",level:66,itemClass:"Armor",itemSubClass:"Plate"},
-    {id:16923,name:"Helm of Wrath",quality:"Epic",level:66,itemClass:"Armor",itemSubClass:"Plate"},
-    {id:40192,name:"Ashes of Al'ar",quality:"Epic",level:70,itemClass:"Mount"},
-    {id:82800,name:"Mechanical Pandaren Dragonling",quality:"Uncommon",level:1,itemClass:"Battle Pet"},
-  ];
-  results=all.filter(i=>(i.name||'').toLowerCase().includes(q)||String(i.id).includes(q));
+  showSkel();
+  const all = await getSearchIndex();
+  let results=all.filter(i=>(i.name||'').toLowerCase().includes(q)||String(i.id).includes(q));
   if(qual)results=results.filter(i=>i.quality===qual);
   ST.allItems=results;ST.filtered=results;ST.page=1;
   document.getElementById('searchResultTitle').textContent=`Results for "${q}"`;
   renderPage();
   const m=document.getElementById('searchResultMeta');
+  if(m)m.innerHTML=`<span>${results.length}</span> results`;;
   if(m)m.innerHTML=`<span>${results.length}</span> results`;
 }
 document.getElementById('bigSearch')?.addEventListener('keydown',e=>{if(e.key==='Enter')runSearch();});
@@ -1133,12 +1122,43 @@ function renderPage() {
 }
 
 /* Restore saved view on load */
-document.addEventListener('DOMContentLoaded', () => {
+
+/* ── SEARCH: LOAD INDEX ── */
+let _searchIndex = null;
+
+async function getIndex() {
+  if (_searchIndex) return _searchIndex;
   try {
-    const saved = localStorage.getItem('forgeView');
-    if (saved && VIEWS.includes(saved)) setView(saved);
-    else setView('grid');
-  } catch(e) { setView('grid'); }
+    const r = await fetch('data/index.json');
+    _searchIndex = await r.json();
+  } catch(e) { _searchIndex = []; }
+  return _searchIndex;
+}
+
+async function runSearch() {
+  const q = (document.getElementById('bigSearch')?.value || '').trim().toLowerCase();
+  const qual = document.getElementById('qualFilter')?.value || '';
+  const cat  = document.getElementById('typeFilter')?.value || '';
+  if (!q) { document.getElementById('searchResultTitle').textContent = 'Enter a search term above'; return; }
+  showSkel();
+  const all = await getIndex();
+  let results = all.filter(i => (i.name||'').toLowerCase().includes(q) || String(i.id).includes(q));
+  if (qual) results = results.filter(i => i.quality === qual);
+  if (cat)  results = results.filter(i => (i.category||'') === cat);
+  ST.allItems = results; ST.filtered = results; ST.page = 1;
+  document.getElementById('searchResultTitle').textContent = 'Results for "' + q + '"';
+  renderPage();
+  const m = document.getElementById('searchResultMeta');
+  if (m) m.innerHTML = '<span>' + results.length.toLocaleString() + '</span> results found';
+  const c = document.getElementById('vtCount');
+  if (c) c.innerHTML = '<span>' + results.length.toLocaleString() + '</span> items';
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  try { const v = localStorage.getItem('forgeView'); setView(v || 'grid'); } catch(e) { setView('grid'); }
+  document.getElementById('bigSearch')?.addEventListener('keydown', e => { if (e.key === 'Enter') runSearch(); });
+  const urlQ = new URLSearchParams(window.location.search).get('q');
+  if (urlQ) { document.getElementById('bigSearch').value = urlQ; setTimeout(runSearch, 200); }
 });
 
 </script>

@@ -3,18 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Armor Database — All WoW Armor | ForgeWoWdatabase.com</title>
-<meta name="description" content="Browse every piece of armor in World of Warcraft. Filter by armor type (Plate, Mail, Leather, Cloth), slot, quality, and expansion.">
-<meta name="keywords" content="WoW armor, plate mail leather cloth, World of Warcraft gear">
+<title>🛡️ Armor — ForgeWoW Database</title>
+<meta name="description" content="Browse 420 WoW armor — . Full item details, icons and Wowhead links.">
+<meta name="keywords" content="WoW armor, World of Warcraft armor, armor database, WoW items">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://forgewowdatabase.com/armor.html">
-<meta property="og:title" content="Armor Database — All WoW Armor">
-<meta property="og:description" content="Browse every piece of armor in World of Warcraft. Filter by armor type (Plate, Mail, Leather, Cloth), slot, quality, and expansion.">
-<meta property="og:type" content="website">
+<meta property="og:title" content="Armor — ForgeWoW Database">
+<meta property="og:description" content="Browse 420 WoW armor — . Full item details, icons and Wowhead links.">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@400;600;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script src="forge-assets.js"></script>
 <style>
+
 
 :root{
   --gold:#E6A11C;--gold-bright:#f5be45;--gold-dim:#9a6c0e;
@@ -241,6 +241,11 @@ footer{background:rgba(0,0,0,.97);border-top:2px solid var(--border-gold);margin
 @media(max-width:900px){.sidebar-layout{grid-template-columns:1fr;}.foot-grid{grid-template-columns:1fr 1fr;}.nav-links{display:none;}}
 @media(max-width:540px){.foot-grid{grid-template-columns:1fr;}.items-grid{grid-template-columns:1fr 1fr;}}
 
+
+.browse-layout{display:grid;grid-template-columns:260px 1fr;gap:2rem;align-items:start;}
+.filter-tag{display:inline-flex;align-items:center;gap:.3rem;font-family:"Cinzel",serif;font-size:.55rem;letter-spacing:.1em;text-transform:uppercase;background:rgba(0,194,255,.08);border:1px solid rgba(0,194,255,.2);border-radius:2px;padding:.18rem .5rem;color:var(--cyan);cursor:pointer;}
+.filter-tag:hover{background:rgba(0,194,255,.15);}
+.active-filters{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:.8rem;}
 
 
 /* ═══════════════════════════════════════════
@@ -486,159 +491,270 @@ select.vt-sort:focus{border-color:var(--gold-dim);}
 .items-table .td-ilvl{text-align:center;font-family:"Cinzel",serif;font-size:.7rem;color:var(--gold-dim);}
 .items-table .td-sub{color:var(--text-dim);font-size:.78rem;}
 
+
+
+/* NAV MORE DROPDOWN */
+.nav-more-wrap{position:relative;display:inline-block;}
+.nav-more-btn{cursor:pointer;}
+.nav-more-drop{
+  display:none;position:absolute;top:calc(100% + 4px);left:0;z-index:500;
+  background:rgba(0,0,0,.98);border:1px solid var(--border-gold);
+  border-radius:4px;min-width:190px;padding:.3rem 0;
+  box-shadow:0 12px 32px rgba(0,0,0,.9);
+  flex-direction:column;
+}
+.nav-more-drop.open{display:flex;}
+.nav-more-drop .nav-link{padding:.42rem 1rem;display:block;width:100%;text-align:left;border:none;border-radius:0;}
+.nav-more-drop .nav-link:hover{background:rgba(230,161,28,.08);}
+
+/* ACHIEVEMENT CARDS */
+.ach-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:.85rem;}
+.ach-card{background:rgba(6,14,28,.92);border:1px solid var(--border-gold);border-radius:4px;
+  padding:.85rem;cursor:pointer;transition:all .2s;display:flex;gap:.75rem;align-items:flex-start;position:relative;overflow:hidden;}
+.ach-card::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;
+  background:linear-gradient(90deg,transparent,var(--gold-dim),transparent);opacity:0;transition:opacity .2s;}
+.ach-card:hover::before{opacity:1}
+.ach-card:hover{border-color:rgba(230,161,28,.45);transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.6);}
+.ach-icon-wrap{width:44px;height:44px;border-radius:4px;border:1px solid var(--border-gold);
+  object-fit:cover;flex-shrink:0;background:rgba(0,0,0,.5);overflow:hidden;}
+.ach-icon-wrap img{width:100%;height:100%;object-fit:cover;}
+.ach-icon-ph{width:44px;height:44px;border-radius:4px;border:1px solid var(--border-gold);
+  background:rgba(0,0,0,.5);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:1.2rem;}
+.ach-name{font-size:.88rem;font-weight:600;color:var(--text-bright);margin-bottom:.15rem;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.ach-cat-tag{font-family:"Cinzel",serif;font-size:.5rem;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--cyan);margin-bottom:.2rem;}
+.ach-desc{font-size:.76rem;color:var(--text);line-height:1.5;
+  overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;}
+.ach-points{font-family:"Cinzel",serif;font-size:.62rem;color:var(--gold-bright);margin-top:.2rem;}
+.ach-wide-badge{font-family:"Cinzel",serif;font-size:.48rem;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--text-dim);margin-left:.5rem;opacity:.7;}
+
+/* MOUNT GRID */
+.mount-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:.85rem;}
+.mount-card{background:rgba(6,14,28,.92);border:1px solid var(--border-gold);border-radius:4px;
+  padding:.85rem;cursor:pointer;transition:all .2s;display:flex;flex-direction:column;
+  align-items:center;text-align:center;gap:.4rem;}
+.mount-card:hover{border-color:rgba(0,194,255,.35);transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.6);}
+.mount-icon-wrap{width:64px;height:64px;border-radius:6px;border:1px solid var(--border-gold);
+  overflow:hidden;background:rgba(0,0,0,.5);}
+.mount-icon-wrap img{width:100%;height:100%;object-fit:cover;}
+.mount-icon-ph{width:64px;height:64px;border-radius:6px;border:1px solid var(--border-gold);
+  background:rgba(0,0,0,.5);display:flex;align-items:center;justify-content:center;font-size:2rem;}
+.mount-name{font-size:.78rem;font-weight:600;color:var(--text-bright);line-height:1.3;}
+.mount-faction{font-family:"Cinzel",serif;font-size:.5rem;letter-spacing:.1em;text-transform:uppercase;}
+.faction-Alliance{color:#0070dd;}.faction-Horde{color:#e05252;}.faction-neutral,.faction-Both{color:var(--text-dim);}
+.mount-source{font-size:.7rem;color:var(--text-dim);}
+
+/* PET GRID */
+.pet-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:.8rem;}
+.pet-card{background:rgba(6,14,28,.92);border:1px solid var(--border-gold);border-radius:4px;
+  padding:.75rem;cursor:pointer;transition:all .2s;display:flex;flex-direction:column;
+  align-items:center;text-align:center;gap:.35rem;}
+.pet-card:hover{border-color:rgba(0,194,255,.35);transform:translateY(-2px);}
+.pet-icon-wrap{width:52px;height:52px;border-radius:50%;border:2px solid var(--border-gold);overflow:hidden;background:rgba(0,0,0,.5);}
+.pet-icon-wrap img{width:100%;height:100%;object-fit:cover;}
+.pet-icon-ph{width:52px;height:52px;border-radius:50%;border:2px solid var(--border-gold);
+  background:rgba(0,0,0,.5);display:flex;align-items:center;justify-content:center;font-size:1.5rem;}
+.pet-name{font-size:.78rem;font-weight:600;color:var(--text-bright);line-height:1.3;}
+.pet-type{font-family:"Cinzel",serif;font-size:.49rem;letter-spacing:.1em;text-transform:uppercase;color:var(--cyan);}
+.pet-source{font-size:.68rem;color:var(--text-dim);}
+
+/* FISH SPECIFICS */
+.fish-stats{display:flex;gap:.7rem;margin-top:.3rem;flex-wrap:wrap;}
+.fish-stat{font-family:"Cinzel",serif;font-size:.52rem;letter-spacing:.08em;color:var(--text-dim);text-transform:uppercase;}
+.fish-stat span{color:var(--gold-dim);}
+
+/* CAT FILTER PILLS */
+.cat-filter-pills{display:flex;flex-wrap:wrap;gap:.32rem;margin-bottom:.8rem;}
+.cat-pill{font-family:"Cinzel",serif;font-size:.52rem;letter-spacing:.09em;text-transform:uppercase;
+  padding:.2rem .6rem;border:1px solid var(--border-cyan);border-radius:2px;
+  color:var(--text-dim);cursor:pointer;transition:all .14s;background:transparent;}
+.cat-pill:hover{border-color:var(--cyan);color:var(--cyan);}
+.cat-pill.active{border-color:var(--gold);color:var(--gold);background:rgba(230,161,28,.08);}
+
+/* STAT BADGE */
+.stat-badge{display:inline-flex;align-items:center;
+  font-family:"Cinzel",serif;font-size:.5rem;letter-spacing:.08em;text-transform:uppercase;
+  background:rgba(0,194,255,.07);border:1px solid rgba(0,194,255,.15);
+  border-radius:2px;padding:.12rem .4rem;color:var(--cyan);}
+
 </style>
 </head>
 <body>
 
-<nav class="top-nav" role="navigation" aria-label="Main navigation">
+<!-- NAV -->
+<nav class="top-nav" role="navigation">
   <div class="nav-inner">
-    <a class="nav-logo" href="index.html" aria-label="Forge WoW Database Home">
-      <img data-asset="logo" src="" alt="Forge WoW Database Logo">
+    <a class="nav-logo" href="index.html">
+      <img data-asset="logo" src="" alt="ForgeWoW Database Logo">
       <div>
         <div class="nav-logo-text">ForgeWOW</div>
         <span class="nav-logo-sub">Item Database</span>
       </div>
     </a>
     <div class="nav-links">
-      <a class="nav-link" href="index.html">Home</a>
-<a class="nav-link" href="items.html">Items</a>
-<a class="nav-link" href="weapons.html">Weapons</a>
-<a class="nav-link active" href="armor.html">Armor</a>
-<a class="nav-link" href="spells.html">Spells</a>
-<a class="nav-link" href="quests.html">Quests</a>
-<a class="nav-link" href="npcs.html">NPCs</a>
-<a class="nav-link" href="professions.html">Professions</a>
-<a class="nav-link" href="lore.html">Lore</a>
-<a class="nav-link" href="search.html">Search</a>
-
+      <a class="nav-link" href="weapons.html">⚔️ Weapons</a>
+      <a class="nav-link active" href="armor.html">🛡️ Armor</a>
+      <a class="nav-link" href="consumables.html">🧪 Consumables</a>
+      <a class="nav-link" href="gems.html">💎 Gems</a>
+      <a class="nav-link" href="mounts.html">🐴 Mounts</a>
+      <a class="nav-link" href="pets.html">🐾 Battle Pets</a>
+      <a class="nav-link" href="housing.html">🏠 Housing</a>
+      <a class="nav-link" href="achievements.html">🏆 Achievements</a>
+      <div class="nav-more-wrap"><button class="nav-link nav-more-btn" onclick="toggleMore(event)">More ▾</button><div class="nav-more-drop" id="navMoreDrop"><a class="nav-link" href="recipes.html">📜 Recipes</a><a class="nav-link" href="tradegoods.html">⚗️ Trade Goods</a><a class="nav-link" href="toys.html">🧸 Toys</a><a class="nav-link" href="fish.html">🐟 Fish</a><a class="nav-link" href="containers.html">🎒 Containers</a><a class="nav-link" href="quests.html">📋 Quest Items</a><a class="nav-link" href="profession_tools.html">⚒️ Prof. Tools</a><a class="nav-link" href="glyphs.html">✨ Glyphs</a><a class="nav-link" href="keys.html">🗝️ Keys</a></div></div>
       <a class="nav-link sister" href="https://www.wowhousingdecor.com" target="_blank" rel="noopener">🏠 WoWHousingDecor</a>
+      <a class="nav-link" href="index.html">⚒ Home</a>
     </div>
     <div class="nav-search-mini">
-      <input type="text" id="navSearch" placeholder="Search…" aria-label="Search database">
+      <input type="text" id="navSearch" placeholder="Search…" aria-label="Search">
       <button onclick="doSearch()"><span>Go</span></button>
     </div>
   </div>
 </nav>
 
+<!-- PAGE HEADER -->
 <div class="page-header">
   <img class="page-header-bg" data-asset="header_bg" src="" alt="">
   <div class="page-header-overlay"></div>
-  <div class="rune-strip top">ᚠ ᚢ ᚦ ᚨ ᚱ ᚲ ᚷ ᚹ ᚺ ᚾ ᛁ ᛃ ᛇ ᛈ ᛉ ᛊ ᛏ ᛒ ᛖ ᛗ ᛚ ᛜ ᛞ ᛟ ᚠ ᚢ ᚦ ᚨ ᚱ ᚲ ᚷ ᚹ ᚺ ᚾ ᛁ ᛃ ᛇ ᛈ ᛉ ᛊ</div>
+  <div class="rune-strip top">ᚠ ᚢ ᚦ ᚨ ᚱ ᚲ ᚷ ᚹ ᚺ ᚾ ᛁ ᛃ ᛇ ᛈ ᛉ ᛊ ᛏ ᛒ ᛖ ᛗ ᛚ ᛜ ᛞ ᛟ ᚠ ᚢ ᚦ ᚨ ᚱ ᚲ ᚷ ᚹ ᚺ ᚾ ᛁ ᛃ</div>
   <div class="page-header-content">
     <div class="page-title-block">
-      <div class="page-eyebrow">Armor Database</div>
-      <h1 class="page-title">🛡️ WoW Armor</h1>
-      <p class="page-desc">Every piece of armor in World of Warcraft — plate, mail, leather, cloth — across all classes, specs, and expansions.</p>
+      <div class="page-eyebrow">ForgeWoW Database</div>
+      <h1 class="page-title">🛡️ Armor</h1>
+      <p class="page-desc">420 items · Browse 420 WoW armor — . Full item details, icons and Wowhead links.</p>
     </div>
-    <a class="forge-btn" href="index.html"><span>← Back to Home</span></a>
+    <a class="forge-btn" href="index.html"><span>⚒ Home</span></a>
   </div>
-  <div class="rune-strip bot">ᚠ ᚢ ᚦ ᚨ ᚱ ᚲ ᚷ ᚹ ᚺ ᚾ ᛁ ᛃ ᛇ ᛈ ᛉ ᛊ ᛏ ᛒ ᛖ ᛗ ᛚ ᛜ ᛞ ᛟ ᚠ ᚢ ᚦ ᚨ ᚱ ᚲ ᚷ ᚹ ᚺ ᚾ ᛁ ᛃ ᛇ ᛈ ᛉ ᛊ</div>
+  <div class="rune-strip bot">ᚠ ᚢ ᚦ ᚨ ᚱ ᚲ ᚷ ᚹ ᚺ ᚾ ᛁ ᛃ ᛇ ᛈ ᛉ ᛊ ᛏ ᛒ ᛖ ᛗ ᛚ ᛜ ᛞ ᛟ ᚠ ᚢ ᚦ ᚨ ᚱ ᚲ ᚷ ᚹ ᚺ ᚾ ᛁ ᛃ</div>
 </div>
-<div class="content-wrap">
-  <div class="browse-layout">
-    <aside class="sidebar">
+
+<div class="app-body">
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    
+    <div class="sb-box">
+      <div class="sb-title">Categories</div>
+      <ul class="sb-list"><li><a href="weapons.html">⚔️ Weapons</a></li>
+<li><a class="active" href="armor.html">🛡️ Armor</a></li>
+<li><a href="consumables.html">🧪 Consumables</a></li>
+<li><a href="gems.html">💎 Gems</a></li>
+<li><a href="recipes.html">📜 Recipes</a></li>
+<li><a href="tradegoods.html">⚗️ Trade Goods</a></li>
+<li><a href="mounts.html">🐴 Mounts</a></li>
+<li><a href="pets.html">🐾 Battle Pets</a></li>
+<li><a href="toys.html">🧸 Toys</a></li>
+<li><a href="housing.html">🏠 Housing</a></li>
+<li><a href="fish.html">🐟 Fish</a></li>
+<li><a href="containers.html">🎒 Containers</a></li>
+<li><a href="achievements.html">🏆 Achievements</a></li>
+<li><a href="quests.html">📋 Quest Items</a></li>
+<li><a href="profession_tools.html">⚒️ Prof. Tools</a></li>
+<li><a href="glyphs.html">✨ Glyphs</a></li>
+<li><a href="keys.html">🗝️ Keys</a></li>
+</ul>
+    </div>
+    
       <div class="sb-box">
-        <div class="sb-title">Armor Type</div>
-        <ul class="sb-list">
-          <li><a onclick="filterSub('Plate',this)" class="active">🔩 Plate</a></li>
-          <li><a onclick="filterSub('Mail',this)">🔗 Mail</a></li>
-          <li><a onclick="filterSub('Leather',this)">🦺 Leather</a></li>
-          <li><a onclick="filterSub('Cloth',this)">👘 Cloth</a></li>
-          <li><a onclick="filterSub('Shield',this)">🛡 Shields</a></li>
-          <li><a onclick="filterSub('',this)">📋 All Armor</a></li>
-        </ul>
+        <div class="sb-title">Armor</div>
+        <ul class="sb-list" id="subList"><li><a onclick="filterSub('',this)" class="active">All Armor</a></li>
+<li><a onclick="filterSub('Plate',this)">Plate</a></li>
+<li><a onclick="filterSub('Mail',this)">Mail</a></li>
+<li><a onclick="filterSub('Leather',this)">Leather</a></li>
+<li><a onclick="filterSub('Cloth',this)">Cloth</a></li>
+<li><a onclick="filterSub('Miscellaneous',this)">Miscellaneous</a></li>
+</ul>
       </div>
-      <div class="sb-box">
-        <div class="sb-title">Slot</div>
-        <ul class="sb-list">
-          <li><a onclick="filterSlot('Head',this)">⛑ Head</a></li>
-          <li><a onclick="filterSlot('Shoulders',this)">🫱 Shoulders</a></li>
-          <li><a onclick="filterSlot('Chest',this)">👕 Chest</a></li>
-          <li><a onclick="filterSlot('Legs',this)">👖 Legs</a></li>
-          <li><a onclick="filterSlot('Feet',this)">👢 Feet</a></li>
-          <li><a onclick="filterSlot('Hands',this)">🧤 Hands</a></li>
-          <li><a onclick="filterSlot('',this)">📋 All Slots</a></li>
-        </ul>
+    <div class="sb-box">
+      <div class="sb-title">Quality</div>
+      <div class="q-filter-list">
+        <div class="q-pill q-legendary on" onclick="toggleQ('Legendary',this)"><div class="q-dot"></div>Legendary</div>
+        <div class="q-pill q-epic on" onclick="toggleQ('Epic',this)"><div class="q-dot"></div>Epic</div>
+        <div class="q-pill q-rare on" onclick="toggleQ('Rare',this)"><div class="q-dot"></div>Rare</div>
+        <div class="q-pill q-uncommon on" onclick="toggleQ('Uncommon',this)"><div class="q-dot"></div>Uncommon</div>
+        <div class="q-pill q-common on" onclick="toggleQ('Common',this)"><div class="q-dot"></div>Common</div>
+        <div class="q-pill q-poor on" onclick="toggleQ('Poor',this)"><div class="q-dot"></div>Poor</div>
       </div>
-      <div class="sb-box">
-        <div class="sb-title">Quality</div>
-        <div class="q-filter-list">
-          <div class="q-pill q-legendary on" onclick="toggleQ('Legendary',this)"><div class="q-dot"></div>Legendary</div>
-          <div class="q-pill q-epic on" onclick="toggleQ('Epic',this)"><div class="q-dot"></div>Epic</div>
-          <div class="q-pill q-rare on" onclick="toggleQ('Rare',this)"><div class="q-dot"></div>Rare</div>
-          <div class="q-pill q-uncommon on" onclick="toggleQ('Uncommon',this)"><div class="q-dot"></div>Uncommon</div>
+    </div>
+    <div class="sb-box" style="padding:.6rem .9rem;">
+      <img data-asset="rune_tile" src="" alt="" style="width:100%;opacity:.28;">
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <!-- VIEW TOOLBAR -->
+    <div class="view-toolbar">
+      <span class="view-label">View</span>
+      <div class="view-btn-group">
+        <button class="view-btn active" data-view="grid"     onclick="setView('grid')"     title="Grid">⊞</button>
+        <button class="view-btn"        data-view="list"     onclick="setView('list')"     title="List">≡</button>
+        <button class="view-btn"        data-view="compact"  onclick="setView('compact')"  title="Compact">⊡</button>
+        <button class="view-btn"        data-view="carousel" onclick="setView('carousel')" title="Carousel">⟳</button>
+        <button class="view-btn"        data-view="table"    onclick="setView('table')"    title="Table">⊟</button>
+      </div>
+      <div class="vt-sep"></div>
+      <span class="sort-label">Sort</span>
+      <select class="vt-sort" id="sortSel" onchange="applyFilters()">
+        <option value="name-asc">Name A–Z</option>
+        <option value="name-desc">Name Z–A</option>
+        <option value="level-desc">Level ↓</option>
+        <option value="level-asc">Level ↑</option>
+        <option value="id-asc">ID ↑</option>
+        <option value="id-desc">ID ↓</option>
+        <option value="quality-desc">Quality ↓</option>
+      </select>
+      <div class="vt-sep"></div>
+      <div class="search-inline">
+        <input type="text" placeholder="Quick filter…" oninput="viewSearch(this.value)" id="vtSearch">
+        <button onclick="document.getElementById('vtSearch').value='';viewSearch('')">✕</button>
+      </div>
+      <div class="result-count" id="vtCount"><span>—</span> items</div>
+    </div>
+
+    
+
+    <!-- ITEMS CONTAINER -->
+    <div class="items-container view-grid" id="itemsContainer">
+
+      <!-- CAROUSEL -->
+      <div class="carousel-wrap" id="carouselWrap">
+        <div class="carousel-track-outer">
+          <div class="carousel-track" id="carouselTrack"></div>
+        </div>
+        <div class="carousel-nav">
+          <button class="carousel-arrow" id="carouselPrev" onclick="carouselPrev()"><span>◀</span></button>
+          <div class="carousel-dots" id="carouselDots"></div>
+          <span class="carousel-page-info" id="carouselPageInfo"></span>
+          <button class="carousel-arrow" id="carouselNext" onclick="carouselNext()"><span>▶</span></button>
         </div>
       </div>
-    </aside>
-    <main>
-      <div class="view-toolbar">
-  <span class="view-label">View</span>
-  <div class="view-btn-group">
-    <button class="view-btn active" data-view="grid" onclick="setView('grid')" title="Grid View">⊞</button>
-    <button class="view-btn" data-view="list" onclick="setView('list')" title="List View">≡</button>
-    <button class="view-btn" data-view="compact" onclick="setView('compact')" title="Compact View">⊡</button>
-    <button class="view-btn" data-view="carousel" onclick="setView('carousel')" title="Carousel View">⟳</button>
-    <button class="view-btn" data-view="table" onclick="setView('table')" title="Table View">⊟</button>
-  </div>
-  <div class="vt-sep"></div>
-  <span class="sort-label">Sort</span>
-  <select class="vt-sort" id="sortSel" onchange="applyFilters()">
-    <option value="name-asc">Name A–Z</option>
-    <option value="name-desc">Name Z–A</option>
-    <option value="level-desc">iLvl ↓</option>
-    <option value="level-asc">iLvl ↑</option>
-    <option value="id-asc">ID ↑</option>
-    <option value="id-desc">ID ↓</option>
-    <option value="quality-desc">Quality ↓</option>
-  </select>
-  <div class="vt-sep"></div>
-  <div class="search-inline">
-    <input type="text" placeholder="Quick filter…" oninput="viewSearch(this.value)" id="vtSearch">
-    <button onclick="document.getElementById('vtSearch').value='';viewSearch('')">✕</button>
-  </div>
-  <div class="result-count" id="vtCount"><span>—</span> items</div>
+
+      <!-- TABLE -->
+      <div class="table-wrap" id="tableWrap">
+        <table class="items-table">
+          <thead><tr>
+            <th class="td-icon"></th>
+            <th data-col="name"    onclick="tableSortBy('name')"   >Name    <span class="sort-arrow"></span></th>
+            <th data-col="id"      onclick="tableSortBy('id')"     >ID      <span class="sort-arrow"></span></th>
+            <th data-col="ilvl"    onclick="tableSortBy('ilvl')"   >Level   <span class="sort-arrow"></span></th>
+            <th data-col="quality" onclick="tableSortBy('quality')" >Quality <span class="sort-arrow"></span></th>
+            <th data-col="type"    onclick="tableSortBy('type')"   >Subclass<span class="sort-arrow"></span></th>
+            <th>Source</th>
+          </tr></thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
+
+      <!-- GRID -->
+      <div class="items-grid" id="itemGrid"></div>
+      <div class="pagination" id="pagination"></div>
+    </div>
+  </main>
 </div>
 
-<div class="items-container view-grid" id="itemsContainer">
-  
-<div class="carousel-wrap" id="carouselWrap">
-  <div class="carousel-track-outer">
-    <div class="carousel-track" id="carouselTrack"></div>
-  </div>
-  <div class="carousel-nav">
-    <button class="carousel-arrow" id="carouselPrev" onclick="carouselPrev()"><span>◀</span></button>
-    <div class="carousel-dots" id="carouselDots"></div>
-    <span class="carousel-page-info" id="carouselPageInfo"></span>
-    <button class="carousel-arrow" id="carouselNext" onclick="carouselNext()"><span>▶</span></button>
-  </div>
-</div>
-
-  
-<div class="table-wrap" id="tableWrap">
-  <table class="items-table">
-    <thead>
-      <tr>
-        <th class="td-icon"></th>
-        <th data-col="name" onclick="tableSortBy('name')">Name <span class="sort-arrow"></span></th>
-        <th data-col="id" onclick="tableSortBy('id')">ID <span class="sort-arrow"></span></th>
-        <th data-col="ilvl" onclick="tableSortBy('ilvl')">iLvl <span class="sort-arrow"></span></th>
-        <th data-col="quality" onclick="tableSortBy('quality')">Quality <span class="sort-arrow"></span></th>
-        <th data-col="type" onclick="tableSortBy('type')">Subclass <span class="sort-arrow"></span></th>
-        <th>Class</th>
-      </tr>
-    </thead>
-    <tbody id="tableBody"></tbody>
-  </table>
-</div>
-
-  <div class="items-grid" id="itemGrid"></div>
-  <div class="pagination" id="pagination"></div>
-</div>
-      
-    </main>
-  </div>
-</div>
-
+<!-- TOOLTIP + MODAL -->
 <div id="tooltip">
   <div id="tip3d"><div id="tip-qb"></div><div id="tip-sh"></div></div>
   <div id="tip-body">
@@ -658,9 +774,7 @@ select.vt-sort:focus{border-color:var(--gold-dim);}
       <div class="m-grid" id="mGrid"></div>
       <div class="m-desc" id="mDesc" style="display:none"></div>
       <div class="m-actions">
-        <a id="mWowhead" href="#" target="_blank" rel="noopener noreferrer">
-          <button class="forge-btn sm"><span>🔗 Wowhead</span></button>
-        </a>
+        <a id="mWowhead" href="#" target="_blank" rel="noopener"><button class="forge-btn sm"><span>🔗 Wowhead</span></button></a>
         <button class="forge-btn sm" onclick="copyId()"><span>📋 Copy ID</span></button>
         <button class="forge-btn sm" onclick="closeDetail()"><span>✕ Close</span></button>
       </div>
@@ -668,53 +782,42 @@ select.vt-sort:focus{border-color:var(--gold-dim);}
   </div>
 </div>
 
+<!-- FOOTER -->
 <footer>
   <div class="foot-grid">
     <div class="foot-brand">
       <img data-asset="logo" src="" alt="ForgeWoW Database">
-      <p>The most comprehensive free World of Warcraft item database. Covering 2.4M+ items across all expansions.</p>
-      <a class="forge-btn sm" href="items.html"><span>Browse Items</span></a>
+      <p>The most comprehensive free World of Warcraft item database. 420 armor indexed.</p>
+      <a class="forge-btn sm" href="index.html"><span>⚒ Home</span></a>
     </div>
     <div>
-      <div class="foot-col-title">Database</div>
+      <div class="foot-col-title">Categories</div>
       <ul class="foot-links">
-        <li><a href="weapons.html">Weapons</a></li>
-        <li><a href="armor.html">Armor</a></li>
-        <li><a href="spells.html">Spells</a></li>
-        <li><a href="quests.html">Quests</a></li>
-        <li><a href="npcs.html">NPCs</a></li>
-        <li><a href="professions.html">Professions</a></li>
-        <li><a href="lore.html">Lore</a></li>
-        <li><a href="maps.html">Zone Maps</a></li>
+        <li><a href="weapons.html">⚔️ Weapons</a></li><li><a href="armor.html">🛡️ Armor</a></li><li><a href="consumables.html">🧪 Consumables</a></li><li><a href="gems.html">💎 Gems</a></li><li><a href="recipes.html">📜 Recipes</a></li><li><a href="tradegoods.html">⚗️ Trade Goods</a></li><li><a href="mounts.html">🐴 Mounts</a></li><li><a href="pets.html">🐾 Battle Pets</a></li><li><a href="toys.html">🧸 Toys</a></li>
       </ul>
     </div>
     <div>
-      <div class="foot-col-title">Tools</div>
+      <div class="foot-col-title">More</div>
       <ul class="foot-links">
-        <li><a href="search.html">Advanced Search</a></li>
-        <li><a href="bis.html">BiS Lists</a></li>
-        <li><a href="transmog.html">Transmog Finder</a></li>
-        <li><a href="items.html">Full Item Browser</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="housing.html">🏠 Housing</a></li><li><a href="fish.html">🐟 Fish</a></li><li><a href="containers.html">🎒 Containers</a></li><li><a href="achievements.html">🏆 Achievements</a></li><li><a href="quests.html">📋 Quest Items</a></li><li><a href="profession_tools.html">⚒️ Prof. Tools</a></li><li><a href="glyphs.html">✨ Glyphs</a></li><li><a href="keys.html">🗝️ Keys</a></li>
       </ul>
     </div>
     <div>
       <div class="foot-col-title">Sister Site</div>
-      <a class="foot-sister" href="https://www.wowhousingdecor.com" target="_blank" rel="noopener noreferrer">
+      <a class="foot-sister" href="https://www.wowhousingdecor.com" target="_blank" rel="noopener">
         <span class="url">🏠 WoWHousingDecor.com</span>
         <span class="tag">Your WoW Housing Companion</span>
       </a>
     </div>
   </div>
   <div class="foot-bottom">
-    <strong>ForgeWoWdatabase.com</strong> &mdash; Fan-made WoW Database &nbsp;|&nbsp;
-    Data via <span>Blizzard Battle.net API</span> &nbsp;|&nbsp;
-    Not affiliated with Blizzard Entertainment
+    <strong>ForgeWoWdatabase.com</strong> — Fan-made WoW Database | Data via <span>Blizzard Battle.net API</span> | Not affiliated with Blizzard Entertainment
   </div>
-  <div class="foot-rune">ᚠ ᚢ ᚦ ᚨ ᚱ ᚲ ᚷ ᚹ ᚺ ᚾ ᛁ ᛃ ᛇ ᛈ ᛉ ᛊ ᛏ ᛒ ᛖ ᛗ ᛚ ᛜ ᛞ ᛟ ᚠ ᚢ ᚦ ᚨ ᚱ ᚲ ᚷ ᚹ ᚺ ᚾ ᛁ ᛃ ᛇ ᛈ ᛉ ᛊ ᚠ ᚢ ᚦ ᚨ ᚱ ᚲ ᚷ ᚹ ᚺ ᚾ ᛁ ᛃ ᛇ ᛈ ᛉ ᛊ ᛏ ᛒ ᛖ ᛗ ᛚ ᛜ ᛞ ᛟ ᚠ ᚢ ᚦ ᚨ ᚱ ᚲ ᚷ ᚹ ᚺ ᚾ ᛁ ᛃ ᛇ ᛈ ᛉ ᛊ</div>
+  <div class="foot-rune">ᚠ ᚢ ᚦ ᚨ ᚱ ᚲ ᚷ ᚹ ᚺ ᚾ ᛁ ᛃ ᛇ ᛈ ᛉ ᛊ ᛏ ᛒ ᛖ ᛗ ᛚ ᛜ ᛞ ᛟ ᚠ ᚢ ᚦ ᚨ ᚱ ᚲ ᚷ ᚹ ᚺ ᚾ ᛁ ᛃ</div>
 </footer>
+
 <script>
+
 
 /* 3D ENGINE */
 const M3D=(function(){
@@ -871,49 +974,16 @@ document.addEventListener("keydown",e=>{if(e.key==="Escape")closeDetail();});
 
 /* SEARCH */
 function doSearch(){const q=document.getElementById("navSearch")?.value.trim();if(q)window.location.href="search.html?q="+encodeURIComponent(q);}
-document.addEventListener("DOMContentLoaded",()=>{
-  document.getElementById("navSearch")?.addEventListener("keydown",e=>{if(e.key==="Enter")doSearch();});
 });
 
 
-let subF='Plate',slotF='';
-function filterSub(s,el){document.querySelectorAll('.sb-box:first-child .sb-list li a').forEach(a=>a.classList.remove('active'));el.classList.add('active');subF=s;doFilter();}
-function filterSlot(s,el){document.querySelectorAll('.sb-box:nth-child(2) .sb-list li a').forEach(a=>a.classList.remove('active'));el.classList.add('active');slotF=s;doFilter();}
-function doFilter(){
-  let items=[...DB.armor];
-  if(subF)items=items.filter(i=>(i.itemSubClass||'').toLowerCase().includes(subF.toLowerCase()));
-  if(slotF)items=items.filter(i=>(i.slot||'').toLowerCase().includes(slotF.toLowerCase()));
-  if(ST.activeQualities.size<7)items=items.filter(i=>ST.activeQualities.has(i.quality));
-  items.sort((a,b)=>(a.name||'').localeCompare(b.name||''));
-  ST.filtered=items;ST.page=1;renderPage();
-  document.getElementById('catTitle').textContent=(subF||'All')+(slotF?' — '+slotF:'')+' Armor';
-  const m=document.getElementById('toolbarMeta');if(m)m.innerHTML=`<span>${items.length}</span> pieces`;
+function setSortClick(val,el){
+  document.querySelectorAll('.sb-list li a').forEach(a=>a.classList.remove('active'));
+  el.classList.add('active');
+  document.getElementById('sortSel').value=val;
+  applyFilters();
 }
-DB.armor=[{id:16921,name:"Breastplate of Wrath",quality:"Epic",level:66,itemClass:"Armor",itemSubClass:"Plate",slot:"Chest"},{id:16922,name:"Pauldrons of Wrath",quality:"Epic",level:66,itemClass:"Armor",itemSubClass:"Plate",slot:"Shoulders"},{id:16923,name:"Helm of Wrath",quality:"Epic",level:66,itemClass:"Armor",itemSubClass:"Plate",slot:"Head"},{id:16924,name:"Legplates of Wrath",quality:"Epic",level:66,itemClass:"Armor",itemSubClass:"Plate",slot:"Legs"},{id:22349,name:"Helm of the Lightbringer",quality:"Epic",level:110,itemClass:"Armor",itemSubClass:"Plate",slot:"Head"},{id:45428,name:"Conqueror's Aegis Tunic",quality:"Epic",level:219,itemClass:"Armor",itemSubClass:"Plate",slot:"Chest"},{id:71031,name:"Firelord's Mantle",quality:"Epic",level:378,itemClass:"Armor",itemSubClass:"Cloth",slot:"Shoulders"},{id:30130,name:"Nordrassil Feral-Kilt",quality:"Epic",level:120,itemClass:"Armor",itemSubClass:"Leather",slot:"Legs"},{id:22490,name:"Tier 4 Warrior Shoulders",quality:"Epic",level:110,itemClass:"Armor",itemSubClass:"Plate",slot:"Shoulders"}];
-ST.allItems=DB.armor;
-document.addEventListener('DOMContentLoaded',()=>doFilter());
-
-
-/* ═══════════════════════════════════════════
-   VIEW MODE CONTROLLER
-═══════════════════════════════════════════ */
-const VIEWS = ['grid','list','compact','carousel','table'];
-let currentView = 'grid';
-let tableSort = { col: 'name', dir: 'asc' };
-let carouselPage = 0;
-const CAROUSEL_VISIBLE = 5;
-
-function setView(v) {
-  currentView = v;
-  const container = document.getElementById('itemsContainer');
-  if (!container) return;
-  VIEWS.forEach(view => container.classList.remove('view-' + view));
-  container.classList.add('view-' + v);
-  // Update toolbar buttons
-  document.querySelectorAll('.view-btn[data-view]').forEach(btn => {
-    btn.classList.toggle('active', btn.dataset.view === v);
-  });
-  // Re-render for view-specific layouts
+// Re-render for view-specific layouts
   if (v === 'carousel') renderCarousel();
   if (v === 'table') renderTable();
   // Save preference
@@ -1077,12 +1147,104 @@ function renderPage() {
 }
 
 /* Restore saved view on load */
-document.addEventListener('DOMContentLoaded', () => {
+/* NAV MORE TOGGLE */
+function toggleMore(e){
+  e.stopPropagation();
+  const d=document.getElementById('navMoreDrop');
+  d.classList.toggle('open');
+}
+document.addEventListener('click',()=>{
+  const d=document.getElementById('navMoreDrop');
+  if(d)d.classList.remove('open');
+});
+
+/* SUBTYPE FILTER */
+let _subFilter='';
+function filterSub(sub,el){
+  document.querySelectorAll('#subList a').forEach(a=>a.classList.remove('active'));
+  if(el)el.classList.add('active');
+  _subFilter=sub;
+  let items=[...ST.allItems];
+  if(_subFilter)items=items.filter(i=>(i.itemSubClass||i.petType||i.achCategory||i.fishType||'').toLowerCase().includes(_subFilter.toLowerCase()));
+  if(ST.activeQualities.size<7)items=items.filter(i=>ST.activeQualities.has(i.quality));
+  ST.filtered=items;ST.page=1;renderPage();
+  if(currentView==='carousel'){carouselPage=0;renderCarousel();}
+  if(currentView==='table')renderTable();
+  const c=document.getElementById('vtCount');if(c)c.innerHTML=`<span>${items.length.toLocaleString()}</span> items`;
+}
+
+/* ACHIEVEMENT CATEGORY FILTER */
+let _achCatFilter='';
+function filterAchCat(cat,el){
+  document.querySelectorAll('.cat-pill').forEach(p=>p.classList.remove('active'));
+  if(el)el.classList.add('active');
+  _achCatFilter=cat;
+  let items=[...ST.allItems];
+  if(_achCatFilter)items=items.filter(i=>i.achCategory===_achCatFilter);
+  if(ST.activeQualities.size<7)items=items.filter(i=>ST.activeQualities.has(i.quality));
+  ST.filtered=items;ST.page=1;renderPage();
+}
+
+/* MOUNT FACTION FILTER */
+let _factionFilter='';
+function filterFaction(f,el){
+  document.querySelectorAll('.cat-pill').forEach(p=>p.classList.remove('active'));
+  if(el)el.classList.add('active');
+  _factionFilter=f;
+  let items=[...ST.allItems];
+  if(_factionFilter)items=items.filter(i=>(i.faction||'').includes(_factionFilter));
+  ST.filtered=items;ST.page=1;renderPage();
+}
+
+
+/* LOAD REAL DATA FROM JSON FILE */
+const PAGE_CAT  = 'armor';
+const PAGE_FILE = 'armor';
+
+async function initPage(){
+  try{
+    const r = await fetch('data/armor.json');
+    if(!r.ok) throw new Error('HTTP '+r.status);
+    const items = await r.json();
+    ST.allItems = items;
+    applyFilters();
+    const c = document.getElementById('vtCount');
+    if(c) c.innerHTML = `<span>${items.length.toLocaleString()}</span> items`;
+  } catch(e) {
+    showEmpty('📦','No data file found',`Ensure data/armor.json exists in the data/ folder.`);
+    console.error(e);
+  }
+}
+
+function doSearch(){
+  const q = document.getElementById('navSearch')?.value.trim();
+  if(q) window.location.href='search.html?q='+encodeURIComponent(q);
+}
+
+document.getElementById('navSearch')?.addEventListener('keydown', e=>{ if(e.key==='Enter') doSearch(); });
+
+
+/* ── LOAD REAL DATA ── */
+async function initPage() {
   try {
-    const saved = localStorage.getItem('forgeView');
-    if (saved && VIEWS.includes(saved)) setView(saved);
-    else setView('grid');
-  } catch(e) { setView('grid'); }
+    const r = await fetch('data/armor.json');
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    const items = await r.json();
+    ST.allItems = items;
+    applyFilters();
+    const c = document.getElementById('vtCount');
+    if (c) c.innerHTML = '<span>' + items.length.toLocaleString() + '</span> items';
+    const t = document.getElementById('catTitle');
+    if (t) t.textContent = 'Armor';
+  } catch(e) {
+    showEmpty('📦', 'Could not load data', 'Ensure data/armor.json exists. Error: ' + e.message);
+    console.error(e);
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  try { const v = localStorage.getItem('forgeView'); setView(v || 'grid'); } catch(e) { setView('grid'); }
+  initPage();
 });
 
 </script>
