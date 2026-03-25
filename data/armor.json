@@ -5864,5 +5864,19 @@
     "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_pants_03.jpg",
     "wowhead": "https://www.wowhead.com/item=4079",
     "category": "armor"
+  },
+  {
+    "id": 3235,
+    "name": "Ring of Scorn",
+    "quality": "Uncommon",
+    "itemClass": "Armor",
+    "itemSubclass": "Miscellaneous",
+    "level": 12,
+    "requiredLevel": 0,
+    "sellPrice": 412,
+    "description": "For Deliah",
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_jewelry_ring_15.jpg",
+    "wowhead": "https://www.wowhead.com/item=3235",
+    "category": "armor"
   }
 ]

@@ -13312,5 +13312,33 @@
     "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_scroll_03.jpg",
     "wowhead": "https://www.wowhead.com/item=22773",
     "category": "recipes"
+  },
+  {
+    "id": 6475,
+    "name": "Pattern: Deviate Scale Gloves",
+    "quality": "Common",
+    "itemClass": "Recipe",
+    "itemSubclass": "Leatherworking",
+    "level": 1,
+    "requiredLevel": 0,
+    "sellPrice": 375,
+    "description": "Teaches you how to craft Deviate Scale Gloves.",
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_scroll_03.jpg",
+    "wowhead": "https://www.wowhead.com/item=6475",
+    "category": "recipes"
+  },
+  {
+    "id": 18334,
+    "name": "Libram of Protection",
+    "quality": "Uncommon",
+    "itemClass": "Recipe",
+    "itemSubclass": "Book",
+    "level": 21,
+    "requiredLevel": 21,
+    "sellPrice": 0,
+    "description": "Dark runes skitter across the surface.",
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_misc_book_11.jpg",
+    "wowhead": "https://www.wowhead.com/item=18334",
+    "category": "recipes"
   }
 ]

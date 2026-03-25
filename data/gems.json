@@ -13788,5 +13788,33 @@
     "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_misc_gem_x4_rare_cut_orange.jpg",
     "wowhead": "https://www.wowhead.com/item=76660",
     "category": "gems"
+  },
+  {
+    "id": 52206,
+    "name": "Bold Inferno Ruby",
+    "quality": "Rare",
+    "itemClass": "Gem",
+    "itemSubclass": "Strength",
+    "level": 32,
+    "requiredLevel": 0,
+    "sellPrice": 8250,
+    "description": "Matches any socket.",
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_misc_cutgemsuperior6.jpg",
+    "wowhead": "https://www.wowhead.com/item=52206",
+    "category": "gems"
+  },
+  {
+    "id": 76595,
+    "name": "Perfect Inscribed Tiger Opal",
+    "quality": "Rare",
+    "itemClass": "Gem",
+    "itemSubclass": "Multiple Stats",
+    "level": 34,
+    "requiredLevel": 0,
+    "sellPrice": 11000,
+    "description": "Matches any socket.",
+    "icon": "https://render.worldofwarcraft.com/us/icons/56/inv_misc_gem_x4_uncommon_perfectcut_orange.jpg",
+    "wowhead": "https://www.wowhead.com/item=76595",
+    "category": "gems"
   }
 ]
