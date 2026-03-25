@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Armor Database — All WoW Armor | ForgeWoWdatabase.com</title>
+<meta name="description" content="Browse every piece of armor in World of Warcraft. Filter by armor type (Plate, Mail, Leather, Cloth), slot, quality, and expansion.">
+<meta name="keywords" content="WoW armor, plate mail leather cloth, World of Warcraft gear">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://forgewowdatabase.com/armor.html">
+<meta property="og:title" content="Armor Database — All WoW Armor">
+<meta property="og:description" content="Browse every piece of armor in World of Warcraft. Filter by armor type (Plate, Mail, Leather, Cloth), slot, quality, and expansion.">
+<meta property="og:type" content="website">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@400;600;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="forge-assets.js"></script>
+<style>
+
+:root{
+  --gold:#E6A11C;--gold-bright:#f5be45;--gold-dim:#9a6c0e;
+  --cyan:#00C2FF;--cyan-dim:rgba(0,194,255,.2);
+  --black:#000;--blue-deep:#030a14;--blue-panel:#08121f;
+  --q-poor:#9d9d9d;--q-common:#e0e0e0;--q-uncommon:#1eff00;
+  --q-rare:#0070dd;--q-epic:#a335ee;--q-legendary:#ff8000;--q-artifact:#e6cc80;
+  --border-gold:rgba(230,161,28,.28);--border-gold-hi:rgba(230,161,28,.6);
+  --border-cyan:rgba(0,194,255,.2);
+  --text:#c0c8d8;--text-bright:#e8edf8;--text-dim:#56606f;
+  --btn-bg:none;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:#000 repeat fixed center/300px;
+  color:var(--text);font-family:"Crimson Pro",Georgia,serif;
+  min-height:100vh;display:flex;flex-direction:column;overflow-x:hidden;font-size:17px;line-height:1.7;
+}
+::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:#000}
+::-webkit-scrollbar-thumb{background:var(--gold-dim);border-radius:3px}
+
+/* FORGE BUTTON */
+.forge-btn{
+  position:relative;display:inline-flex;align-items:center;justify-content:center;
+  cursor:pointer;border:none;background:transparent;padding:0;
+  min-width:160px;height:46px;transition:transform .18s,filter .18s;text-decoration:none;
+  font-family:"Cinzel",serif;font-size:.66rem;font-weight:700;
+  letter-spacing:.14em;text-transform:uppercase;
+  color:#e8f4ff;text-shadow:0 0 10px rgba(0,194,255,.8),0 1px 4px rgba(0,0,0,1);white-space:nowrap;
+}
+.forge-btn::before{
+  content:"";position:absolute;inset:0;
+  background-image:var(--btn-bg);background-size:100% 100%;background-repeat:no-repeat;z-index:0;
+}
+.forge-btn span{position:relative;z-index:1;padding:0 1.4rem;}
+.forge-btn:hover{transform:scale(1.05);filter:brightness(1.2) drop-shadow(0 0 10px rgba(0,194,255,.5));}
+.forge-btn:active{transform:scale(.97)}
+.forge-btn.gold span{color:#f5e090;text-shadow:0 0 14px rgba(230,161,28,.9),0 1px 4px rgba(0,0,0,1);}
+.forge-btn.sm{min-width:110px;height:36px;font-size:.58rem;}
+.forge-btn.lg{min-width:210px;height:54px;font-size:.72rem;}
+
+/* NAV */
+.top-nav{position:sticky;top:0;z-index:100;background:rgba(0,0,0,.96);border-bottom:2px solid var(--cyan);backdrop-filter:blur(12px);box-shadow:0 2px 20px rgba(0,194,255,.1);}
+.nav-inner{max-width:1300px;margin:0 auto;display:flex;align-items:center;padding:.5rem 2rem;gap:1.2rem;height:60px;}
+.nav-logo{display:flex;align-items:center;gap:.55rem;text-decoration:none;flex-shrink:0;}
+.nav-logo img{height:46px;width:auto;filter:drop-shadow(0 0 8px rgba(230,161,28,.5));}
+.nav-logo-text{font-family:"Cinzel Decorative",serif;font-size:.82rem;color:var(--gold-bright);line-height:1.1;text-shadow:0 0 12px rgba(230,161,28,.4);}
+.nav-logo-sub{font-family:"Cinzel",serif;font-size:.43rem;letter-spacing:.22em;color:var(--gold-dim);display:block;}
+.nav-links{display:flex;align-items:center;gap:.15rem;margin-left:auto;flex-wrap:wrap;}
+.nav-link{font-family:"Cinzel",serif;font-size:.56rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--text-dim);text-decoration:none;padding:.3rem .62rem;border:1px solid transparent;border-radius:2px;transition:all .16s;white-space:nowrap;}
+.nav-link:hover{color:var(--cyan);border-color:var(--border-cyan);background:rgba(0,194,255,.06);}
+.nav-link.active{color:var(--gold);border-color:var(--border-gold);background:rgba(230,161,28,.07);}
+.nav-link.sister{color:#8adeff;border-color:rgba(0,194,255,.25);background:rgba(0,194,255,.04);font-size:.52rem;}
+.nav-link.sister:hover{color:#fff;border-color:var(--cyan);background:rgba(0,194,255,.1);}
+.nav-search-mini{display:flex;border:1px solid var(--border-gold);border-radius:3px;overflow:hidden;background:rgba(0,0,0,.6);}
+.nav-search-mini input{background:transparent;border:none;outline:none;padding:.35rem .7rem;color:var(--text-bright);font-family:"Crimson Pro",serif;font-size:.85rem;width:160px;}
+.nav-search-mini input::placeholder{color:var(--text-dim)}
+.nav-search-mini button{position:relative;min-width:56px;border:none;background:transparent;cursor:pointer;font-family:"Cinzel",serif;font-size:.52rem;font-weight:700;letter-spacing:.08em;color:#e8f4ff;text-shadow:0 0 8px rgba(0,194,255,.7),0 1px 2px rgba(0,0,0,1);transition:transform .16s,filter .16s;}
+.nav-search-mini button::before{content:"";position:absolute;inset:0;background-image:var(--btn-bg);background-size:100% 100%;z-index:0;}
+.nav-search-mini button span{position:relative;z-index:1;}
+.nav-search-mini button:hover{transform:scale(1.04);filter:brightness(1.2);}
+
+/* PAGE HEADER */
+.page-header{
+  position:relative;overflow:hidden;
+  background:linear-gradient(180deg,#000 0%,#040c18 60%,#000 100%);
+  border-bottom:1px solid var(--border-gold);
+  padding:0;
+}
+.page-header-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.3;z-index:0;}
+.page-header-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.6),rgba(0,0,0,.3),rgba(0,0,0,.75));z-index:1;}
+.page-header-content{position:relative;z-index:2;max-width:1300px;margin:0 auto;padding:2.5rem 2rem;display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap;}
+.page-title-block{}
+.page-eyebrow{font-family:"Cinzel",serif;font-size:.56rem;letter-spacing:.28em;text-transform:uppercase;color:var(--cyan);opacity:.7;margin-bottom:.35rem;}
+.page-title{font-family:"Cinzel Decorative",serif;font-size:clamp(1.5rem,3.5vw,2.6rem);font-weight:700;background:linear-gradient(180deg,#fff8d0 0%,#f5be45 35%,#E6A11C 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1.1;margin-bottom:.4rem;}
+.page-desc{font-size:.95rem;color:var(--text);max-width:600px;line-height:1.65;}
+.rune-strip{font-family:"Cinzel",serif;font-size:.44rem;letter-spacing:.26em;color:var(--cyan);opacity:.4;text-align:center;padding:.23rem 2rem;background:rgba(0,0,0,.5);overflow:hidden;white-space:nowrap;user-select:none;}
+.rune-strip.top{border-bottom:1px solid rgba(0,194,255,.1);}
+.rune-strip.bot{border-top:1px solid rgba(0,194,255,.1);}
+
+/* MAIN CONTENT */
+.content-wrap{max-width:1300px;margin:0 auto;padding:2.5rem 2rem;flex:1;}
+.sidebar-layout{display:grid;grid-template-columns:260px 1fr;gap:2rem;align-items:start;}
+
+/* SIDEBAR */
+.sidebar{position:sticky;top:72px;}
+.sb-box{background:rgba(4,10,20,.92);border:1px solid var(--border-gold);border-radius:5px;margin-bottom:1rem;overflow:hidden;}
+.sb-title{font-family:"Cinzel",serif;font-size:.56rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);padding:.65rem 1rem;border-bottom:1px solid var(--border-gold);background:rgba(230,161,28,.04);display:flex;align-items:center;gap:.4rem;}
+.sb-title::before{content:"⬥";font-size:.36rem;color:var(--gold-dim);}
+.sb-list{list-style:none;padding:.3rem 0;}
+.sb-list li a{display:flex;align-items:center;gap:.5rem;padding:.42rem .95rem;font-size:.86rem;color:var(--text);text-decoration:none;transition:all .14s;border-left:2px solid transparent;cursor:pointer;}
+.sb-list li a:hover,.sb-list li a.active{background:rgba(230,161,28,.07);color:var(--gold-bright);border-left-color:var(--gold);}
+.sb-list li a .ico{width:20px;height:20px;object-fit:contain;flex-shrink:0;}
+.sb-div{height:1px;background:linear-gradient(90deg,transparent,var(--border-gold),transparent);margin:.35rem .95rem;}
+.q-filter-list{padding:.35rem .95rem;display:flex;flex-direction:column;gap:.18rem;}
+.q-pill{display:flex;align-items:center;gap:.42rem;padding:.24rem .5rem;border-radius:3px;cursor:pointer;font-size:.8rem;border:1px solid transparent;transition:all .14s;}
+.q-pill:hover{background:rgba(255,255,255,.04)}
+.q-pill.on{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.08)}
+.q-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0;}
+.q-poor{color:#9d9d9d}.q-poor .q-dot{background:#9d9d9d}
+.q-common{color:#e0e0e0}.q-common .q-dot{background:#e0e0e0}
+.q-uncommon{color:#1eff00}.q-uncommon .q-dot{background:#1eff00}
+.q-rare{color:#0070dd}.q-rare .q-dot{background:#0070dd}
+.q-epic{color:#a335ee}.q-epic .q-dot{background:#a335ee}
+.q-legendary{color:#ff8000}.q-legendary .q-dot{background:#ff8000}
+
+/* GRID / CARDS */
+.items-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(225px,1fr));gap:.9rem;}
+.item-card{background:rgba(6,14,28,.92);border:1px solid var(--border-gold);border-radius:4px;padding:.88rem;cursor:pointer;transition:all .2s;display:flex;gap:.75rem;align-items:flex-start;position:relative;overflow:hidden;}
+.item-card::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--gold-dim),transparent);opacity:0;transition:opacity .2s;}
+.item-card:hover::before{opacity:1}
+.item-card:hover{border-color:rgba(0,194,255,.35);background:rgba(10,24,46,.95);transform:translateY(-2px);box-shadow:0 8px 28px rgba(0,0,0,.7);}
+.item-icon{width:44px;height:44px;border-radius:4px;border:1px solid var(--border-gold);object-fit:cover;flex-shrink:0;background:rgba(0,0,0,.5);}
+.item-icon-ph{width:44px;height:44px;border-radius:4px;border:1px solid var(--border-gold);background:rgba(0,0,0,.5);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:.7rem;color:var(--text-dim);font-family:"Cinzel",serif;}
+.item-info{flex:1;min-width:0;}
+.item-name{font-size:.9rem;font-weight:600;color:var(--text-bright);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-bottom:.16rem;}
+.item-id{font-size:.7rem;color:var(--text-dim);}
+.item-quality{font-size:.68rem;font-family:"Cinzel",serif;letter-spacing:.05em;margin-top:.16rem;}
+.item-sub{font-size:.73rem;color:var(--text-dim);margin-top:.06rem;}
+.q-text-poor{color:#9d9d9d}.q-text-common{color:#e0e0e0}.q-text-uncommon{color:#1eff00}
+.q-text-rare{color:#0070dd}.q-text-epic{color:#a335ee}.q-text-legendary{color:#ff8000}.q-text-artifact{color:#e6cc80}
+
+/* TOOLBAR */
+.toolbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:1.1rem;flex-wrap:wrap;gap:.65rem;padding-bottom:.8rem;border-bottom:1px solid var(--border-gold);}
+.t-title{font-family:"Cinzel",serif;font-size:.9rem;font-weight:700;color:var(--gold-bright);display:flex;align-items:center;gap:.45rem;}
+.t-title::before{content:"⬥";font-size:.45rem;color:var(--gold-dim);}
+.t-meta{font-family:"Cinzel",serif;font-size:.56rem;letter-spacing:.06em;color:var(--text-dim);}
+.t-meta span{color:var(--gold)}
+.t-right{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap;}
+select.sort-sel{background:rgba(0,0,0,.85);border:1px solid var(--border-gold);border-radius:3px;color:var(--text);font-family:"Cinzel",serif;font-size:.56rem;letter-spacing:.05em;padding:.35rem .6rem;outline:none;cursor:pointer;}
+
+/* PAGINATION */
+.pagination{display:flex;align-items:center;justify-content:center;gap:.4rem;flex-wrap:wrap;margin-top:1.2rem;}
+.pg-btn{position:relative;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;border:none;background:transparent;padding:0;min-width:72px;height:34px;font-family:"Cinzel",serif;font-size:.58rem;font-weight:700;letter-spacing:.08em;color:#8ab0cc;text-shadow:0 1px 3px rgba(0,0,0,.9);white-space:nowrap;transition:transform .16s,filter .16s,color .16s;}
+.pg-btn::before{content:"";position:absolute;inset:0;background-image:var(--btn-bg);background-size:100% 100%;background-repeat:no-repeat;z-index:0;opacity:.6;transition:opacity .16s;}
+.pg-btn:hover{color:#e8f4ff;transform:scale(1.04);filter:drop-shadow(0 0 5px rgba(0,194,255,.4));}
+.pg-btn:hover::before{opacity:1;}
+.pg-btn.active{color:#f5e090;text-shadow:0 0 10px rgba(230,161,28,.8),0 1px 3px rgba(0,0,0,1);}
+.pg-btn.active::before{opacity:1;}
+.pg-btn:disabled{opacity:.28;cursor:not-allowed;transform:none;filter:none;}
+.pg-btn span{position:relative;z-index:1;}
+
+/* SKELETON */
+@keyframes shimmer{0%{background-position:-400px 0}100%{background-position:400px 0}}
+.skeleton{background:linear-gradient(90deg,rgba(10,26,47,.9) 25%,rgba(14,38,66,.9) 50%,rgba(10,26,47,.9) 75%);background-size:800px 100%;animation:shimmer 1.4s infinite;border-radius:3px;}
+.sk-ico{width:44px;height:44px;border-radius:4px;flex-shrink:0}
+.sk-ln{height:11px;margin-bottom:6px}
+.sk-w80{width:80%}.sk-w55{width:55%}.sk-w70{width:70%}
+
+/* SECTION HEADINGS */
+.sec-eyebrow{font-family:"Cinzel",serif;font-size:.56rem;letter-spacing:.28em;text-transform:uppercase;color:var(--cyan);margin-bottom:.45rem;display:flex;align-items:center;gap:.7rem;justify-content:center;}
+.sec-eyebrow::before,.sec-eyebrow::after{content:"";flex:1;max-width:80px;height:1px;background:rgba(0,194,255,.3);}
+.sec-title{font-family:"Cinzel Decorative",serif;font-size:clamp(1.3rem,2.5vw,2rem);font-weight:700;background:linear-gradient(180deg,#fff0a0 0%,#f5be45 40%,#E6A11C 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:.5rem;text-align:center;}
+.sec-sub{text-align:center;font-size:.95rem;color:var(--text);max-width:680px;margin:0 auto 2rem;line-height:1.7;}
+
+/* INFO CARDS */
+.info-card{background:rgba(4,10,20,.92);border:1px solid var(--border-gold);border-radius:5px;padding:1.4rem;}
+.info-card-title{font-family:"Cinzel",serif;font-size:.8rem;font-weight:700;color:var(--gold-bright);margin-bottom:.5rem;display:flex;align-items:center;gap:.4rem;}
+.info-card-title::before{content:"⬥";font-size:.38rem;color:var(--gold-dim);}
+.info-card p{font-size:.88rem;color:var(--text);line-height:1.65;}
+
+/* DETAIL OVERLAY */
+.overlay{position:fixed;inset:0;background:rgba(0,0,0,.85);backdrop-filter:blur(5px);display:flex;align-items:center;justify-content:center;z-index:1000;padding:1rem;opacity:0;pointer-events:none;transition:opacity .22s;}
+.overlay.vis{opacity:1;pointer-events:all}
+.modal{background:rgba(5,12,24,.99);border:1px solid var(--border-gold-hi);border-top:2px solid var(--gold);border-radius:5px;width:100%;max-width:680px;max-height:90vh;overflow-y:auto;position:relative;transform:translateY(10px);transition:transform .22s;box-shadow:0 30px 80px rgba(0,0,0,.95);}
+.overlay.vis .modal{transform:translateY(0)}
+.modal-inner{padding:1.5rem}
+.mc-btn{position:absolute;top:.8rem;right:.8rem;background:rgba(255,255,255,.06);border:1px solid var(--border-gold);border-radius:50%;width:28px;height:28px;color:var(--text-dim);cursor:pointer;font-size:.88rem;display:flex;align-items:center;justify-content:center;transition:all .14s;z-index:2;}
+.mc-btn:hover{background:rgba(224,82,82,.15);color:#e05252;border-color:rgba(224,82,82,.3)}
+#m3d{width:100%;height:240px;background:radial-gradient(ellipse at 50% 70%,rgba(22,10,42,.95),rgba(3,8,18,1));border-radius:4px;overflow:hidden;margin-bottom:1.2rem;border:1px solid var(--border-gold);position:relative;}
+#m3d canvas{display:block;width:100%!important;height:100%!important;}
+#m3d-hint{position:absolute;bottom:.35rem;right:.52rem;font-family:"Cinzel",serif;font-size:.46rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(0,194,255,.28);}
+.m-title{font-family:"Cinzel",serif;font-size:1.15rem;font-weight:700;margin-bottom:.18rem;}
+.m-id{font-size:.75rem;color:var(--text-dim);}
+.m-qbadge{display:inline-block;font-family:"Cinzel",serif;font-size:.52rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.15rem .5rem;border-radius:2px;margin-top:.25rem;border:1px solid rgba(255,255,255,.1);background:rgba(0,0,0,.4);}
+.m-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(165px,1fr));gap:.5rem;margin:1rem 0;}
+.m-field{background:rgba(0,0,0,.4);border:1px solid var(--border-gold);border-radius:3px;padding:.5rem .75rem;}
+.m-field-label{font-family:"Cinzel",serif;font-size:.49rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-dim);margin-bottom:.15rem;}
+.m-field-val{font-size:.88rem;color:var(--text-bright);}
+.m-desc{background:rgba(0,0,0,.3);border:1px solid var(--border-gold);border-radius:3px;padding:.75rem;font-style:italic;color:#c8901a;font-size:.85rem;line-height:1.6;margin-bottom:1rem;}
+.m-actions{display:flex;gap:.6rem;flex-wrap:wrap;align-items:center;}
+.m-actions a{text-decoration:none;}
+
+/* 3D TOOLTIP */
+#tooltip{position:fixed;z-index:900;width:330px;background:rgba(4,10,22,.98);border:1px solid var(--border-gold-hi);border-top:2px solid var(--gold);border-radius:4px;overflow:hidden;box-shadow:0 18px 55px rgba(0,0,0,.9);pointer-events:none;opacity:0;transition:opacity .12s,transform .12s;transform:translateY(5px);}
+#tooltip.vis{opacity:1;transform:translateY(0)}
+#tip3d{width:100%;height:168px;background:radial-gradient(ellipse at 50% 70%,rgba(18,10,38,.95),rgba(3,8,18,1));position:relative;overflow:hidden;}
+#tip3d canvas{display:block;width:100%!important;height:100%!important;}
+#tip-qb{position:absolute;top:.4rem;left:.5rem;font-family:"Cinzel",serif;font-size:.5rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:.15rem .45rem;border-radius:2px;background:rgba(0,0,0,.75);border:1px solid rgba(255,255,255,.1);}
+#tip-sh{position:absolute;bottom:.35rem;right:.5rem;font-family:"Cinzel",serif;font-size:.44rem;letter-spacing:.1em;color:rgba(0,194,255,.36);text-transform:uppercase;}
+#tip-body{padding:.72rem .88rem}
+#tip-name{font-family:"Cinzel",serif;font-size:.9rem;font-weight:700;color:var(--gold-bright);margin-bottom:.12rem;line-height:1.2;}
+#tip-type{font-family:"Cinzel",serif;font-size:.52rem;letter-spacing:.1em;text-transform:uppercase;color:var(--text-dim);margin-bottom:.45rem;padding-bottom:.45rem;border-bottom:1px solid rgba(230,161,28,.12);}
+.tsr{display:flex;justify-content:space-between;font-size:.76rem;padding:.11rem 0;border-bottom:1px solid rgba(255,255,255,.025);}
+.tsr:last-child{border:none}.tsl{color:var(--text-dim)}.tsv{color:var(--text-bright);font-weight:600}
+#tip-desc{font-size:.74rem;color:var(--gold);font-style:italic;margin-top:.44rem;padding-top:.44rem;border-top:1px solid rgba(230,161,28,.1);line-height:1.5;}
+#tip-hint{font-family:"Cinzel",serif;font-size:.46rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(0,194,255,.28);text-align:center;margin-top:.42rem;}
+
+/* SECTION DARK */
+.section-dark{background:rgba(0,0,0,.65);border-top:1px solid var(--border-gold);border-bottom:1px solid var(--border-gold);width:100%;}
+.section-dark .inner{max-width:1300px;margin:0 auto;padding:3rem 2rem;}
+
+/* FOOTER */
+footer{background:rgba(0,0,0,.97);border-top:2px solid var(--border-gold);margin-top:auto;}
+.foot-grid{max-width:1300px;margin:0 auto;padding:2.5rem 2rem 1.5rem;display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:2rem;}
+.foot-brand img{width:140px;height:auto;margin-bottom:.65rem;filter:drop-shadow(0 0 8px rgba(230,161,28,.3));}
+.foot-brand p{font-size:.82rem;color:var(--text-dim);line-height:1.6;margin-bottom:.65rem;}
+.foot-col-title{font-family:"Cinzel",serif;font-size:.58rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:.7rem;display:flex;align-items:center;gap:.38rem;}
+.foot-col-title::before{content:"⬥";font-size:.36rem;}
+.foot-links{list-style:none;display:flex;flex-direction:column;gap:.32rem;}
+.foot-links a{font-size:.82rem;color:var(--text-dim);text-decoration:none;transition:color .15s;}
+.foot-links a:hover{color:var(--cyan);}
+.foot-sister{display:flex;flex-direction:column;gap:.18rem;background:rgba(0,194,255,.05);border:1px solid rgba(0,194,255,.2);border-radius:4px;padding:.65rem .88rem;margin-top:.45rem;text-decoration:none;transition:all .16s;}
+.foot-sister:hover{background:rgba(0,194,255,.1);border-color:rgba(0,194,255,.4);}
+.foot-sister .url{font-family:"Cinzel",serif;font-size:.66rem;letter-spacing:.08em;color:var(--cyan);}
+.foot-sister .tag{font-size:.74rem;color:var(--text-dim);}
+.foot-bottom{border-top:1px solid var(--border-gold);padding:.9rem 2rem;text-align:center;font-size:.72rem;color:var(--text-dim);max-width:1300px;margin:0 auto;}
+.foot-bottom span{color:var(--gold-dim);}
+.foot-rune{font-family:"Cinzel",serif;font-size:.42rem;letter-spacing:.24em;color:var(--cyan);opacity:.22;text-align:center;padding:.22rem 1rem;border-top:1px solid var(--border-gold);overflow:hidden;white-space:nowrap;user-select:none;}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.fade-in{animation:fadeUp .5s ease both;}
+@media(max-width:900px){.sidebar-layout{grid-template-columns:1fr;}.foot-grid{grid-template-columns:1fr 1fr;}.nav-links{display:none;}}
+@media(max-width:540px){.foot-grid{grid-template-columns:1fr;}.items-grid{grid-template-columns:1fr 1fr;}}
+
+
+</style>
+</head>
+<body>
+
+<nav class="top-nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html" aria-label="Forge WoW Database Home">
+      <img data-asset="logo" src="" alt="Forge WoW Database Logo">
+      <div>
+        <div class="nav-logo-text">ForgeWOW</div>
+        <span class="nav-logo-sub">Item Database</span>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a class="nav-link" href="index.html">Home</a>
+<a class="nav-link" href="items.html">Items</a>
+<a class="nav-link" href="weapons.html">Weapons</a>
+<a class="nav-link active" href="armor.html">Armor</a>
+<a class="nav-link" href="spells.html">Spells</a>
+<a class="nav-link" href="quests.html">Quests</a>
+<a class="nav-link" href="npcs.html">NPCs</a>
+<a class="nav-link" href="professions.html">Professions</a>
+<a class="nav-link" href="lore.html">Lore</a>
+<a class="nav-link" href="search.html">Search</a>
+
+      <a class="nav-link sister" href="https://www.wowhousingdecor.com" target="_blank" rel="noopener">🏠 WoWHousingDecor</a>
+    </div>
+    <div class="nav-search-mini">
+      <input type="text" id="navSearch" placeholder="Search…" aria-label="Search database">
+      <button onclick="doSearch()"><span>Go</span></button>
+    </div>
+  </div>
+</nav>
+
+<div class="page-header">
+  <img class="page-header-bg" data-asset="header_bg" src="" alt="">
+  <div class="page-header-overlay"></div>
+  <div class="rune-strip top">ᚠ ᚢ ᚦ ᚨ ᚱ ᚲ ᚷ ᚹ ᚺ ᚾ ᛁ ᛃ ᛇ ᛈ ᛉ ᛊ ᛏ ᛒ ᛖ ᛗ ᛚ ᛜ ᛞ ᛟ ᚠ ᚢ ᚦ ᚨ ᚱ ᚲ ᚷ ᚹ ᚺ ᚾ ᛁ ᛃ ᛇ ᛈ ᛉ ᛊ</div>
+  <div class="page-header-content">
+    <div class="page-title-block">
+      <div class="page-eyebrow">Armor Database</div>
+      <h1 class="page-title">🛡️ WoW Armor</h1>
+      <p class="page-desc">Every piece of armor in World of Warcraft — plate, mail, leather, cloth — across all classes, specs, and expansions.</p>
+    </div>
+    <a class="forge-btn" href="index.html"><span>← Back to Home</span></a>
+  </div>
+  <div class="rune-strip bot">ᚠ ᚢ ᚦ ᚨ ᚱ ᚲ ᚷ ᚹ ᚺ ᚾ ᛁ ᛃ ᛇ ᛈ ᛉ ᛊ ᛏ ᛒ ᛖ ᛗ ᛚ ᛜ ᛞ ᛟ ᚠ ᚢ ᚦ ᚨ ᚱ ᚲ ᚷ ᚹ ᚺ ᚾ ᛁ ᛃ ᛇ ᛈ ᛉ ᛊ</div>
+</div>
+<div class="content-wrap">
+  <div class="browse-layout">
+    <aside class="sidebar">
+      <div class="sb-box">
+        <div class="sb-title">Armor Type</div>
+        <ul class="sb-list">
+          <li><a onclick="filterSub('Plate',this)" class="active">🔩 Plate</a></li>
+          <li><a onclick="filterSub('Mail',this)">🔗 Mail</a></li>
+          <li><a onclick="filterSub('Leather',this)">🦺 Leather</a></li>
+          <li><a onclick="filterSub('Cloth',this)">👘 Cloth</a></li>
+          <li><a onclick="filterSub('Shield',this)">🛡 Shields</a></li>
+          <li><a onclick="filterSub('',this)">📋 All Armor</a></li>
+        </ul>
+      </div>
+      <div class="sb-box">
+        <div class="sb-title">Slot</div>
+        <ul class="sb-list">
+          <li><a onclick="filterSlot('Head',this)">⛑ Head</a></li>
+          <li><a onclick="filterSlot('Shoulders',this)">🫱 Shoulders</a></li>
+          <li><a onclick="filterSlot('Chest',this)">👕 Chest</a></li>
+          <li><a onclick="filterSlot('Legs',this)">👖 Legs</a></li>
+          <li><a onclick="filterSlot('Feet',this)">👢 Feet</a></li>
+          <li><a onclick="filterSlot('Hands',this)">🧤 Hands</a></li>
+          <li><a onclick="filterSlot('',this)">📋 All Slots</a></li>
+        </ul>
+      </div>
+      <div class="sb-box">
+        <div class="sb-title">Quality</div>
+        <div class="q-filter-list">
+          <div class="q-pill q-legendary on" onclick="toggleQ('Legendary',this)"><div class="q-dot"></div>Legendary</div>
+          <div class="q-pill q-epic on" onclick="toggleQ('Epic',this)"><div class="q-dot"></div>Epic</div>
+          <div class="q-pill q-rare on" onclick="toggleQ('Rare',this)"><div class="q-dot"></div>Rare</div>
+          <div class="q-pill q-uncommon on" onclick="toggleQ('Uncommon',this)"><div class="q-dot"></div>Uncommon</div>
+        </div>
+      </div>
+    </aside>
+    <main>
+      <div class="toolbar">
+        <div><div class="t-title" id="catTitle">Plate Armor</div><div class="t-meta" id="toolbarMeta">Loading…</div></div>
+        <div class="t-right"><select class="sort-sel" id="sortSel" onchange="doFilter()"><option value="name-asc">Name A–Z</option><option value="level-desc">iLvl ↓</option></select></div>
+      </div>
+      <div class="items-grid" id="itemGrid"></div>
+      <div class="pagination" id="pagination"></div>
+    </main>
+  </div>
+</div>
+
+<div id="tooltip">
+  <div id="tip3d"><div id="tip-qb"></div><div id="tip-sh"></div></div>
+  <div id="tip-body">
+    <div id="tip-name"></div><div id="tip-type"></div>
+    <div id="tip-stats"></div><div id="tip-desc"></div>
+    <div id="tip-hint">Click for full details</div>
+  </div>
+</div>
+<div class="overlay" id="overlay" onclick="closeOverlay(event)">
+  <div class="modal">
+    <div class="modal-inner">
+      <button class="mc-btn" onclick="closeDetail()">✕</button>
+      <div id="m3d"><div id="m3d-hint">Drag to rotate</div></div>
+      <div class="m-title" id="mName"></div>
+      <div class="m-id" id="mId"></div>
+      <div class="m-qbadge" id="mQ"></div>
+      <div class="m-grid" id="mGrid"></div>
+      <div class="m-desc" id="mDesc" style="display:none"></div>
+      <div class="m-actions">
+        <a id="mWowhead" href="#" target="_blank" rel="noopener noreferrer">
+          <button class="forge-btn sm"><span>🔗 Wowhead</span></button>
+        </a>
+        <button class="forge-btn sm" onclick="copyId()"><span>📋 Copy ID</span></button>
+        <button class="forge-btn sm" onclick="closeDetail()"><span>✕ Close</span></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="foot-grid">
+    <div class="foot-brand">
+      <img data-asset="logo" src="" alt="ForgeWoW Database">
+      <p>The most comprehensive free World of Warcraft item database. Covering 2.4M+ items across all expansions.</p>
+      <a class="forge-btn sm" href="items.html"><span>Browse Items</span></a>
+    </div>
+    <div>
+      <div class="foot-col-title">Database</div>
+      <ul class="foot-links">
+        <li><a href="weapons.html">Weapons</a></li>
+        <li><a href="armor.html">Armor</a></li>
+        <li><a href="spells.html">Spells</a></li>
+        <li><a href="quests.html">Quests</a></li>
+        <li><a href="npcs.html">NPCs</a></li>
+        <li><a href="professions.html">Professions</a></li>
+        <li><a href="lore.html">Lore</a></li>
+        <li><a href="maps.html">Zone Maps</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="foot-col-title">Tools</div>
+      <ul class="foot-links">
+        <li><a href="search.html">Advanced Search</a></li>
+        <li><a href="bis.html">BiS Lists</a></li>
+        <li><a href="transmog.html">Transmog Finder</a></li>
+        <li><a href="items.html">Full Item Browser</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="foot-col-title">Sister Site</div>
+      <a class="foot-sister" href="https://www.wowhousingdecor.com" target="_blank" rel="noopener noreferrer">
+        <span class="url">🏠 WoWHousingDecor.com</span>
+        <span class="tag">Your WoW Housing Companion</span>
+      </a>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <strong>ForgeWoWdatabase.com</strong> &mdash; Fan-made WoW Database &nbsp;|&nbsp;
+    Data via <span>Blizzard Battle.net API</span> &nbsp;|&nbsp;
+    Not affiliated with Blizzard Entertainment
+  </div>
+  <div class="foot-rune">ᚠ ᚢ ᚦ ᚨ ᚱ ᚲ ᚷ ᚹ ᚺ ᚾ ᛁ ᛃ ᛇ ᛈ ᛉ ᛊ ᛏ ᛒ ᛖ ᛗ ᛚ ᛜ ᛞ ᛟ ᚠ ᚢ ᚦ ᚨ ᚱ ᚲ ᚷ ᚹ ᚺ ᚾ ᛁ ᛃ ᛇ ᛈ ᛉ ᛊ ᚠ ᚢ ᚦ ᚨ ᚱ ᚲ ᚷ ᚹ ᚺ ᚾ ᛁ ᛃ ᛇ ᛈ ᛉ ᛊ ᛏ ᛒ ᛖ ᛗ ᛚ ᛜ ᛞ ᛟ ᚠ ᚢ ᚦ ᚨ ᚱ ᚲ ᚷ ᚹ ᚺ ᚾ ᛁ ᛃ ᛇ ᛈ ᛉ ᛊ</div>
+</footer>
+<script>
+
+/* 3D ENGINE */
+const M3D=(function(){
+  const QC={"Poor":0x9d9d9d,"Common":0xc8c8c8,"Uncommon":0x1eff00,"Rare":0x0070dd,"Epic":0xa335ee,"Legendary":0xff8000,"Artifact":0xe6cc80,"default":0xE6A11C};
+  function qc(q){return QC[q]||QC.default;}
+  function mt(c,o={}){return new THREE.MeshStandardMaterial({color:c,metalness:o.m||.72,roughness:o.r||.25,emissive:c,emissiveIntensity:o.ei||.1,transparent:o.tr||false,opacity:o.op||1});}
+  function gm(c){return new THREE.MeshStandardMaterial({color:c,metalness:.05,roughness:0,transparent:true,opacity:.88,emissive:c,emissiveIntensity:.5});}
+  function getShape(item){
+    const n=(item.name||"").toLowerCase(),sc=(item.itemSubClass||item.item_subclass?.name||"").toLowerCase();
+    if(/sword|blade|sabre/.test(n)||sc.includes("sword"))return"sword";
+    if(/axe|hatchet/.test(n)||sc.includes("axe"))return"axe";
+    if(/mace|hammer|maul/.test(n)||sc.includes("mace"))return"mace";
+    if(/dagger|knife/.test(n))return"dagger";
+    if(/staff|stave|wand/.test(n)||sc.includes("staff"))return"staff";
+    if(/bow|crossbow/.test(n)||sc.includes("bow"))return"bow";
+    if(/shield/.test(n))return"shield";
+    if(/helm|crown|hood/.test(n))return"helm";
+    if(/ring|band/.test(n))return"ring";
+    if(/potion|flask/.test(n))return"potion";
+    return"orb";
+  }
+  function build(shape,col){
+    const g=new THREE.Group();
+    switch(shape){
+      case"sword":{const bl=new THREE.Mesh(new THREE.CylinderGeometry(.04,.008,1.7,6),mt(0xb8c8d8,{m:.93,r:.1}));bl.position.y=.55;g.add(bl);g.add(new THREE.Mesh(new THREE.BoxGeometry(.52,.065,.1),mt(col,{ei:.25})));const ha=new THREE.Mesh(new THREE.CylinderGeometry(.04,.04,.48,8),mt(0x4a2808,{m:.2,r:.8}));ha.position.y=-.3;g.add(ha);const po=new THREE.Mesh(new THREE.SphereGeometry(.09,8,8),mt(col,{ei:.35}));po.position.y=-.58;g.add(po);const ge=new THREE.Mesh(new THREE.OctahedronGeometry(.065),gm(col));ge.position.set(0,.02,.09);g.add(ge);g.position.y=-.22;break;}
+      case"axe":{const sh=new THREE.Mesh(new THREE.CylinderGeometry(.033,.044,1.3,8),mt(0x4a2808,{m:.2,r:.8}));g.add(sh);const ah=new THREE.Mesh(new THREE.BoxGeometry(.65,.52,.1),mt(0x9ab0c0,{m:.9,r:.15}));ah.position.set(.18,.44,0);g.add(ah);const aa=new THREE.Mesh(new THREE.BoxGeometry(.08,.52,.12),mt(col,{ei:.25}));aa.position.set(-.05,.44,0);g.add(aa);g.position.y=-.2;break;}
+      case"mace":{const sh=new THREE.Mesh(new THREE.CylinderGeometry(.04,.05,1.0,8),mt(0x5a3808,{m:.3,r:.7}));g.add(sh);const hd=new THREE.Mesh(new THREE.SphereGeometry(.22,8,8),mt(0x9ab0c0,{m:.85,r:.2}));hd.position.y=.68;g.add(hd);for(let i=0;i<6;i++){const sp=new THREE.Mesh(new THREE.ConeGeometry(.04,.2,5),mt(col,{ei:.2}));const a=i/6*Math.PI*2;sp.position.set(Math.cos(a)*.22,.68,Math.sin(a)*.22);sp.lookAt(Math.cos(a)*2,.68,Math.sin(a)*2);g.add(sp);}g.position.y=-.28;break;}
+      case"dagger":{const bl=new THREE.Mesh(new THREE.CylinderGeometry(.022,.005,.95,5),mt(0xd0d8e8,{m:.95,r:.08}));bl.position.y=.35;g.add(bl);g.add(new THREE.Mesh(new THREE.BoxGeometry(.3,.055,.08),mt(col,{ei:.2})));const ha=new THREE.Mesh(new THREE.CylinderGeometry(.03,.03,.34,7),mt(0x2a1a08,{m:.2,r:.9}));ha.position.y=-.2;g.add(ha);g.position.y=-.1;break;}
+      case"staff":{g.add(new THREE.Mesh(new THREE.CylinderGeometry(.024,.034,2.0,8),mt(0x382010,{m:.15,r:.85})));const ob=new THREE.Mesh(new THREE.SphereGeometry(.16,14,14),mt(col,{ei:.55,tr:true,op:.9,m:.05,r:.0}));ob.position.y=1.1;g.add(ob);const ib=new THREE.Mesh(new THREE.SphereGeometry(.08,10,10),mt(0xffffff,{ei:1.2,tr:true,op:.35}));ib.position.y=1.1;g.add(ib);for(let i=0;i<3;i++){const ri=new THREE.Mesh(new THREE.TorusGeometry(.042,.01,6,16),mt(col,{ei:.15}));ri.position.y=.2+i*.55;ri.rotation.x=Math.PI/2;g.add(ri);}g.position.y=-.5;break;}
+      case"bow":{const ar=new THREE.Mesh(new THREE.TorusGeometry(.58,.042,8,20,Math.PI*1.4),mt(0x5a3808,{m:.2,r:.7}));ar.rotation.z=Math.PI*.3;g.add(ar);const pts=[new THREE.Vector3(-.32,.54,0),new THREE.Vector3(0,-.04,0),new THREE.Vector3(.4,-.52,0)];g.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(pts),new THREE.LineBasicMaterial({color:0xd0c090})));break;}
+      case"shield":{const fa=new THREE.Mesh(new THREE.CylinderGeometry(.52,.52,.08,7),new THREE.MeshStandardMaterial({color:0x7a8898,metalness:.8,roughness:.25,side:THREE.DoubleSide}));fa.rotation.x=Math.PI/2;g.add(fa);const bo=new THREE.Mesh(new THREE.SphereGeometry(.15,8,8),mt(col,{ei:.3}));bo.position.z=.07;g.add(bo);const ri=new THREE.Mesh(new THREE.TorusGeometry(.52,.03,6,20),mt(col,{ei:.15}));ri.rotation.x=Math.PI/2;ri.position.z=.01;g.add(ri);break;}
+      case"helm":{const dm=new THREE.Mesh(new THREE.SphereGeometry(.33,10,10,0,Math.PI*2,0,Math.PI*.65),mt(0x8a9aaa,{m:.85,r:.2}));dm.position.y=.05;g.add(dm);const vi=new THREE.Mesh(new THREE.BoxGeometry(.48,.065,.36),mt(0x6a7a8a,{m:.9,r:.15}));vi.position.y=-.04;g.add(vi);const cr=new THREE.Mesh(new THREE.BoxGeometry(.05,.32,.26),mt(col,{ei:.2}));cr.position.y=.3;g.add(cr);g.add(Object.assign(new THREE.Mesh(new THREE.OctahedronGeometry(.065),gm(col)),{position:new THREE.Vector3(0,.1,.3)}));break;}
+      case"ring":{g.add(new THREE.Mesh(new THREE.TorusGeometry(.23,.052,10,40),mt(col,{m:.92,r:.08,ei:.12})));g.add(Object.assign(new THREE.Mesh(new THREE.OctahedronGeometry(.085),gm(col)),{position:new THREE.Vector3(0,.23,.05)}));break;}
+      case"potion":{g.add(new THREE.Mesh(new THREE.CylinderGeometry(.16,.19,.42,10),mt(col,{ei:.45,tr:true,op:.82,m:.05,r:.1})));const ne=new THREE.Mesh(new THREE.CylinderGeometry(.055,.13,.2,8),mt(0x8a9aaa,{m:.7,r:.3}));ne.position.y=.31;g.add(ne);g.position.y=-.1;break;}
+      default:{g.add(new THREE.Mesh(new THREE.IcosahedronGeometry(.26,1),mt(col,{ei:.35})));for(let i=0;i<2;i++){const ri=new THREE.Mesh(new THREE.TorusGeometry(.34,.014,6,36),mt(col,{ei:.25}));ri.rotation.x=Math.PI/2+i*Math.PI/3;g.add(ri);}break;}
+    }
+    return g;
+  }
+  let tS,tC,tR,tM,tA,tI=false;
+  function iTip(){if(tI)return;tI=true;const w=document.getElementById("tip3d");tR=new THREE.WebGLRenderer({antialias:true,alpha:true});tR.setPixelRatio(Math.min(devicePixelRatio,2));tR.setClearColor(0,0);tR.setSize(330,168);w.insertBefore(tR.domElement,w.firstChild);tS=new THREE.Scene();tC=new THREE.PerspectiveCamera(50,330/168,.1,100);tC.position.z=2.2;tS.add(new THREE.AmbientLight(0xffffff,.65));const d=new THREE.DirectionalLight(0xfff0d0,1.6);d.position.set(2,3,2);tS.add(d);const d2=new THREE.DirectionalLight(0x00C2FF,.35);d2.position.set(-2,-1,-2);tS.add(d2);}
+  function lTip(item){iTip();if(tM){tS.remove(tM);tM=null;}cancelAnimationFrame(tA);tM=build(getShape(item),qc(item.quality));tS.add(tM);let t=0;function lp(){tA=requestAnimationFrame(lp);t+=.013;tM.rotation.y=t;tM.rotation.x=Math.sin(t*.4)*.14;tR.render(tS,tC);}lp();}
+  let mS,mC,mR,mM,mA,mI=false,mD=false,mLX=0,mLY=0,mRX=0,mRY=0;
+  function iMod(){if(mI)return;mI=true;const w=document.getElementById("m3d");mR=new THREE.WebGLRenderer({antialias:true,alpha:true});mR.setPixelRatio(Math.min(devicePixelRatio,2));mR.setClearColor(0,0);mR.setSize(w.clientWidth||640,240);w.insertBefore(mR.domElement,w.firstChild);mS=new THREE.Scene();mC=new THREE.PerspectiveCamera(45,(w.clientWidth||640)/240,.1,100);mC.position.z=2.8;mS.add(new THREE.AmbientLight(0xffffff,.72));const d1=new THREE.DirectionalLight(0xfff8e0,1.9);d1.position.set(3,4,3);mS.add(d1);mS.add(Object.assign(new THREE.DirectionalLight(0x4020ff,.28),{position:new THREE.Vector3(-3,-2,-2)}));mS.add(Object.assign(new THREE.PointLight(0xE6A11C,1,8),{position:new THREE.Vector3(0,2,2)}));const el=mR.domElement;el.addEventListener("mousedown",e=>{mD=true;mLX=e.clientX;mLY=e.clientY;});window.addEventListener("mouseup",()=>mD=false);window.addEventListener("mousemove",e=>{if(!mD||!mM)return;mRY+=(e.clientX-mLX)*.009;mRX+=(e.clientY-mLY)*.009;mM.rotation.y=mRY;mM.rotation.x=mRX;mLX=e.clientX;mLY=e.clientY;});}
+  function lMod(item){iMod();cancelAnimationFrame(mA);if(mM){mS.remove(mM);mM=null;}mM=build(getShape(item),qc(item.quality));mRX=0;mRY=0;mS.add(mM);const w=document.getElementById("m3d");mR.setSize(w.clientWidth,240);mC.aspect=w.clientWidth/240;mC.updateProjectionMatrix();let t=0;function lp(){mA=requestAnimationFrame(lp);if(!mD){mRY+=.009;mM.rotation.y=mRY;}mR.render(mS,mC);}lp();}
+  function stop(){cancelAnimationFrame(tA);cancelAnimationFrame(mA);}
+  return{lTip,lMod,stop,getShape};
+})();
+
+
+/* ITEM BROWSER ENGINE */
+const QCC={"Poor":"#9d9d9d","Common":"#e0e0e0","Uncommon":"#1eff00","Rare":"#0070dd","Epic":"#a335ee","Legendary":"#ff8000","Artifact":"#e6cc80","default":"#E6A11C"};
+function qCol(q){return QCC[q]||QCC.default;}
+
+const ST={allItems:[],filtered:[],activeCategory:"",activeQualities:new Set(["Poor","Common","Uncommon","Rare","Epic","Legendary","Artifact"]),page:1,perPage:24,currentItem:null,sortBy:"name-asc"};
+const DB={};
+
+async function loadCat(cat,el){
+  if(el){document.querySelectorAll(".sb-list li a").forEach(a=>a.classList.remove("active"));el.classList.add("active");}
+  ST.activeCategory=cat;ST.page=1;
+  const titleEl=document.getElementById("catTitle");
+  if(titleEl)titleEl.textContent=cat.charAt(0).toUpperCase()+cat.slice(1);
+  showSkel();
+  try{
+    if(!DB[cat]){const r=await fetch("data/"+cat+".json");if(!r.ok)throw new Error();DB[cat]=await r.json();}
+    ST.allItems=DB[cat];applyFilters();
+  }catch(e){showEmpty("📦","No data","Place "+cat+".json in data/ folder");}
+}
+
+function applyFilters(){
+  ST.sortBy=document.getElementById("sortSel")?.value||"name-asc";
+  let items=[...ST.allItems];
+  if(ST.activeQualities.size<7)items=items.filter(i=>ST.activeQualities.has(i.quality));
+  items.sort((a,b)=>{switch(ST.sortBy){case"name-asc":return(a.name||"").localeCompare(b.name||"");case"name-desc":return(b.name||"").localeCompare(a.name||"");case"id-asc":return a.id-b.id;case"id-desc":return b.id-a.id;case"level-desc":return(b.level||0)-(a.level||0);default:return 0;}});
+  ST.filtered=items;renderPage();
+}
+
+function toggleQ(q,el){
+  ST.activeQualities.has(q)?(ST.activeQualities.delete(q),el.classList.remove("on")):(ST.activeQualities.add(q),el.classList.add("on"));
+  ST.page=1;applyFilters();
+}
+
+function renderPage(){
+  const total=ST.filtered.length,pages=Math.max(1,Math.ceil(total/ST.perPage));
+  ST.page=Math.min(ST.page,pages);
+  const slice=ST.filtered.slice((ST.page-1)*ST.perPage,ST.page*ST.perPage);
+  const meta=document.getElementById("toolbarMeta");
+  if(meta)meta.innerHTML=`<span>${total.toLocaleString()}</span> items &mdash; page ${ST.page}/${pages}`;
+  const grid=document.getElementById("itemGrid");
+  if(!grid)return;
+  if(!slice.length){showEmpty("🔍","Nothing found","Adjust filters or try a different category");return;}
+  grid.innerHTML=slice.map(item=>{
+    const qcls="q-text-"+(item.quality||"common").toLowerCase();
+    const ico=item.icon?`<img class="item-icon" src="${item.icon}" alt="" onerror="this.outerHTML='<div class=item-icon-ph>?</div>'">`:`<div class="item-icon-ph">?</div>`;
+    return`<div class="item-card" onclick="openDetail(${item.id})" onmouseenter="showTip(event,${item.id})" onmouseleave="hideTip()" onmousemove="moveTip(event)">${ico}<div class="item-info"><div class="item-name">${item.name||"Unknown"}</div><div class="item-id">ID: ${item.id}${item.level?" · ilvl "+item.level:""}</div><div class="item-quality ${qcls}">${item.quality||""}</div><div class="item-sub">${item.itemSubClass||item.item_subclass?.name||""}</div></div></div>`;
+  }).join("");
+  renderPagination(pages);
+}
+
+function renderPagination(pages){
+  const pg=document.getElementById("pagination");if(!pg)return;
+  if(pages<=1){pg.innerHTML="";return;}
+  let h=`<button class="pg-btn" onclick="goPage(${ST.page-1})" ${ST.page<=1?"disabled":""}><span>← Prev</span></button>`;
+  const s=Math.max(1,ST.page-2),en=Math.min(pages,ST.page+2);
+  if(s>1)h+=`<button class="pg-btn" onclick="goPage(1)"><span>1</span></button>${s>2?`<span style="color:var(--text-dim);padding:0 .25rem">…</span>`:""}`;
+  for(let p=s;p<=en;p++)h+=`<button class="pg-btn${p===ST.page?" active":""}" onclick="goPage(${p})"><span>${p}</span></button>`;
+  if(en<pages)h+=`${en<pages-1?`<span style="color:var(--text-dim);padding:0 .25rem">…</span>`:""}<button class="pg-btn" onclick="goPage(${pages})"><span>${pages}</span></button>`;
+  h+=`<button class="pg-btn" onclick="goPage(${ST.page+1})" ${ST.page>=pages?"disabled":""}><span>Next →</span></button>`;
+  pg.innerHTML=h;
+}
+
+function goPage(p){ST.page=p;renderPage();window.scrollTo(0,300);}
+function showSkel(){const g=document.getElementById("itemGrid");if(g)g.innerHTML=Array(12).fill(0).map(()=>`<div class="item-card" style="pointer-events:none"><div class="sk-ico skeleton"></div><div style="flex:1"><div class="sk-ln sk-w80 skeleton"></div><div class="sk-ln sk-w55 skeleton"></div><div class="sk-ln sk-w70 skeleton"></div></div></div>`).join("");const pg=document.getElementById("pagination");if(pg)pg.innerHTML="";}
+function showEmpty(ic,ti,de){const g=document.getElementById("itemGrid");if(g)g.innerHTML=`<div style="grid-column:1/-1;text-align:center;padding:4rem 2rem;color:var(--text-dim)"><div style="font-size:2.5rem;margin-bottom:.7rem">${ic}</div><div style="font-family:'Cinzel',serif;font-size:.88rem;color:var(--text);margin-bottom:.4rem">${ti}</div><div style="font-size:.86rem">${de}</div></div>`;}
+
+/* TOOLTIP */
+let tipOn=false;
+function showTip(e,id){
+  const item=ST.filtered.find(i=>i.id===id)||ST.allItems.find(i=>i.id===id);
+  if(!item)return;tipOn=true;
+  const tip=document.getElementById("tooltip"),qc=qCol(item.quality);
+  document.getElementById("tip-qb").textContent=item.quality||"";document.getElementById("tip-qb").style.color=qc;
+  tip.style.borderTopColor=qc;
+  document.getElementById("tip-name").textContent=item.name||"Unknown";document.getElementById("tip-name").style.color=qc;
+  document.getElementById("tip-type").textContent=[item.itemClass||item.item_class?.name,item.itemSubClass||item.item_subclass?.name].filter(Boolean).join(" — ")||"";
+  document.getElementById("tip-sh").textContent=M3D.getShape(item);
+  const stats=[];if(item.level)stats.push(["Item Level",item.level]);if(item.requiredLevel)stats.push(["Req Level",item.requiredLevel]);if(item.sellPrice)stats.push(["Sell Price",fmtG(item.sellPrice)]);
+  document.getElementById("tip-stats").innerHTML=stats.map(([k,v])=>`<div class="tsr"><span class="tsl">${k}</span><span class="tsv">${v}</span></div>`).join("");
+  const d=document.getElementById("tip-desc");if(item.description){d.textContent='"'+item.description+'"';d.style.display="";}else d.style.display="none";
+  M3D.lTip(item);tip.classList.add("vis");moveTip(e);
+}
+function moveTip(e){if(!tipOn)return;const tip=document.getElementById("tooltip");let x=e.clientX+16,y=e.clientY-18;if(x+340>window.innerWidth)x=e.clientX-345;if(y+420>window.innerHeight)y=window.innerHeight-425;if(y<5)y=5;tip.style.left=x+"px";tip.style.top=y+"px";}
+function hideTip(){tipOn=false;document.getElementById("tooltip").classList.remove("vis");}
+
+/* DETAIL MODAL */
+function openDetail(id){
+  const item=ST.filtered.find(i=>i.id===id)||ST.allItems.find(i=>i.id===id);
+  if(!item)return;ST.currentItem=item;hideTip();
+  const qc=qCol(item.quality);
+  document.getElementById("mName").textContent=item.name||"Unknown";document.getElementById("mName").style.color=qc;
+  document.getElementById("mId").textContent="Item ID: "+item.id;
+  const qb=document.getElementById("mQ");qb.textContent=item.quality||"";qb.style.color=qc;qb.style.borderColor=qc+"55";
+  const fields=[["Item Level",item.level],["Required Level",item.requiredLevel],["Class",item.itemClass||item.item_class?.name],["Subclass",item.itemSubClass||item.item_subclass?.name],["Slot",item.inventoryType],["Sell Price",item.sellPrice?fmtG(item.sellPrice):null],["Weight",item.weightLbs?item.weightLbs+"lbs":null],["Location",item.location]].filter(([,v])=>v!=null&&v!=="");
+  document.getElementById("mGrid").innerHTML=fields.map(([l,v])=>`<div class="m-field"><div class="m-field-label">${l}</div><div class="m-field-val">${v}</div></div>`).join("");
+  const md=document.getElementById("mDesc");if(item.description){md.textContent='"'+item.description+'"';md.style.display="";}else md.style.display="none";
+  document.getElementById("mWowhead").href="https://www.wowhead.com/item="+item.id;
+  document.getElementById("overlay").classList.add("vis");
+  setTimeout(()=>M3D.lMod(item),60);
+}
+function closeDetail(){document.getElementById("overlay").classList.remove("vis");M3D.stop();}
+function closeOverlay(e){if(e.target===document.getElementById("overlay"))closeDetail();}
+function copyId(){if(ST.currentItem)navigator.clipboard?.writeText(String(ST.currentItem.id));}
+function fmtG(c){const g=Math.floor(c/10000),s=Math.floor((c%10000)/100),co=c%100;return[g?g+"g":"",s?s+"s":"",co?co+"c":""].filter(Boolean).join(" ")||"0c";}
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closeDetail();});
+
+/* SEARCH */
+function doSearch(){const q=document.getElementById("navSearch")?.value.trim();if(q)window.location.href="search.html?q="+encodeURIComponent(q);}
+document.addEventListener("DOMContentLoaded",()=>{
+  document.getElementById("navSearch")?.addEventListener("keydown",e=>{if(e.key==="Enter")doSearch();});
+});
+
+
+let subF='Plate',slotF='';
+function filterSub(s,el){document.querySelectorAll('.sb-box:first-child .sb-list li a').forEach(a=>a.classList.remove('active'));el.classList.add('active');subF=s;doFilter();}
+function filterSlot(s,el){document.querySelectorAll('.sb-box:nth-child(2) .sb-list li a').forEach(a=>a.classList.remove('active'));el.classList.add('active');slotF=s;doFilter();}
+function doFilter(){
+  let items=[...DB.armor];
+  if(subF)items=items.filter(i=>(i.itemSubClass||'').toLowerCase().includes(subF.toLowerCase()));
+  if(slotF)items=items.filter(i=>(i.slot||'').toLowerCase().includes(slotF.toLowerCase()));
+  if(ST.activeQualities.size<7)items=items.filter(i=>ST.activeQualities.has(i.quality));
+  items.sort((a,b)=>(a.name||'').localeCompare(b.name||''));
+  ST.filtered=items;ST.page=1;renderPage();
+  document.getElementById('catTitle').textContent=(subF||'All')+(slotF?' — '+slotF:'')+' Armor';
+  const m=document.getElementById('toolbarMeta');if(m)m.innerHTML=`<span>${items.length}</span> pieces`;
+}
+DB.armor=[{id:16921,name:"Breastplate of Wrath",quality:"Epic",level:66,itemClass:"Armor",itemSubClass:"Plate",slot:"Chest"},{id:16922,name:"Pauldrons of Wrath",quality:"Epic",level:66,itemClass:"Armor",itemSubClass:"Plate",slot:"Shoulders"},{id:16923,name:"Helm of Wrath",quality:"Epic",level:66,itemClass:"Armor",itemSubClass:"Plate",slot:"Head"},{id:16924,name:"Legplates of Wrath",quality:"Epic",level:66,itemClass:"Armor",itemSubClass:"Plate",slot:"Legs"},{id:22349,name:"Helm of the Lightbringer",quality:"Epic",level:110,itemClass:"Armor",itemSubClass:"Plate",slot:"Head"},{id:45428,name:"Conqueror's Aegis Tunic",quality:"Epic",level:219,itemClass:"Armor",itemSubClass:"Plate",slot:"Chest"},{id:71031,name:"Firelord's Mantle",quality:"Epic",level:378,itemClass:"Armor",itemSubClass:"Cloth",slot:"Shoulders"},{id:30130,name:"Nordrassil Feral-Kilt",quality:"Epic",level:120,itemClass:"Armor",itemSubClass:"Leather",slot:"Legs"},{id:22490,name:"Tier 4 Warrior Shoulders",quality:"Epic",level:110,itemClass:"Armor",itemSubClass:"Plate",slot:"Shoulders"}];
+ST.allItems=DB.armor;
+document.addEventListener('DOMContentLoaded',()=>doFilter());
+
+</script>
+</body>
+</html>
